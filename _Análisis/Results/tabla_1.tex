@@ -1,0 +1,21 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Tabla 1}
+\begin{tabular}{l*{2}{cc}}
+\hline\hline
+            &\multicolumn{1}{c}{(1)}         &            &\multicolumn{1}{c}{(2)}         &            \\
+            &  Coef./S.E.         &     p-value&  Coef./S.E.         &     p-value\\
+\hline
+Edad        &      241.93\sym{***}&        0.00&      226.25\sym{***}&        0.00\\
+            &        6.69         &            &        6.62         &            \\
+Mujer       &    -3319.70\sym{***}&        0.00&    -3465.36\sym{***}&        0.00\\
+            &      193.56         &            &      190.75         &            \\
+Const       &     9260.28\sym{***}&        0.00&     6165.87\sym{***}&        0.00\\
+            &      284.99         &            &      640.98         &            \\
+\hline
+R-cuadrado  &        0.06         &            &        0.09         &            \\
+N. de obs.  &    26444.00         &            &    26444.00         &            \\
+\hline\hline
+\multicolumn{5}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+\end{table}

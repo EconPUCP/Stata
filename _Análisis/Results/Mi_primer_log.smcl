@@ -1,0 +1,33 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:/Users/Usuario/Documents/GitHub/Proyecto_STATA/_Análisis/Results/Mi_primer_log.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}18 Feb 2019, 01:35:47
+{txt}
+{com}. use "C:/Users/Usuario/Documents/GitHub/Proyecto_STATA/_Análisis/Data/sumaria-2018.dta", clear
+{txt}
+{com}. tabulate pobreza
+
+         {txt}pobreza {c |}      Freq.     Percent        Cum.
+{hline 17}{c +}{hline 35}
+   pobre extremo {c |}{res}      1,069        2.85        2.85
+{txt}pobre no extremo {c |}{res}      5,680       15.16       18.02
+{txt}        no pobre {c |}{res}     30,713       81.98      100.00
+{txt}{hline 17}{c +}{hline 35}
+           Total {c |}{res}     37,462      100.00
+{txt}
+{com}. histogram ga03hd
+{txt}(bin={res}45{txt}, start={res}0{txt}, width={res}1028.0222{txt})
+{res}{txt}
+{com}. kdensity ga03hd
+{res}{txt}
+{com}. 
+. log close 
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:/Users/Usuario/Documents/GitHub/Proyecto_STATA/_Análisis/Results/Mi_primer_log.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}18 Feb 2019, 01:35:50
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}

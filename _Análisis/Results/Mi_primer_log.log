@@ -1,0 +1,34 @@
+---------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  C:/Users/Usuario/Documents/GitHub/Proyecto_STATA/_Análisis/Res
+> ults/Mi_primer_log.log
+  log type:  text
+ opened on:  18 Feb 2019, 01:35:50
+
+. 
+. use "C:/Users/Usuario/Documents/GitHub/Proyecto_STATA/_Análisis/Data/suma
+> ria-2018.dta", clear
+
+. tabulate pobreza
+
+         pobreza |      Freq.     Percent        Cum.
+-----------------+-----------------------------------
+   pobre extremo |      1,069        2.85        2.85
+pobre no extremo |      5,680       15.16       18.02
+        no pobre |     30,713       81.98      100.00
+-----------------+-----------------------------------
+           Total |     37,462      100.00
+
+. histogram ga03hd
+(bin=45, start=0, width=1028.0222)
+
+. kdensity ga03hd
+
+. 
+. log close // Se cierra el log-file 
+      name:  <unnamed>
+       log:  C:/Users/Usuario/Documents/GitHub/Proyecto_STATA/_Análisis/Res
+> ults/Mi_primer_log.log
+  log type:  text
+ closed on:  18 Feb 2019, 01:35:52
+---------------------------------------------------------------------------
