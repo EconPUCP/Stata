@@ -1,7 +1,7 @@
 # Conceptos Básicos
 
 ## 1.  CONOCIENDO LA INTERFAZ
----------------------------------
+
 
 ### 1.1 LA INTERFAZ DE STATA
 La interfaz de Stata se compone de distintas ventanas. Conozcamos algunas:
@@ -132,4 +132,4 @@ Vayamos a la carpeta mencionada en la ventana de resultados para ver qué encont
 | UCSF GSI  | [Thinking like Stata](https://www.youtube.com/watch?v=jTtIREfhyEY&t=108s&ab_channel=UCSFGSI "Thinking like Stata") | Manejar la sintaxis de los comandos en Stata  |
 
 
-****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/Gladys91/Proyecto_STATA/tree/main/_An%C3%A1lisis/Scripts/Conceptos%20b%C3%A1sicos "script") y [base de datos](https://github.com/Gladys91/Proyecto_STATA/tree/main/_An%C3%A1lisis/Data "base de datos")* 
+****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Conceptos%20b%C3%A1sicos/1_creaci%C3%B3n_do_file.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data "base de datos")* 
