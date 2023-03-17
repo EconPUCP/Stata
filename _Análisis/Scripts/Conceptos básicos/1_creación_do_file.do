@@ -6,7 +6,7 @@
 
 *Preambulo 
 
-cd "C:/Users/Usuario/Documents/GitHub/Proyecto_STATA/_Análisis/Data" // Se debe cambiar por la dirección donde se encuentra tu base de datos
+cd "C:/Users/Usuario/Documents/GitHub/Stata/_Análisis/Data" // Se debe cambiar por la dirección donde se encuentra tu base de datos
 
 *************
 
