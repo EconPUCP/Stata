@@ -57,4 +57,4 @@ Por ejemplo:
 
 Hasta este punto hemos visto cómo manipular las variables de tiempo y como hacer algunos gráficos simples considerando estos datos. Ahora vamos a ver un primer conjunto de operaciones estadísticas bastante recurrentes cuando se usan datos temporales.
 
-****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/Gladys91/Proyecto_STATA/tree/main/_An%C3%A1lisis/Scripts/Conceptos%20b%C3%A1sicos "script") y [base de datos](https://github.com/Gladys91/Proyecto_STATA/tree/main/_An%C3%A1lisis/Data "base de datos")*
+****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Serie%20de%20tiempo/3_gr%C3%A1ficos_serie_de_tiempo.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data "base de datos")*
