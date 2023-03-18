@@ -1,7 +1,7 @@
 # Modelo de series de tiempo
 
 ## 1.  OPERADORES DE REZAGOS, ADELANTOS Y DIFERENCIAS
----------------------------------
+
 
 Un conjunto importante de operadores que se vuelve disponible cuando se usa `tsset` con los relacionados a los rezagos, los adelantos y las diferencias. Veamos este operador en términos de ecuaciones:
 
