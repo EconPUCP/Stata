@@ -1,6 +1,6 @@
 ************
 *PONTIFICIA UNIVERSIDAD CATÓLICA DEL PERÚ
-* SCRIPT: 8_Aplicación_ec_mincer.do
+* SCRIPT: 9_Aplicación_mincer.do
 * OBJETIVO: Ecuación de Mincer básica
 ************
  
