@@ -64,7 +64,7 @@ matrix B1 = (.,0,0 \ 0,.,0 \ 0,0,.)
 svar inf u interes, lags(1/2) aeq(A1) beq(B1)
 ```
 
-Realizaremos el impulso respuesta
+Realizaremos el impulso respuesta:
 
 ```
 irf create svar_irf, step(36) set(irf_2) replace
