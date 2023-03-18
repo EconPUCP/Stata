@@ -1,4 +1,4 @@
-# Aplicación: Reporte Macroeconómico usando el PWT 10.01
+# Aplicación: Reporte macroeconómico usando el PWT 10.01
 
 Para integrar los puntos estudiados en este modulo, replicaremos un ejemplo  del laboratorio de manejo de base de datos 2023 - 0 de Diego Quispe Ortogorin, para lo cual realizaremos un reporte macroeconómico.
 
