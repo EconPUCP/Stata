@@ -1,0 +1,10 @@
+# Site settings
+title: Stata econ pucp
+tag_text: STATA ECONPUCP
+description: Solo is a Jekyll theme that supports single-page websites only, but supports them well. Yes, it’s responsive.
+
+# Build settings
+markdown: kramdown
+exclude: ["README.md"]
+sass:
+  style: compressed
