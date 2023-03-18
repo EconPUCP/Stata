@@ -49,7 +49,8 @@ El navegador de datos permite visualizar los datos como si fuera una hoja de cá
 >
 > * Podemos cambiar el color de la interfaz haciendo   *click derecho  → preferencias → general → esquema de color general → seleccionar color de preferencia*
 >* Podemos cambiar la disposición de las ventanas de Stata siguiendo la ruta *Edición → Preferencias → Cargar conjunto de preferencias → seleccionar diseño de preferencia*
-
+>
+>Puedes ver un tutorial de cómo hacerlo en el siguiente [enlace](https://youtu.be/XzhVLyJ1Re8?t=1190 "enlace")
 
 ### 1.2 DO-FILES
 En vez de introducir comandos de manera directa en la ventana de comandos, se puede crear un archivo de texto que contenga los comandos e instrucciones de Stata para que puedan ser ejecutados. Estos archivos son llamados do-files.
