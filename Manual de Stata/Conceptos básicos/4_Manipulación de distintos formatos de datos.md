@@ -24,5 +24,6 @@ Cada tipo de variable permite ciertos tipos de procesos u operaciones. Por lo qu
 ## Sigue aprendiendo
 | Recurso  | Tema | Descripción |
 | ------------- |:-------------:|:-------------:|
-|   |  |   |
-|   |  |   |
+| UCLA - Stata learning module | [Missing Values](https://stats.oarc.ucla.edu/stata/modules/missing-values/ "Missing Values") | Cómo declarar los missing values en la data  |
+| UCLA - FAQ  | [Missing values](https://stats.oarc.ucla.edu/stata/faq/how-can-i-recode-missing-values-into-different-categories/ "Missing values") | Cómo recodificar los missing values en diferentes categorías  |
+| STATA  | [Dropping spells of missing values](https://www.stata.com/support/faqs/data-management/dropping-spells-of-missing-values/ "Dropping spells of missing values") | Cómo borrar missinhg values al inicio y final de un panel de datos  |
