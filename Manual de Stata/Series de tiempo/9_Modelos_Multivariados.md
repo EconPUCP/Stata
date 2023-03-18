@@ -275,4 +275,4 @@ irf graph sirf, impulse(ti im) response(ti im) xtitle("Periodos")
 
 ![image](https://user-images.githubusercontent.com/106888200/224494458-c275a0ab-d58e-46a0-b5e5-d803dbeca33d.png)
 
-****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Serie%20de%20tiempo/9_pron%C3%B3sticos.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data "base de datos")*
+****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Serie%20de%20tiempo/11_var_svar.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data "base de datos")*
