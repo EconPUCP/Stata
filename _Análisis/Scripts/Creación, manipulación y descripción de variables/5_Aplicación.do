@@ -1,7 +1,7 @@
 ************
 *PONTIFICIA UNIVERSIDAD CATÓLICA DEL PERÚ
 * SCRIPT: 5_Aplicación.do
-* OBJETIVO: Reporte Macroeconómico usando PWT 10.01
+* OBJETIVO: Reporte macroeconómico PWT 10.01
 ************
 
 *Preámbulo
