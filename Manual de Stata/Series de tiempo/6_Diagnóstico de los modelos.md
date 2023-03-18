@@ -326,4 +326,4 @@ El gráfico nos indica que no hay una gran diferencia entre el histograma y la d
 
 Con esto hemos modelado, bajo ciertos criterios, a la serie de tasa de crecimiento de los términos de intercambio. A partir de esto podemos pronosticar los valores de las series.
 
-****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/Gladys91/Proyecto_STATA/tree/main/_An%C3%A1lisis/Scripts/Conceptos%20b%C3%A1sicos "script") y [base de datos](https://github.com/Gladys91/Proyecto_STATA/tree/main/_An%C3%A1lisis/Data "base de datos")*
+****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Serie%20de%20tiempo/6_simulando_un_proceso_AR.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data "base de datos")*
