@@ -58,4 +58,4 @@ Ahora veamos otros tópicos de series de tiempo. En las primeras partes hemos vi
 Comenzaremos viendo modelos ARCH y GARCH para luego pasar a modelos multivariados VAR y SVAR. Por último, analizaremos la presencia de cointegración en las series y revisaremos cómo aprovechar esta propiedad en las series.
 
 
-****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/Gladys91/Proyecto_STATA/tree/main/_An%C3%A1lisis/Scripts/Conceptos%20b%C3%A1sicos "script") y [base de datos](https://github.com/Gladys91/Proyecto_STATA/tree/main/_An%C3%A1lisis/Data "base de datos")*
+****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Serie%20de%20tiempo/7_random_walks.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data "base de datos")*
