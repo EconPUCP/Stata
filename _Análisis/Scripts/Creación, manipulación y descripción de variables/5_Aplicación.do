@@ -1,7 +1,7 @@
 ************
 *PONTIFICIA UNIVERSIDAD CATÓLICA DEL PERÚ
 * SCRIPT: 5_Aplicación.do
-* OBJETIVO: Incidencia de la pobreza monetaría ENAHO 2020
+* OBJETIVO: Reporte Macroeconómico usando PWT 10.01
 ************
 
 *Preámbulo
