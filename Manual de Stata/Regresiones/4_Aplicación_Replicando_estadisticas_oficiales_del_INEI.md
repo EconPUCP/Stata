@@ -1,6 +1,6 @@
-# Regresiones
+# APLICACIÓN
 
-### 4 REPLICANDO ESTADISTICAS OFICIALES DEL INEI USANDO ENAHO
+### REPLICANDO ESTADISTICAS OFICIALES DEL INEI USANDO ENAHO
 
 
 Como aplicación vamos a replicar algunos estadísticos oficiales del INEI usando la ENAHO junto a su diseño muestral. Particularmente nos enfocaremos en el porcentaje de población en situación de pobreza monetaria, según ámbito geográfico para el 2018.
@@ -100,4 +100,4 @@ La definición para cada valor de _subpoop_ está dado en el mismo resultado. Po
 En estos casos también podemos comparar los intervalos de confianza de cada estimador presentados tanto en las estadísticas oficiales como en los resultados del código.
 
 
-****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/Gladys91/Proyecto_STATA/tree/main/_An%C3%A1lisis/Scripts/Conceptos%20b%C3%A1sicos "script") y [base de datos](https://github.com/Gladys91/Proyecto_STATA/tree/main/_An%C3%A1lisis/Data "base de datos")*
+****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Regresi%C3%B3n/4_Aplicaci%C3%B3n.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data "base de datos")*
