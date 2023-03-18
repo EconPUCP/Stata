@@ -102,8 +102,8 @@ Debemos indicar la base de datos secundaria a anexar en el espacio de filename. 
 ## Sigue aprendiendo
 | Recurso  | Tema | Descripción |
 | ------------- |:-------------:|:-------------:|
-| UCLA - Stata learning module | [Combining data](https://stats.oarc.ucla.edu/stata/modules/combining-data/ "Combining data") | Cómo combinar archivos en Stata según los casos: 1:1, 1:m, m:1   |
-|   |  |   |
-
+| UCLA - Stata learning module | [Combining data](https://stats.oarc.ucla.edu/stata/modules/combining-data/ "Combining data") | Cómo realizar un merge programando según los casos: 1:1, 1:m, m:1   |
+| StataCorp LLC | [How to merge files into a single dataset](https://youtu.be/niGZBRyyDuY "How to merge files into a single dataset") | Cómo realizar un merge con los botones de Stata |
+| STATeando | [Unión de bases: Merge y Append](https://youtu.be/vbcGwqUCIFE?t=3 "Unión de bases: Merge y Append") | Uso del comando `Merge` y `Append` |
 
 ****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Conceptos%20b%C3%A1sicos/6_merge_append.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data "base de datos")* 
