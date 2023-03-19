@@ -166,7 +166,7 @@ gen g_pbi2 = d4.lnpbi
 
 ![image](https://user-images.githubusercontent.com/106888200/224375603-7e83af9a-50f4-40d8-8d22-253a98eb547f.png)
 
-La última línea de código no genera la tasa de crecimiento sino la diferencia de la diferencia de la diferencia de la diferencia del ln(y). También podemos combinar los operadores. Si queremos obtener la tasa de crecimiento rezagada en la base anual del PBI podemos usar l.d.lnpbi.
+La última línea de código no genera la tasa de crecimiento sino la diferencia de la diferencia de la diferencia de la diferencia del ln(y). También podemos combinar los operadores. Si queremos obtener la tasa de crecimiento rezagada en la base anual del PBI podemos usar l.d.lnpbi. 
 
 
 ****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Serie%20de%20tiempo/2_rezagos_adelantos_diferencias.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data "base de datos")*
