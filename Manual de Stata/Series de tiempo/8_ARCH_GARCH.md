@@ -131,3 +131,4 @@ Cada extensión particular tiene una teoría detrás que permite entender los re
 
 
 ****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Serie%20de%20tiempo/10_ARCH_GARCH.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data "base de datos")*
+ 
