@@ -176,7 +176,7 @@ format semana %tw
 ## Sigue aprendiendo
 | Recurso  | Tema | Descripción |
 | ------------- |:-------------:|:-------------:|
-|   |  |   |
+| Stata.Professor | [Daily Dates](https://fintechprofessor.com/2018/10/22/quick-table-for-converting-different-dates-to-stata-format/ "Daily Dates") | Tabla rápida para convertir diferentes fechas a formato Stata |
 |   |  |   |
 
 
