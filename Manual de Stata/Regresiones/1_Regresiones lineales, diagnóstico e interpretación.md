@@ -51,7 +51,7 @@ En general, los resultados de regresiones tienen un orden similar por lo que est
 Entre azul, tenemos:
 
 - Source, expresa la fuente de variabilidad en el Model, Residual y Total. La variabilidad total (Total) está dividida en la variabilidad que puede ser ‘explicada’ por las variables independientes (Model) y la no ‘explicada’ por estas (Residual). Su suma equivale al Total.
-- SS: Es la suma de cuadrados (Sum of Squares) asociada a cada fuente de variación. Recuerde que ![](https://scontent.flim30-1.fna.fbcdn.net/v/t39.30808-6/332516926_948054716332691_6928087430602738356_n.jpg?stp=cp0_dst-jpg&_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_ohc=K2ZZLPjSUAEAX_i_C-t&tn=Xc4MjXoFM9qCnvxH&_nc_ht=scontent.flim30-1.fna&oh=00_AfA8Ww_lHXawFUoiN7SWBKnGMq5Vitc67eaptLkLyOrpMg&oe=63FD81B3)
+- SS: Es la suma de cuadrados (Sum of Squares) asociada a cada fuente de variación. Recuerde que $R^2= \frac{SS_{Model}}{SS_{Total}}$
 - df: Indica los grados de libertad (degrees of freedom) asociados a cada fuente de variabilidad. El grado de libertad del modelo es igual a N − k siendo N es el número de observaciones y k el número de variables explicativas agregadas al modelo. En este caso hay 188 observaciones y 187 grados de libertad en el modelo estimado.
 - MS: Es el mean square y equivale a la división del SS entre los grados de libertad respectivos.
 En este espacio se tiene resultados sobre el ajuste general del modelo.
@@ -72,15 +72,19 @@ Esta última es la parte usualmente más analizada puesto que contiene a los coe
 1. La variable dependiente, en este caso life
 2. Son los coeficientes estimados del modelo. En este caso:
 
-![image](https://user-images.githubusercontent.com/106888200/224081313-d84ff622-e2d7-4a29-9b06-b33c9adf57cd.png)
+$$\beta_0=_ cons=50.35941$$
+
+$$\beta_1=school=2.45184$$
+
+$$life = 50.35941 + school x 2.45184$$
 
 3. Los errores estándar asociados a cada coeficiente
 4. t indica el estadístico t y se obtiene de la siguiente manera:
 
-![image](https://user-images.githubusercontent.com/106888200/224081085-e75a0060-25c2-45d3-a45b-4cd7444aa055.png)
+$$t=\frac{\hat{\beta}-\beta_{H0}}{s.e( \hat{\beta} )}$$
 
 
-En donde $\hat{\beta}$, s.e.( $\hat{\beta}$ ) es el error estándar del estimador y βH0 es el valor que toma el coeficiente en la hipótesis nula, en el contexto de una regresión, $β_{H0}$=0.
+En donde $\hat{\beta}$, s.e.( $\hat{\beta}$ ) es el error estándar del estimador y $β_{H0}$ es el valor que toma el coeficiente en la hipótesis nula, en el contexto de una regresión, $β_{H0}$=0.
 
 5. P>|t| indica el p-value asociado al test de significancia realizado sobre la variable individual.
 Las dos últimas columnas indican los intervalos de confianza de cada estimador.
@@ -170,7 +174,7 @@ En la regresión previa estimamos un modelo con dos variables continuas. Ahora c
 
 En este caso hay cinco regiones, todas indicadas dentro de una misma variables. Debido a esto usamos _i.region_ en vez de solo _region_ en la regressión. De esta se considera una categoría base y se estiman las dummies restanto con respecto a la ignorada. En un sentido similar podemos agregar interacciones entre variables en la regresión. Estas interacciones ocurren al multiplicar variables en la regresión. Por ejemplo:
 
-![image](https://user-images.githubusercontent.com/106888200/223936130-b55c2521-007e-4f48-9ab1-bffb67759de3.png)
+$$life=\beta_0+\beta_1xschool+\beta_{2,r}xRegion_r+\beta_{3,r}(schoolxRegion)_r$$
 
 En este caso estimamos un β2 para cada región, es decir un β2,r∀r. Adicionalmente, estimamos β3,r para la interacción entre escolaridad y cada categoría de región. Para implementar esta regresión renemos dos opciones que generan exactamente lo mismo:
 
