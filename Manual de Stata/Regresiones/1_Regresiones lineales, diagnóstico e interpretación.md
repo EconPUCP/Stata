@@ -61,7 +61,7 @@ En este espacio se tiene resultados sobre el ajuste general del modelo.
 
 - Number of obs, es el número de observaciones usados en la regresión. 
 - F() y Prob > F : es el estadísticos F de significancia conjunta que busca evaluar si el modelo en conjunto es estadísticamente distinto a cero. Se obtiene dividiendo el Mean Square del Modelo con el Mean Square del Residuo. El segundo es el p-value asociado a este test de significancia conjunta.
-- R^2 y R^2 _adj_: El R^2 muestra la bondad de ajuste del modelo, es decir, que tanta variabilidad total es explicada por la variabilidad explicada. El segundo estadístico es una versión del R^2 que controla su aumento del aumento generado por un aumento en el número de observaciones en la muestra.
+- $R^2$ y $R^2 _{adj}$: El $R^2$ muestra la bondad de ajuste del modelo, es decir, que tanta variabilidad total es explicada por la variabilidad explicada. El segundo estadístico es una versión del $R^2$ que controla su aumento del aumento generado por un aumento en el número de observaciones en la muestra.
 - Es la raíz del Error Medio cuadrático (Mean Square Error)
 
 ![image](https://user-images.githubusercontent.com/106888200/223621398-3aa7b3ce-52ac-45c2-b1ee-ec2bb68e2ec7.png)
@@ -80,7 +80,7 @@ Esta última es la parte usualmente más analizada puesto que contiene a los coe
 ![image](https://user-images.githubusercontent.com/106888200/224081085-e75a0060-25c2-45d3-a45b-4cd7444aa055.png)
 
 
-En donde ˆβ, s.e.(ˆβ) es el error estándar del estimador y βH0 es el valor que toma el coeficiente en la hipótesis nula, en el contexto de una regresión, βH0=0.
+En donde $\hat{\beta}$, s.e.( $\hat{\beta}$ ) es el error estándar del estimador y βH0 es el valor que toma el coeficiente en la hipótesis nula, en el contexto de una regresión, $β_{H0}$=0.
 
 5. P>|t| indica el p-value asociado al test de significancia realizado sobre la variable individual.
 Las dos últimas columnas indican los intervalos de confianza de cada estimador.
@@ -191,8 +191,10 @@ En el resultado tenemos los coeficientes estimados para la variable categórica 
 ## Sigue aprendiendo
 | Recurso  | Tema | Descripción |
 | ------------- |:-------------:|:-------------:|
-|  |  |   |
-|   |  |  |
+| Jngod2011 - Repositorio Github | [Stata for Econometrics](https://github.com/jngod2011/Stata_for_Econometrics/blob/master/The%20Multiple%20Regression%20Model/ML.do "Stata for Econometrics")  | Do file modelo de regresión multiple.  |
+| Luis García Núñez | [Econometría 1](https://www.youtube.com/playlist?list=PLvXMYc3QuXe_7363kwXPtwTrd6TzfofOa "Econometría 1") | Modelo de reegresión lineal clásico y otros temas. |
+|Proyecta Perú| [Modelo de regresión clásico](https://youtu.be/YY4kTRDAy8k?t=2342 "Modelo de regresión clásico") | Aplicación práctica en STATA del modelo de regresión clásico. |
+
 
 
 ****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Regresi%C3%B3n/1_regresi%C3%B3n_lineal.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data "base de datos")* 
