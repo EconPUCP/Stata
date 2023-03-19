@@ -43,11 +43,9 @@ eststo: ivreg2 inf (open = lland oil) lpcinc
 En este caso no podemos rechazar la nula por lo que el conjunto de instrumentos sería válido.
 
 
-## Sigue aprendiendo
 | Recurso  | Tema | Descripción |
 | ------------- |:-------------:|:-------------:|
-|   |  |   |
-|   |  |   |
+| Luis García Núñez | [Correlación entre los regresores y los errores](https://www.youtube.com/watch?v=2xMjmxbkfEE&list=PLvXMYc3QuXe_7363kwXPtwTrd6TzfofOa&index=28 "Correlación entre los regresores y los errores") | Teoría de las variables instrumentales y MC2E, verificando las condiciones de las variables instrumentales. |
 
 
 ****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Regresi%C3%B3n/8_variables_instrumentales.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data "base de datos")*
