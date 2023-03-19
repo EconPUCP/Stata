@@ -270,8 +270,8 @@ Si consideramos $Φ_1$ = 0.99 la serie empieza a diferir del comportamiento prev
 ## Sigue aprendiendo
 | Recurso  | Tema | Descripción |
 | ------------- |:-------------:|:-------------:|
-|   |  |   |
-|   |  |   |
-
+| Luis García Núñez | [Economatría de Series de tiempo](https://www.youtube.com/playlist?list=PLvXMYc3QuXe-SdUoft2D8b4JGziA-Iq38 "Economatría de Series de tiempo") |   Teoría de series de tiempo|
+| Jngod2011 - Repositorio Github| [Regression with Time-Series Data](https://github.com/jngod2011/Stata_for_Econometrics/tree/master/Regression%20with%20Time-Series%20Data-%20Nonstationary%20Variables "Regression with Time-Series Data") | Regresión con datos de series temporales: variables no estacionarias |
+| Jngod2011 - Repositorio Github| [Durbin Watson test](https://github.com/jngod2011/Stata_for_Econometrics/tree/master/Regression%20with%20Time-Series%20Data-%20Stationary%20Variables "Durbin Watson test") | Regresión con datos de series temporales: variables estacionarias |
 
 ****Puedes usar el kit de replicación de este módulo obteniendo el [script 1](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Serie%20de%20tiempo/5_simulando_un_proceso_MA.do "script 1"), [script 2](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Serie%20de%20tiempo/6_simulando_un_proceso_AR.do "script 2")  y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data "base de datos")*
