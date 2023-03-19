@@ -303,6 +303,12 @@ Al ver la base final, encontramos que es distinta a la anterior:
 > Si desea verificar una variable rápidamente, usa el comando `inspect`, que es similar a `summarize` pero brinda un histograma ordenado en la ventana de resultados.
 > Si necesitas aprender más de este comando puedes teclear `help inspect` en la ventana de comando.
 
+## Sigue aprendiendo
+| Recurso  | Tema | Descripción |
+| ------------- |:-------------:|:-------------:|
+| UCLA - Stata learning module | [Using if with Stata commands](https://stats.oarc.ucla.edu/stata/modules/using-if-with-stata-commands/ "Using if with Stata commands") | Uso del comando `if` con los comandos más comunes en Stata  |
+| DLab-Berkeley  | [Stata Fundamentals](https://github.com/dlab-berkeley/Stata-Fundamentals/blob/main/lessons/01_introduction.do "Stata Fundamentals") | Crear nuevas variables usando operadores lógicos  |
+| Diego Quispe Ortogorin  | [Sesión 2 - Laboratorio de Econometría](https://youtu.be/uY58S1-1bAQ?t=4828 "Sesión 2 - Laboratorio de Econometría") | Uso del comando `if` utilizando operadores lógico |
 
 
 ****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Creaci%C3%B3n%2C%20manipulaci%C3%B3n%20y%20descripci%C3%B3n%20de%20variables/1_manipulaci%C3%B3n_de_variables.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data "base de datos")* 
