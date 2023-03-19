@@ -23,8 +23,7 @@ En este caso, luego de indicar la carpeta, llamamos a nuestro gráfico ‘grafic
 ## Sigue aprendiendo
 | Recurso  | Tema | Descripción |
 | ------------- |:-------------:|:-------------:|
-|  |  |   |
-|   |  |  |
+| Diego Quispe Ortogorin | [Sesión 9 - Laboratorio de Econometría](https://youtu.be/W_lSyuOtW_U?t=560 "Sesión 9 - Laboratorio de Econometría") | Cómo exportar un gráfico |
 
 
 ****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Gr%C3%A1ficos%20y%20mapas/3_exportar_gr%C3%A1fico.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data "base de datos")* 
