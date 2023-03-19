@@ -45,7 +45,7 @@ tsline igb, ttitle("Periodos, 0 = 01Ene2010") ytitle("") title("Índice General 
 Si vemos la serie de retornos:
 
 ```
-gen retorno=(igb - l.igb)/l.igb
+gen retorno=(igb - l.igb)/l.igb 
 
 tsline retorno, ttitle("Periodos, 0 = 01Ene2010") ytitle("%") title("Tasa de Crecimiento Índice General Bursatil")
 ```
