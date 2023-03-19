@@ -6,7 +6,7 @@
 
 Los problemas de endogeneidad son constantes al momento de estimar un modelo. Una forma fácil de entender la endogeneidad es considerar que hay una correlación entre una variable explicativa (incluida o no ) y el término de error. Es decir:  
 
-  ![image](https://user-images.githubusercontent.com/106888200/224231853-c90b37b8-b4a0-4159-9f6e-5785c45f4470.png)
+  $E(e|X) ≠ 0$ o $E(X'e) = 0$
 
 
 Definamos que esto puede ocurrir producto de:
@@ -18,8 +18,10 @@ Definamos que esto puede ocurrir producto de:
 Veamos un ejemplo clásico de simultaneidad.
 Consideremos una ecuación de oferta y otra de demanda:
 
-![image](https://user-images.githubusercontent.com/106888200/224231802-c2d58206-8120-4035-bda0-d12c729c94d0.png)
+$$Q_d = \beta P_d + e_d$$
 
+
+$$Q_s = \theta P_s + e_s$$
 
 Si queremos estimar Qd sin considerar que P se determina simultáneamente en las ecuaciones entonces tendríamos problemas de endogeneidad. Si encontramos los valores de equilibrio de las variables obtenemos:
 
@@ -29,7 +31,7 @@ A partir de esto, podemos verificar que:
 
 ![image](https://user-images.githubusercontent.com/106888200/224231972-71b5e77e-67c8-46e4-8a36-9d21cf3a2cdc.png)
 
-Por lo que no se cumpliría que E(P _d_ ε _d_),  por lo tanto, hay endogeneidad
+Por lo que no se cumpliría que $E(P_dε_d)$,  por lo tanto, hay endogeneidad
 
 ### 7.2 VARIABLES INSTRUMENTALES
 
@@ -132,8 +134,8 @@ En este caso vemos que el coeficiente estimado es igual pero los errores estánd
 ## Sigue aprendiendo
 | Recurso  | Tema | Descripción |
 | ------------- |:-------------:|:-------------:|
-|   |  |   |
-|   |  |   |
+| Luis García Núñez | [Correlación entre los regresores y los errores](https://www.youtube.com/watch?v=2xMjmxbkfEE&list=PLvXMYc3QuXe_7363kwXPtwTrd6TzfofOa&index=28 "Correlación entre los regresores y los errores") | Teoría de las variables instrumentales y MC2E, verificando las condiciones de las variables instrumentales. |
+| Proyecta Perú - Asesores  | [Endogeneidad y variables instrumentales en Stata](https://www.youtube.com/watch?v=GJLos89fLic&list=PLlyb_Ke0SHbj3hKlN_lUH7F28IoafcSv-&index=5&ab_channel=ProyectaPer%C3%BA-Asesores "Endogeneidad y variables instrumentales en Stata") | Aplicación en Stata con variables instrumentales |
 
 
 ****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Regresi%C3%B3n/7_endogenoidad.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data "base de datos")*
