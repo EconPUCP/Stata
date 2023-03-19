@@ -32,9 +32,9 @@ Base de Datos Internacionales
 | Corporación Latinobarómetro  | Latinobarómetro  | [Contexto político](https://www.latinobarometro.org/latContents.jsp "Contexto político")  |
 | ECMWF  | ECMWF | [Variables climáticas mensuales](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-land-monthly-means?tab=form "Variables climáticas mensuales")   |
 | ECMWF  | ECMWF | [Variables climáticas diarias](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-land?tab=overview "Variables climáticas diarias")  |
-| IPUMS INTERNATIONAL  |   | censos poblacionales  |
-| NOAA |   | luces nocturnas.  |
-| Oxford Martin School  |   | coronavirus  |
+| IPUMS INTERNATIONAL  | IPUMS INTERNATIONAL | [Censos poblacionales](https://international.ipums.org/international/ "Censos poblacionales") |
+| NOAA | NOAA  | [Luces nocturnas](https://ngdc.noaa.gov/eog/dmsp/downloadV4composites.html#AXP "Luces nocturnas")  |
+| Oxford Martin School  |   | [Data de la pandemia del Coronavirus](https://ourworldindata.org/coronavirus#explore-the-global-situation "Data de la pandemia del Coronavirus") |
 | Oxford University  |   | Niños del Milenio  |
 | RAISG  |   | Amazonía  |
 | Vanderbilt University  |   | Contexto político  |
