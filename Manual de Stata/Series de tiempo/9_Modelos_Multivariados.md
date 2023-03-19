@@ -23,7 +23,7 @@ $$y_t=\beta_{10}+\beta_{11}y_{t-1}+\beta_{12}x_{t-1}+\beta_{13}z_{t-1}+e_{yt}$$
 
 $$x_t=\beta_{20}+\beta_{21}y_{t-1}+\beta_{22}x_{t-1}+\beta_{23}z_{t-1}+e_{yt}$$
 
-En donde $y_t$ y $x_t$ son las variables dependientes y eyt, ext son ruidos blancos para cada serie. También podemos expresar este modelo de manera matricial de la siguiente manera:
+En donde $y_t$ y $x_t$ son las variables dependientes y eyt, ext son ruidos blancos para cada serie. También podemos expresar este modelo de manera matricial de la siguiente manera: 
 
 $$
 \left(\begin{array}{cc} 
