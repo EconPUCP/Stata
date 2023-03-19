@@ -58,8 +58,8 @@ Los coeficientes son iguales que antes
 ## Sigue aprendiendo
 | Recurso  | Tema | Descripción |
 | ------------- |:-------------:|:-------------:|
-|   |  |   |
-|   |  |   |
+| Jngod2011 - Repositorio Github | [Heteroskedasticity](https://github.com/jngod2011/Stata_for_Econometrics/blob/master/Heteroskedasticity/hetero.part1.do "Heteroskedasticity") | Cómo detectar la heterocedasticidad a través de varios test y métodos |
+| Data & Programming Tips & Tricks 2023 | [Linear Regression With If Statement and Robust Standard Errors](https://www.youtube.com/watch?v=BlJPIH7b4XY&list=PL-BMciqTzu5TzABIIaxjlfchC8W4pCNKK&index=15&ab_channel=Data%26ProgrammingTips%26Tricks2023 "Linear Regression With If Statement and Robust Standard Errors") | Regresión lineal usando el comando `if` y estimación usando los errores estándar robustos. |
 
 
 ****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Regresi%C3%B3n/2_test_multicoli_hetero.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data "base de datos")*
