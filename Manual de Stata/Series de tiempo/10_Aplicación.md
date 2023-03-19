@@ -7,7 +7,7 @@ Como aplicación vamos a estimar un VAR entre tres variables macroeconómicas im
 use "bcrp.dta"
 tsset date // establecer que la base de datos es una serie de tiempo
 ```
-
+ 
 Dado que los datos de los meses de crisis complican el análisis eliminamos los datos del año 2020, año que se vivió a nivel mundial el covid 19 y solo consideramos desde 2005M5 hasta 2019M12 haciendo uso del comando `keep` `if` . Veamos:
 
 ```
