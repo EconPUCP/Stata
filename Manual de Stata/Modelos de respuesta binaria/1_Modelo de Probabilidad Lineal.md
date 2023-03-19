@@ -95,7 +95,7 @@ esttab mpl_1 mpl_2, nomtitle r2 p
 ## Sigue aprendiendo
 | Recurso  | Tema | Descripción |
 | ------------- |:-------------:|:-------------:|
-| UCLA - Stata learning module  | [Getting help](https://stats.oarc.ucla.edu/stata/modules/getting-help-using-stata/ "Getting help") | Cómo obtener ayuda en Stata  |
+| UCLA   | [Stata data analysis examples](https://stats.oarc.ucla.edu/stata/dae/probit-regression/ "Stata data analysis examples") | Regressión Probit |
 | UCSF GSI  | [Thinking like Stata](https://www.youtube.com/watch?v=jTtIREfhyEY&t=108s&ab_channel=UCSFGSI "Thinking like Stata") | Manejar la sintaxis de los comandos en Stata  |
 
 
