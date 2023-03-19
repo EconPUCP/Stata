@@ -4,20 +4,15 @@
 
 ### Repositorio 
 
-[Main repo Stata](https://github.com/Gladys91/pruebamodelo2)
+[Main repo Stata](https://github.com/EconPUCP/Stata)
 
 ---
 ### Otros repositorios 
 
-[Main repo Stata](https://github.com/Gladys91/pruebamodelo2)
 
-[Main repo R](https://github.com/Gladys91/PRUEBA_STATA_ECON)
+[Main repo R]
 
-[Main repo Eviws](https://github.com/Gladys91/PRUEBA_STATA_ECON)
-
-[Main repo Power Bi](https://github.com/Gladys91/PRUEBA_STATA_ECON)
-
-[Main repo Latex](https://github.com/Gladys91/PRUEBA_STATA_ECON)
+[Main repo Eviews]
 
 
 ### Objetivo
