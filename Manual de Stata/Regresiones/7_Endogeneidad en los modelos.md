@@ -134,7 +134,6 @@ En este caso vemos que el coeficiente estimado es igual pero los errores estánd
 ## Sigue aprendiendo
 | Recurso  | Tema | Descripción |
 | ------------- |:-------------:|:-------------:|
-| Luis García Núñez | [Correlación entre los regresores y los errores](https://www.youtube.com/watch?v=2xMjmxbkfEE&list=PLvXMYc3QuXe_7363kwXPtwTrd6TzfofOa&index=28 "Correlación entre los regresores y los errores") | Teoría de las variables instrumentales y MC2E, verificando las condiciones de las variables instrumentales. |
 | Proyecta Perú - Asesores  | [Endogeneidad y variables instrumentales en Stata](https://www.youtube.com/watch?v=GJLos89fLic&list=PLlyb_Ke0SHbj3hKlN_lUH7F28IoafcSv-&index=5&ab_channel=ProyectaPer%C3%BA-Asesores "Endogeneidad y variables instrumentales en Stata") | Aplicación en Stata con variables instrumentales |
 
 
