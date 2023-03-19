@@ -1,6 +1,6 @@
 # Regresiones
 
-### 6 CONTRASTE DE HIPÓTESIS
+### 6 CONTRASTE DE HIPÓTESIS 
 
 Luego de revisar cómo hacer regresiones básicas, repasamos cómo implementar pruebas de hipótesis en el programa. Para ello aprenderemos a usar el comando `ttest`.
 
