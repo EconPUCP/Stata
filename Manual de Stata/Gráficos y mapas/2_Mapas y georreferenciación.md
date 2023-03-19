@@ -80,8 +80,8 @@ Las posibilidades para hacer mapas en Stata son bastante extensas por lo que se 
 ## Sigue aprendiendo
 | Recurso  | Tema | Descripción |
 | ------------- |:-------------:|:-------------:|
-|   |  |   |
-|   |  |   |
-
+| Stata Ecopucp - Repositorio Github  | [Descarga shapefile](https://github.com/EconPUCP/Stata/blob/main/Recursos%20globales/Prinicipales%20p%C3%A1ginas%20de%20shp.md "Descarga shapefile") | Principales portales webs de descarga de archivos .shp  |
+| UCLA - Stata learning module | [Collapsing data acrros observation](https://stats.oarc.ucla.edu/stata/modules/collapsing-data-across-observations/ "Collapsing data acrros observation") | Ejemplos del uso del comando `collapse` |
+| Diego Quispe Ortogorin  | [Sesión 6 - Laboratorio de Cómputo: Manejo de Bases de Datos](https://youtu.be/jW_1b98FE4M?t=1108 "Sesión 6 - Laboratorio de Cómputo: Manejo de Bases de Datos") | Manejo y uso del comando `collapse` |
 
 ****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Gr%C3%A1ficos%20y%20mapas/2_mapas.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data "base de datos")*
