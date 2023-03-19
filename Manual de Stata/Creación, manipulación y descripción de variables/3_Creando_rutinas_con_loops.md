@@ -159,13 +159,14 @@ En este caso se crea un `local` igual a 1 y se pide que se repita la iteración 
 ![image](https://user-images.githubusercontent.com/106888200/223594291-551fff9c-61ac-48b2-86aa-ca33a30223d6.png)
 
 
-
-
 ## Sigue aprendiendo
 | Recurso  | Tema | Descripción |
 | ------------- |:-------------:|:-------------:|
-|   |  |   |
-|   |  |   |
+| University Virginia Resources | [Stata Basics: foreach and forvalues](https://data.library.virginia.edu/stata-basics-foreach-and-forvalues/ "Stata Basics: foreach and forvalues") | Cómo utilizar loops en el proceso de de preparación y análisis de datos.  |
+| The Data Hall  | [Using loop in Stata](https://thedatahall.com/using-loops-in-stata-forvalues-foreach/ "Using loop in Stata") | Diferentes ejemplos de loops para los comandos `forvalues`, `foreach` y `while`.  |
+| STATeando  | [Macro local y global](https://www.youtube.com/watch?v=Z2XGFCowcDM&ab_channel=STATeando "Macro local y global") | Cómo funcionan las macro locales y globales  |
+| Diego Quispe Ortogorin  | [Sesión 7 y 8 - Laboratorio de Econometría](https://youtu.be/8z3PTOdSgzk?t=3061 "Sesión 7 y 8 - Laboratorio de Econometría") | Mejorar nuestro directorio haciendo uso del comando `global` |
+
 
 
 ****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Creaci%C3%B3n%2C%20manipulaci%C3%B3n%20y%20descripci%C3%B3n%20de%20variables/3_creando_rutinas_con_loops.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data "base de datos")* 
