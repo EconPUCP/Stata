@@ -53,7 +53,7 @@ esttab em_logit_mean em_probit_mean , mtitle("Logit" "Probit") title("Efectos ma
 
 ![image](https://user-images.githubusercontent.com/106888200/225517793-5c8c70b5-f7de-48cc-b11f-69d658497aa8.png)
 
-- Estimar el efecto marginal promedio `margins` y colocando al final post.
+- Estimar el efecto marginal promedio `margins` y colocando al final post. 
 
 ```
 estimates restore logit
