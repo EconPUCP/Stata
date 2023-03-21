@@ -38,4 +38,4 @@ Manuales de Stata
 | University Virginia library | [Artículos variados del manejo de data en Stata](https://data.library.virginia.edu/tag/stata/ "Artículos variados del manejo de data en Stata")  |  
 | Princenton University library | [Artículos variados del manejo de data en Stata](https://libguides.princeton.edu/data-guides "Artículos variados del manejo de data en Stata") |  
 | University Notre Dame Libguide | [Análisis de data con Stata](https://libguides.library.nd.edu/data-analysis-stata/loops "Análisis de data con Stata") |  
-| Stata | [Manual de sintaxis de Stata](https://www.stata.com/features/ "Manual de sintaxis de Stata") |  
+| Stata | [Manual de sintaxis de Stata](https://www.stata.com/features/ "Manual de sintaxis de Stata") |   
