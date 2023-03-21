@@ -22,7 +22,7 @@ Cursos de Stata Virtual
 | :------------ | :-----|
 | Diego Quispe Ortogorín | [Laboratorio de Econometría Stata - 2022 -2](https://www.youtube.com/playlist?list=PLonlrXezFkvPnWy9EXaIDeRgN-LXf24G1 "Laboratorio de Econometría Stata - 2022 -2") | 
 | Diego Quispe Ortogorín | [Laboratorio de cómputo: manejo de base de datos - 2023 - 0](https://www.youtube.com/playlist?list=PLonlrXezFkvMM18XPVxSEUEEc58bko8o- "Laboratorio de cómputo: manejo de base de datos - 2023 - 0") | 
-| Proyecta Perú - Asesores | [Mini curso de Stata y Econometría](https://www.youtube.com/playlist?list=PLlyb_Ke0SHbj3hKlN_lUH7F28IoafcSv- "Mini curso de Stata y Econometría") |  
+| César Mora Ruiz | [Mini curso de Stata y Econometría](https://www.youtube.com/playlist?list=PLlyb_Ke0SHbj3hKlN_lUH7F28IoafcSv- "Mini curso de Stata y Econometría") |  
 | STATeando | [Curso básico de Stata](https://www.youtube.com/playlist?list=PL8Kfd0vexG7x-ckuyt5B4okglsD66TjVw "Curso básico de Stata") |  
 | Edúcate Perú consultores | [Stata para principiantes](https://www.youtube.com/playlist?list=PLCJdTrVInB2qAg41_nRjx0oseIKCixYJU "Stata para principiantes") |  
 
