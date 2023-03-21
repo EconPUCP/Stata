@@ -112,6 +112,7 @@ fitstat, using(prob) force
 | ------------- |:-------------:|:-------------:|
 | UCLA   | [Stata data analysis examples](https://stats.oarc.ucla.edu/stata/dae/probit-regression/ "Stata data analysis examples") | Regressión Probit |
 | UCLA   | [Stata data analysis examples](https://stats.oarc.ucla.edu/stata/dae/logistic-regression/ "Stata data analysis examples") | Regresión Logistica |
+| Luis García Núñez   | [Logit - Probit](https://www.youtube.com/watch?v=NMCgoDYLrsI&t=3s "Logit - Probit") | Ejemplo de estimación logit probit en un modelo de dos variables usando Stata |
 
 
 ****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Modelos%20de%20respuesta%20binaria/2_Modelo_probabilidad_no_lineal.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data "base de datos")*  
