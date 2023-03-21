@@ -197,7 +197,7 @@ En el resultado tenemos los coeficientes estimados para la variable categórica 
 | ------------- |:-------------:|:-------------:|
 | Jngod2011 - Repositorio Github | [Stata for Econometrics](https://github.com/jngod2011/Stata_for_Econometrics/blob/master/The%20Multiple%20Regression%20Model/ML.do "Stata for Econometrics")  | Do file modelo de regresión multiple.  |
 | Luis García Núñez | [Econometría 1](https://www.youtube.com/playlist?list=PLvXMYc3QuXe_7363kwXPtwTrd6TzfofOa "Econometría 1") | Modelo de reegresión lineal clásico y otros temas. |
-|Proyecta Perú - Asesores | [Modelo de regresión clásico](https://youtu.be/YY4kTRDAy8k?t=2342 "Modelo de regresión clásico") | Aplicación práctica en STATA del modelo de regresión clásico. |
+| César Mora Ruíz | [Modelo de regresión clásico](https://youtu.be/YY4kTRDAy8k?t=2342 "Modelo de regresión clásico") | Aplicación práctica en STATA del modelo de regresión clásico. |
 
 
 
