@@ -96,7 +96,7 @@ esttab mpl_1 mpl_2, nomtitle r2 p
 | Recurso  | Tema | Descripción |
 | ------------- |:-------------:|:-------------:|
 | UCLA   | [Stata data analysis examples](https://stats.oarc.ucla.edu/stata/dae/probit-regression/ "Stata data analysis examples") | Regressión Probit |
-| UCSF GSI  | [Thinking like Stata](https://www.youtube.com/watch?v=jTtIREfhyEY&t=108s&ab_channel=UCSFGSI "Thinking like Stata") | Manejar la sintaxis de los comandos en Stata  |
+| UCLA   | [Stata data analysis examples](https://stats.oarc.ucla.edu/stata/dae/logistic-regression/ "Stata data analysis examples") | Regresión Logistica |
 
 
 ****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Modelos%20de%20respuesta%20binaria/1_MPL.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data "base de datos")* 
