@@ -134,7 +134,7 @@ En este caso vemos que el coeficiente estimado es igual pero los errores estánd
 ## Sigue aprendiendo
 | Recurso  | Tema | Descripción |
 | ------------- |:-------------:|:-------------:|
-| Proyecta Perú - Asesores  | [Endogeneidad y variables instrumentales en Stata](https://www.youtube.com/watch?v=GJLos89fLic&list=PLlyb_Ke0SHbj3hKlN_lUH7F28IoafcSv-&index=5&ab_channel=ProyectaPer%C3%BA-Asesores "Endogeneidad y variables instrumentales en Stata") | Aplicación en Stata con variables instrumentales |
+| César Mora Ruíz  | [Endogeneidad y variables instrumentales en Stata](https://www.youtube.com/watch?v=GJLos89fLic&list=PLlyb_Ke0SHbj3hKlN_lUH7F28IoafcSv-&index=5&ab_channel=ProyectaPer%C3%BA-Asesores "Endogeneidad y variables instrumentales en Stata") | Aplicación en Stata con variables instrumentales |
 
 
 ****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Regresi%C3%B3n/7_endogenoidad.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data "base de datos")*
