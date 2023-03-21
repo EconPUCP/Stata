@@ -270,7 +270,7 @@ Si consideramos $Φ_1$ = 0.99 la serie empieza a diferir del comportamiento prev
 ## Sigue aprendiendo
 | Recurso  | Tema | Descripción |
 | ------------- |:-------------:|:-------------:|
-| Luis García Núñez | [Economatría de Series de tiempo](https://www.youtube.com/playlist?list=PLvXMYc3QuXe-SdUoft2D8b4JGziA-Iq38 "Economatría de Series de tiempo") |   Teoría de series de tiempo|
+| Luis García Núñez | [Econometría de Series de tiempo](https://www.youtube.com/playlist?list=PLvXMYc3QuXe-SdUoft2D8b4JGziA-Iq38 "Econometría de Series de tiempo") |   Teoría de series de tiempo|
 | Jngod2011 - Repositorio Github| [Regression with Time-Series Data](https://github.com/jngod2011/Stata_for_Econometrics/tree/master/Regression%20with%20Time-Series%20Data-%20Nonstationary%20Variables "Regression with Time-Series Data") | Regresión con datos de series temporales: variables no estacionarias |
 | Jngod2011 - Repositorio Github| [Durbin Watson test](https://github.com/jngod2011/Stata_for_Econometrics/tree/master/Regression%20with%20Time-Series%20Data-%20Stationary%20Variables "Durbin Watson test") | Regresión con datos de series temporales: variables estacionarias |
 
