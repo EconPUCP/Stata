@@ -37,9 +37,21 @@ use "data_modelo_multinomial.dta"
 describe
 tab estado_salud
 ```
+![image](https://user-images.githubusercontent.com/128189216/227044367-489507d4-325b-4169-a714-2180c9a274b2.png)
 
+Obrsevamos que nuestra variable "percepción de estado de salud" es una variable categórica ordenada. Para estimar este tipo de variables dependiente usaremos el comando  `ologit`
 
+```
+ologit estado_salud edad n_enf_cro ingresos 
+```
 
+![image](https://user-images.githubusercontent.com/128189216/227044901-c203de0a-6e4e-40e3-9fe9-4835322ee89e.png)
+
+Notemos que en el caso del comando `ologit` se estima un vector beta de parametros, también no está presente el intercepto y ahora tenemos las estimaciones de los cortes. Podemos observar todas las variables incluidas en el modelo son estadisticamente significativas.
+
+#### 2.1.1 Predict
+
+Para obtener una predicción de la variable dependiente, después de la regresión se usa el comando `predict` seguido de un nombre para cada una de las variables asociadas a  cada tramo de la variable dependiente. Es útil examinar la media, el mínimo y máximo de las probabilidades predichas:
 
 
 
