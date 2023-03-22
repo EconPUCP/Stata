@@ -102,8 +102,8 @@ marginsplot, name(estudia, replace) title("Consideremos valores específicos")
 ## Sigue aprendiendo
 | Recurso  | Tema | Descripción |
 | ------------- |:-------------:|:-------------:|
-| UCLA - Stata learning module  | [Getting help](https://stats.oarc.ucla.edu/stata/modules/getting-help-using-stata/ "Getting help") | Cómo obtener ayuda en Stata  |
-| UCSF GSI  | [Thinking like Stata](https://www.youtube.com/watch?v=jTtIREfhyEY&t=108s&ab_channel=UCSFGSI "Thinking like Stata") | Manejar la sintaxis de los comandos en Stata  |
-
+| UCLA - Stata data analysis example  | [Multinomial logistic regression](https://stats.oarc.ucla.edu/stata/dae/multinomiallogistic-regression/ "Multinomial logistic regression") | Ejemplo de Logit Multinomial y uso de comandos en Stata |
+| UCLA - Textbook example | [An Introduction to Categorical Data Analysis by Alan Agresti](https://stats.oarc.ucla.edu/stata/examples/icda/an-introduction-to-categorical-analysis-by-alan-agrestichapter-8-multicategory-logit-models/ "An Introduction to Categorical Data Analysis by Alan Agresti") | Ejemplo de Logit Multinomial en Stata |
+| Luis García Núñez | [Extensiones Multinomiales - Logit Multinomial](https://www.youtube.com/watch?v=gztPUSCr-wE "Extensiones Multinomiales - Logit Multinomial") | Teoría y ejemplo práctico en Stata de Logit Multinomial |
 
 ****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Modelos%20multinomiales/1_Logit_multinomial.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data "base de datos")* 
