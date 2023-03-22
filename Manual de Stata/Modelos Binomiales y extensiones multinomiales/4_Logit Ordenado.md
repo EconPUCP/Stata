@@ -53,6 +53,35 @@ Notemos que en el caso del comando `ologit` se estima un vector beta de parametr
 
 Para obtener una predicción de la variable dependiente, después de la regresión se usa el comando `predict` seguido de un nombre para cada una de las variables asociadas a  cada tramo de la variable dependiente. Es útil examinar la media, el mínimo y máximo de las probabilidades predichas:
 
+```
+*Predict
+predict mala buena excelente,pr 
+sum mala buena excelente
+```
+
+![image](https://user-images.githubusercontent.com/128189216/227055192-cc25ada4-411c-42ef-9b1c-e01f59b22d7b.png)
+
+#### 2.1.1 Efectos marginales
+
+Los efectos marginales de esta estimación se deben computar en forma separada para cada una de las categorías de la variable dependiente. El comando a utilizar es `mfx`, el comando que computa los efectos marginales de cualquier estimación. veamos un ejemplo:
+
+```
+mfx, predict(outcome(3))
+```
+
+![image](https://user-images.githubusercontent.com/128189216/227056360-50316163-d118-4561-aa3c-0f4fa5c19468.png)
+
+
+una opción alternativa es también usar en comando `margins`, llegas a los mismo resultados.
+
+```
+mfx, predict(outcome(3))
+```
+
+![image](https://user-images.githubusercontent.com/128189216/227056536-e3246cff-2cd9-466f-b1af-e26e13d69cef.png)
+
+En el output de STATA se proveen los errores estándar y test t y p-values para la hipótesis nula de que los coeficientes de las
+variables explicativas, a nivel individual, son iguales a cero, los que se interpretan de la manera habitual.
 
 
 
