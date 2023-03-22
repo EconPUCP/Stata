@@ -69,6 +69,15 @@ esttab em_logit em_probit , mtitle("Logit" "Probit") title("Efectos marginal pro
 
 ![image](https://user-images.githubusercontent.com/106888200/225517926-b12d1751-fad6-439e-9a7e-095cec2babe6.png)
 
+
+> **TIPS: Comparando los efectos marginales**
+>
+> Para comparar los resultados del Logit y el probit, usamos "los efectos marginales en los promedios" pero si queremos comparar el resultado del logit, probit y MPL se compara con "los efectos marginales promedios".
+>
+
+
+
+
 #### 2.2 ODDS Y RATIO ODDS
 
 El estadístico odds mide el cociente de probabilidades para una observación i de elegir la opción 1 frente a la opción 0; es decir
@@ -106,6 +115,8 @@ fitstat, using(prob) force
 ```
 
 ![image](https://user-images.githubusercontent.com/106888200/225520865-8c09fea8-9bc8-4f53-980a-8b9c2aac5251.png)
+
+
 
 ## Sigue aprendiendo
 | Recurso  | Tema | Descripción |
