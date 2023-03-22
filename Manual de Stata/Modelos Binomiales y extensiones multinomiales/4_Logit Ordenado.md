@@ -7,7 +7,7 @@ Los dos modelos estándar para tales datos son los modelos logit ordenado y prob
 
 El análisis lo realizaremos suponiendo un modelo que incluye una variable latente (no observada) y* que, a diferencia de nuestra variable dependiente, es continua y que se puede escribir como una función lineal de un vector de variables X:
 
-$$Y_i^*=X_i\beta^´+u_i$$
+$$Y_i^*=X_i^´\beta+u_i$$
 
 Para un modelo ordenado de m-alternativas, definimos:
 
@@ -17,29 +17,21 @@ donde $\alpha_{0}=-∞$ y $\alpha_{m}=∞$.
 
 Entonces:
 
+$$Pr(Y_i^ * =j)   =   Pr(\alpha_{j-1} < Y_i^* <=\alpha_{j})$$
 
-Entonces, la selección de cada categoría se observa según la variable
-latente cruce secuencialmente determinados umbrales:
+$$Pr(Y_i^ * =j)   =   Pr(\alpha_{j-1} < X_i^´\beta <=\alpha_{j})$$
 
+$$Pr(Y_i^ * =j)   =   Pr(\alpha_{j-1} - X_i^´\beta <=\alpha_{j} - X_i^´\beta)$$
+
+$$=F(\alpha_{j}-X_i^´\beta) - F(\alpha_{j-1}-X_i^´\beta)$$
+
+donde F es la función de distribución acumulativa. 
 
 
 Como en el caso del modelo de regresión binario, se puede realizar una estimación por medio del método de Máxima Verosimilitud para aproximarse a la regresión de $Y_i^*$ respecto del vector X
 
 
 
-
-
-Si suponemos que los errores siguen una distribución logística, estamos ante el modelo LOGIT ORDENADO.
-
-donde F es la función de distribución acumulada
-
-
-
-
-
-El logit ordenado se estima con el objetivo de determinar de forma paramétrica la probabilidad de pertenencia en cada una de las categorías contempladas. El modelo tiene la siguiente forma:
-
-$$Y*=\betaz_i+e_i
 
 
 ## Sigue aprendiendo
