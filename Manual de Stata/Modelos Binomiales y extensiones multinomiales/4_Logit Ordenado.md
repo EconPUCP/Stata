@@ -25,10 +25,20 @@ $$Pr(Y_i^ * =j)   =   Pr(\alpha_{j-1} - X_i^´\beta <=\alpha_{j} - X_i^´\beta)$
 
 $$=F(\alpha_{j}-X_i^´\beta) - F(\alpha_{j-1}-X_i^´\beta)$$
 
-donde F es la función de distribución acumulativa. 
+donde F es la función de distribución acumulativa. Para el modelo logit ordenado, $u_i$ se distribuye logísticamente con $F(z) =\frac{e^z}{1 + e^z}$.
+
+Para estimar nuestro modelo en Stata procederemos a abrir nuestra base de datos 
+
+```
+cd "C:\Users\Usuario\Documents\GitHub\Stata\_Análisis\Data" // cambiar directorio
+
+*************
+use "data_modelo_multinomial.dta"
+describe
+tab estado_salud
+```
 
 
-Como en el caso del modelo de regresión binario, se puede realizar una estimación por medio del método de Máxima Verosimilitud para aproximarse a la regresión de $Y_i^*$ respecto del vector X
 
 
 
