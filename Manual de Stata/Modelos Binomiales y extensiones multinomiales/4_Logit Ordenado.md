@@ -89,7 +89,7 @@ variables explicativas, a nivel individual, son iguales a cero, los que se inter
 | Recurso  | Tema | Descripción |
 | ------------- |:-------------:|:-------------:|
 | Luis García Núñez | [Extensiones Multinomiales - Logit Ordenado](https://www.youtube.com/watch?v=-Go7UoW0A-U "Extensiones Multinomiales - Logit Ordenado") | Teoría y ejemplo de Logit Ordenado en Stata |
-|               |        |         |
+| UCLA - Stata data analysis example | [Ordered Logit Regression](https://stats.oarc.ucla.edu/stata/dae/ordered-logistic-regression/ "Ordered Logit Regression") | Ejemplo de Logit Ordenado y uso de comandos en Stata |
 
 
 ****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Modelos%20multinomiales/2_Logit_ordenado.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data "base de datos")* 
