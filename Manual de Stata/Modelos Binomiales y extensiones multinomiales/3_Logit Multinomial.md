@@ -102,7 +102,7 @@ marginsplot, name(estudia, replace) title("Consideremos valores específicos")
 ## Sigue aprendiendo
 | Recurso  | Tema | Descripción |
 | ------------- |:-------------:|:-------------:|
-| UCLA - Stata data analysis example  | [Multinomial logistic regression](https://stats.oarc.ucla.edu/stata/dae/multinomiallogistic-regression/ "Multinomial logistic regression") | Ejemplo de Logit Multinomial y uso de comandos en Stata |
+| UCLA - Stata data analysis example  | [Multinomial Logistic Regression](https://stats.oarc.ucla.edu/stata/dae/multinomiallogistic-regression/ "Multinomial Logistic Regression") | Ejemplo de Logit Multinomial y uso de comandos en Stata |
 | UCLA - Textbook example | [An Introduction to Categorical Data Analysis by Alan Agresti](https://stats.oarc.ucla.edu/stata/examples/icda/an-introduction-to-categorical-analysis-by-alan-agrestichapter-8-multicategory-logit-models/ "An Introduction to Categorical Data Analysis by Alan Agresti") | Ejemplo de Logit Multinomial en Stata |
 | Luis García Núñez | [Extensiones Multinomiales - Logit Multinomial](https://www.youtube.com/watch?v=gztPUSCr-wE "Extensiones Multinomiales - Logit Multinomial") | Teoría y ejemplo práctico en Stata de Logit Multinomial |
 
