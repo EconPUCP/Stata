@@ -1,4 +1,4 @@
-# Datos de Panel
+# Panel de datos
 
 Son datos que pertenecen a varios individuos de una entidad y para varios momentos del tiempo
 son datos que es una combinación de datos se series de tiempo y de corte transversal. Por ejemplo Las exportaciones de los países de Sudamérica para el periodo: 1990-2018.
@@ -16,7 +16,7 @@ Tipo de datos de panel:
 - Micropaneles: el número de individuis son personas u hogares y se cumple que el número de individuos es mayor respecto al número de periódos.
 
 
-## 1.1 ORGANIZACIÓN DATA PANEL
+## 1.1 ORGANIZACIÓN DEL PANEL DE DATOS
 
 Algunas consideraciones previas que debemos tener en cuenta es sobre el uso de los comandos `xt`, estos requieren que los datos del panel se organicen en la llamada forma larga, si nuestra data no se encuentra de la forma larga, podemos utilizar el comando `reshape`.
 
