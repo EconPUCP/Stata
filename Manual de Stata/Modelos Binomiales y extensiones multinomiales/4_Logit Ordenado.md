@@ -88,7 +88,7 @@ variables explicativas, a nivel individual, son iguales a cero, los que se inter
 ## Sigue aprendiendo
 | Recurso  | Tema | Descripción |
 | ------------- |:-------------:|:-------------:|
-|               |        |         |
+| Luis García Núñez | [Extensiones Multinomiales - Logit Ordenado](https://www.youtube.com/watch?v=-Go7UoW0A-U "Extensiones Multinomiales - Logit Ordenado") | Teoría y ejemplo de Logit Ordenado en Stata |
 |               |        |         |
 
 
