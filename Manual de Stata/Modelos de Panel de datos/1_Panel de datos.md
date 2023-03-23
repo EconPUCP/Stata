@@ -39,27 +39,22 @@ El comando xttrans proporciona probabilidades de transición de un período al s
 Con los datos panel procedemos a estimar los siguientes modelos:
 
 #### 1.2.1  Modelo agrupado (pooled)
+Tan solo se agrupan o apilan las observaciones y se estima una regresión, por MCO sin atender la naturaleza de corte transversal y de series de tiempo de los datos. 
+En este método se consideran que todos los coeficientes del modelo o ecuación son constantes
+
 
 
 #### 1.2.2  Modelo de efectos fijos (FE)
-La regresión por efectos fijos es un método que permite controlar por variables
-omitidas cuando estas variables no varían en el tiempo pero si entre la unidad de
-observación. La estimación por efectos fijos es equivalente a la estimación antesdespués
-de la sección II, pero puede ser utilizando cuando tenemos dos o más
-periodos de tiempo.
+
+El método de efectos fijos considera que existe un término constante diferente para cada individuo, y supone que los efectos individuales son independientes entre sí.
+Con este modelo se considera que las variables explicativas afectan por igual a las unidades de corte transversal y que éstas se diferencian por características propias de cada una de ellas, medidas por medio del intercepto. 
+
+El método de Efectos fijos pueden ser de dos tipos:
+- El método de efectos fijos con variables dicótomas
+- El método de efectos fijos dentro del grupo (between), intragrupos (within group)
 
 #### 1.2.3 Modelo de efectos aleatorios
-El estimador de efectos aleatorios considera que el componente individual en la
-estimación no es fijo sino aleatorio, por lo tanto que no esta correlacionado con las
-variables explicativas del modelo. Este supuesto permite incorporar variables
-explicativas que observamos y son constantes en el tiempo, esto no lo podemos
-hacer cuando estimamos por efectos fijos.
-
-
-
-
-
-
+El modelo de efectos fijos es un modelo razonable cuando se posee evidencia de que la diferencia entre los diferentes individuos o agentes sociales de la muestra( o bien los diferentes momentos en el tiempo) son cambios en el parámetro de intersección de la función de regresión. 
 
 
 
