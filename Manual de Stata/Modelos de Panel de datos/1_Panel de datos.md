@@ -1,8 +1,35 @@
-# Panel de datos
+# Datos de Panel
+
+Son datos que pertenecen a varios individuos de una entidad y para varios momentos del tiempo
+son datos que es una combinación de datos se series de tiempo y de corte transversal. Por ejemplo Las exportaciones de los países de Sudamérica para el periodo: 1990-2018.
+
+Los datos panel puede ser útil debido a que le permite al investigador clasificar efectos económicos que no puedan ser distinguirse solo con el uso de datos de corte transversal o de series de tiempo.
+
+$$Y_{it}$$
+
+con $i = 1,......N; t = 1,...T.$ Donde $i$ se refiere al individuo o a la unidad de estudio (corte transversal), $t$ a la dimensión en el tiempo.
+
+Tipo de datos de panel: 
+-  Panel balanceado: se dice que un panel es balanceado si cada individuo (persona, familia, empresa , etc) tiene el mismo número de observaciones
+- Panel no balanceado: Si cada individuo tiene un número diferente de observaciones se tiene un panel no balaceado.
+- Macropaneles: Los individuos suelen ser países, sectores, reciones y se cumple que el número de individuos es pequeño respecto al número total de periódos.
+- Micropaneles: el número de individuis son personas u hogares y se cumple que el número de individuos es mayor respecto al número de periódos.
+
+Algunas consideraciones previas que debemos tener en cuenta es el uso de tres comandos importantes:
+
+- El comando `xtstet` nos permite declarar que la base de datos es un panel de datos. Haciendo uso de este comando debemos declarar tanto la variable del el individuo como el periódo de nuestro panel.
+- El comando `xtdescribe` decribe el patrón de los datos de panel y nos ayuda a observar si el panel es balanceado o no.
+- El comando `xtbalance` nos permite quedarnos con un panel balanceado.
+- El comando `xtsum` nos permite realizar algunos estadísticos descriptivos 
 
 ## MODELOS DE PANEL DE DATOS
 
+Con los datos panel procedemos a estimar los siguientes modelos:
 
+- Modelo agrupado (pooled)
+- Modelo de efectos fijos (FE)
+- Modelo de efectos aleatorios
+- Modelo de efectos aleatorios
 
 
 
