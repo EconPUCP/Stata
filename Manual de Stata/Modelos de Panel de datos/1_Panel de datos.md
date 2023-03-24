@@ -22,11 +22,53 @@ Algunas consideraciones previas que debemos tener en cuenta es sobre el uso de l
 
 Los comandos xt necesita que declararemos que la base de datos es un panel de datos, esto lo hacemos con el comando `xtstet`. Haciendo uso de este comando debemos declarar tanto la variable del el individuo como el periódo de nuestro panel.
 
+```
+
+use "panel_enaho_2013_2017.dta", clear
+
+* Declara la base de datos como datos panel
+sort id año
+xtset id año
+```
+
+![image](https://user-images.githubusercontent.com/128189216/227386243-1250aaa9-f284-4e72-923e-3e77717cd12d.png)
+
+
 Una vez declarado que nuestra base de datos con el comando `xtstet`, podemos hacer uso del comando `xtdescribe`, este decribe el patrón de los datos de panel y nos ayuda a observar si el panel es balanceado o no.
 
-El comando `xtbalance` nos permite quedarnos con un panel balanceado.
+```
+xtdescribe
+```
+
+![image](https://user-images.githubusercontent.com/128189216/227386372-27a719a8-a9e2-4313-8814-4d5dda1a2119.png)
+
+En este caso, observamos que aparentemente tenemos un panel balanceado, sin embargo cuando revisamos la data notamos presencia de missings o valores perdidos, por lo que procedemos limpiar la base, y nos queda un panel no balanceado.
+
+```
+*limpiamos los missings o valores perdidos de la data.
+drop if año == . | lsalario == . | edad == . | raza == .  | escolaridad == . | sexo == . | experiencia == .  | urbano == . | zona == .
+xtdescribe
+```
+
+![image](https://user-images.githubusercontent.com/128189216/227395465-8abade45-35ac-4cec-8cb9-a70e68334cba.png)
+
+Usaremos el comando `xtbalance` nos permite quedarnos con un panel balanceado.
+
+```
+ssc install xtbalance // este comando debe ser instalado
+xtbalance, range(2013 2017) miss(id año lsalario edad raza escolaridad sexo experiencia urbano zona)
+xtdescribe
+```
+
+![image](https://user-images.githubusercontent.com/128189216/227395837-b98dd2a6-b644-43a1-bc04-2ff64c34345a.png)
 
 El comando `xtsum` nos permite realizar algunos estadísticos descriptivos y nos proporciona la descomposición de la varianza. 
+
+```
+xtsum lsalario edad raza escolaridad sexo experiencia urbano zona
+```
+
+![image](https://user-images.githubusercontent.com/128189216/227395994-54876f9b-4661-4fc6-aadb-f35725d87754.png)
 
 El comando xttab tabula los datos de una manera que proporciona detalles adicionales sobre el
 "within" y "between" entre la variación de una variable.
@@ -39,8 +81,7 @@ El comando xttrans proporciona probabilidades de transición de un período al s
 Con los datos panel procedemos a estimar los siguientes modelos:
 
 #### 1.2.1  Modelo agrupado (pooled)
-Tan solo se agrupan o apilan las observaciones y se estima una regresión, por MCO sin atender la naturaleza de corte transversal y de series de tiempo de los datos. 
-En este método se consideran que todos los coeficientes del modelo o ecuación son constantes
+Tan solo se agrupan o apilan las observaciones y se estima una regresión, por MCO sin atender la naturaleza de corte transversal y de series de tiempo de los datos. En este método se consideran que todos los coeficientes del modelo o ecuación son constantes
 
 
 
