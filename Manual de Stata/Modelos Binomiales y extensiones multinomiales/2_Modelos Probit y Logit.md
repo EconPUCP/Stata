@@ -126,4 +126,4 @@ fitstat, using(prob) force
 | Luis García Núñez   | [Logit - Probit](https://www.youtube.com/watch?v=NMCgoDYLrsI&t=3s "Logit - Probit") | Ejemplo de estimación logit probit en un modelo de dos variables usando Stata |
 
 
-****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Modelos%20Binomiales%20y%20extensiones%20multinomiales/2_Modelo_probabilidad_no_lineal.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data "base de datos")*  
+****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Modelos%20Binomiales%20y%20extensiones%20multinomiales/2_Modelo_probabilidad_no_lineal.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data "base de datos")*   
