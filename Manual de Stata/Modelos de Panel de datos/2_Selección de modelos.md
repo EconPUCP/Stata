@@ -60,7 +60,7 @@ El p-value de este test nos indica que aceptamos la hipótesis nula por lo que a
 
 > **TIPS: Tabla rápida de comandos xt**
 > 
-> El siguiente cuadro es un resumen de los comandos xt en Stata.
+> El siguiente cuadro es un resumen de los comandos xt en Stata. 
 > 
 > | Descripción | Comandos | 
 > | :-------------- |:-------------|
