@@ -29,11 +29,6 @@ El p-value de este test nos indica que rechazamos la hipótesis nula por lo que 
 El p-value de este test nos indica que aceptamos la hipótesis nula por lo que aceptamos que el modelo de efectos fijos es más adecuado que el modelo de efectos fijos temporales.
 
 
-## Sigue aprendiendo
-| Recurso  | Tema | Descripción |
-| ------------- |:-------------:|:-------------:|
-|               |        |         |
-|               |        |         |
 
 
-****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/Gladys91/Proyecto_STATA/blob/main/_An%C3%A1lisis/Scripts/Conceptos%20b%C3%A1sicos/5_Importar_datos.do "script") y [base de datos](https://github.com/Gladys91/Proyecto_STATA/tree/main/_An%C3%A1lisis/Data "base de datos")* 
+****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Modelos%20de%20Panel%20de%20datos/2_selecci%C3%B3n_de_modelos.do "script") y [base de datos](https://github.com/Gladys91/Proyecto_STATA/tree/main/_An%C3%A1lisis/Data "base de datos")* 
