@@ -1,4 +1,4 @@
-# Modelos Multinomiales
+# EXTENSIONES MULTINOMIALES
 
 En algunos casos, los datos categóricos están ordenados naturalmente. Por ejemplo si se desea estudiar los determinandtes del nivel educativo alcanzado. Las categorías "sin instrucción", "primaria", "secundaria" y "superior" tienen un orden jerárquico natural pues para pasar a la siguiente etapa se debe haber superado el anterior.
 Los dos modelos estándar para tales datos son los modelos logit ordenado y probit ordenado.
@@ -92,4 +92,4 @@ variables explicativas, a nivel individual, son iguales a cero, los que se inter
 | UCLA - Stata data analysis example | [Ordered Logit Regression](https://stats.oarc.ucla.edu/stata/dae/ordered-logistic-regression/ "Ordered Logit Regression") | Ejemplo de Logit Ordenado y uso de comandos en Stata |
 
 
-****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Modelos%20multinomiales/2_Logit_ordenado.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data "base de datos")* 
+****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Modelos%20Binomiales%20y%20extensiones%20multinomiales/4_Logit_ordenado.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data "base de datos")* 
