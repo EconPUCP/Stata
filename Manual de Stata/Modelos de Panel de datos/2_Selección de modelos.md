@@ -60,7 +60,7 @@ El p-value de este test nos indica que aceptamos la hipótesis nula por lo que a
 
 > **TIPS: Tabla rápida de comandos xt**
 > 
-> El siguiente cuadro es un resumen de los comandos xt em Stata.
+> El siguiente cuadro es un resumen de los comandos xt en Stata.
 > 
 > | Descripción | Comandos | 
 > | :-------------- |:-------------|
@@ -73,7 +73,7 @@ El p-value de este test nos indica que aceptamos la hipótesis nula por lo que a
 > | VI estático | xtivreg; xthtaylor |   
 > | VI dinámico | xtabond; xtdpdsys; xtdpd | 
 > 
->  Esta tabla 8.1 fue elaborada por Cameron & Trivedi en el libro "Microeconometrics Using Stata".
+>  ***Esta tabla fue elaborada por Cameron & Trivedi en el libro "Microeconometrics Using Stata".
 >  
 
 
