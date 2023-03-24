@@ -13,16 +13,24 @@ Para comparar el modelo de efectos fijos con el modelo de datos agrupados se usa
 El p-value de este test nos indica que rechazamos la hipótesis nula por lo que aceptamos que el modelo de efectos fijos es más adecuado que el de datos agrupados.
 
 - Efectos Aleatorios vs Datos agrupados: test de Breusch-Pagan
+Para comparar el modelo de efectos aleatorios con el modelo de efectos fijos se usa el test Breusch-Pagan, este test se realiza con el comando `xttest0`
+
 
 ![image](https://user-images.githubusercontent.com/128189216/227428566-80901324-a322-43bb-86c5-33a6d48f7921.png)
 
 El p-value de este test nos indica que rechazamos la hipótesis nula por lo que aceptamos que el modelo de efectos aleatorios es más adecuado que el de datos agrupados.
 
 - Efectos Fijos vs Efectos Aleatorios: test de Hausman
+Para comparar ambos modelos usamos el test de Hausman. Previamente debemos
+estimar los dos modelos y guardarlos con `estimates store` luego usamos el comando
+`hausman` junto a los datos almacenados
+
 
 ![image](https://user-images.githubusercontent.com/128189216/227429527-1e789cd9-3cbd-494d-b23c-1805f821eec3.png)
 
 - Efectos Fijos por individuo vs Efectos fijos temporales: testparm
+Para comparar los dos modelos usamos un test F sobre los coeficientes de
+cada año. Para elo usamos el comando `testparm`.
 
 ![image](https://user-images.githubusercontent.com/128189216/227430252-15331d6f-7a27-4412-b2b0-e62a30e636dc.png)
 
