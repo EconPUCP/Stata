@@ -109,7 +109,7 @@ eststo lsdv: reg lsalario raza escolaridad sexo experiencia urbano i.zona i.id
 eststo fe: xtreg lsalario raza escolaridad sexo experiencia urbano i.zona, fe
 
 * LSDV -AREG
-eststo alsdv: areg lsalario raza escolaridad sexo experiencia urbano ib4.zona, absorb(id)
+eststo alsdv: areg lsalario raza escolaridad sexo experiencia urbano i.zona, absorb(id)
 
 estimates table lsdv fe alsdv, drop(i.id)
 ```
@@ -120,13 +120,13 @@ Podemos también estimar el modelos por efectos fijos temporales haciendo uso de
 
 ```
 * LSDV
-eststo lsdv_it: reg lsalario raza escolaridad sexo experiencia urbano ib4.zona i.id i.año
+eststo lsdv_it: reg lsalario raza escolaridad sexo experiencia urbano i.zona i.id i.año
 
 * FE
-eststo fe_it: xtreg lsalario raza escolaridad sexo experiencia urbano ib4.zona i.año, fe
+eststo fe_it: xtreg lsalario raza escolaridad sexo experiencia urbano i.zona i.año, fe
 
 * LSDV -AREG
-eststo alsdv_it: areg lsalario raza escolaridad sexo experiencia urbano ib4.zona i.año, absorb(id)
+eststo alsdv_it: areg lsalario raza escolaridad sexo experiencia urbano i.zona i.año, absorb(id)
 
 estimates table lsdv_it fe_it alsdv_it, drop(i.id i.year)
 ```
@@ -139,7 +139,7 @@ estimates table lsdv_it fe_it alsdv_it, drop(i.id i.year)
 El modelo de efectos fijos es un modelo razonable cuando se posee evidencia de que la diferencia entre los diferentes individuos o agentes sociales de la muestra( o bien los diferentes momentos en el tiempo) son cambios en el parámetro de intersección de la función de regresión. Para estimar el modelo hacemos uso del comando `xtreg` agregando la opción `re`.
 
 ```
-eststo re: xtreg lsalario raza escolaridad sexo experiencia urbano ib4.zona, re
+eststo re: xtreg lsalario raza escolaridad sexo experiencia urbano i.zona, re
 ```
 
 ![image](https://user-images.githubusercontent.com/128189216/227422243-27d925d2-ccbd-47a5-a558-e029c90126c3.png)
