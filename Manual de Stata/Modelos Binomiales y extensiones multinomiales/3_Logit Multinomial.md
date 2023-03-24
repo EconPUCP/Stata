@@ -1,4 +1,4 @@
-# Modelos Multinomiales
+# EXTENSIONES MULTINOMIALES
 
 
 Recordemos que una variable nominal es aquella donde la variable tiene varias categorías, cuandos la variable dependiente es una variable nomimal con dos categorías nos encontramos ante un modelo binomial, sin embargo cuando estás variables tienen más de dos categorías, nos encontramos ante modelos multinomiales.
