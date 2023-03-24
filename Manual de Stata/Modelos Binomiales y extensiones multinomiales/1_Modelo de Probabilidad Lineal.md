@@ -1,4 +1,4 @@
-# Modelos Binomiales 
+# MODELOS BINOMIALES
 
 
 La variable dependiente de las regresiones no solo pueden ser variables continuas, también pueden tomar valores discretos.
