@@ -1,6 +1,6 @@
 ************
 *PONTIFICIA UNIVERSIDAD CATÓLICA DEL PERÚ
-* SCRIPT: 1_Logit_multinomial.do
+* SCRIPT: 3_Logit_multinomial.do
 * OBJETIVO: Logit Multinomial
 ************
 
