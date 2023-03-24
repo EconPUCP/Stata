@@ -54,12 +54,27 @@ xtreg lsalario raza escolaridad sexo experiencia urbano i.zona i.año, fe
 testparm i.año
 ```
 
-
 ![image](https://user-images.githubusercontent.com/128189216/227430252-15331d6f-7a27-4412-b2b0-e62a30e636dc.png)
 
 El p-value de este test nos indica que aceptamos la hipótesis nula por lo que aceptamos que el modelo de efectos fijos es más adecuado que el modelo de efectos fijos temporales.
 
-
+> **TIPS: Tabla rápida de comandos xt**
+> 
+> El siguiente cuadro es un resumen de los comandos xt em Stata.
+> 
+> | Descripción | Comandos | 
+> | :-------------- |:-------------|
+> | Resumen de datos | xtset; xtdescribe; xtsum; xtdata; xtline; xttab; xttrans |   
+> | MCO agrupado | regress |   
+> | FGLS agrupados | xtreg, re; xtregar, re |   
+> | Efectos aleatorios | xtreg, re; xtregar, re |   
+> | Efectos fijos | xtreg, f e ; xtregar, fe |     
+> | Primeras diferencias | regress (con datos diferenciados) |   
+> | VI estático | xtivreg; xthtaylor |   
+> | VI dinámico | xtabond; xtdpdsys; xtdpd | 
+> 
+>  Esta tabla 8.1 fue elaborada por Cameron & Trivedi en el libro "Microeconometrics Using Stata".
+>  
 
 
 ****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Modelos%20de%20Panel%20de%20datos/2_selecci%C3%B3n_de_modelos.do "script") y [base de datos](https://github.com/Gladys91/Proyecto_STATA/tree/main/_An%C3%A1lisis/Data "base de datos")* 
