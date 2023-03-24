@@ -1,4 +1,4 @@
-# Panel de datos
+# MODELO DE PANEL DE DATOS
 
 Son datos que pertenecen a varios individuos de una entidad y para varios momentos del tiempo
 son datos que es una combinación de datos se series de tiempo y de corte transversal. Por ejemplo Las exportaciones de los países de Sudamérica para el periodo: 1990-2018.
@@ -75,6 +75,24 @@ El comando xttab tabula los datos de una manera que proporciona detalles adicion
 
 El comando xttrans proporciona probabilidades de transición de un período al siguiente. El comando xttrans es más útil cuando la variable toma pocos valores
 
+> **TIPS: Shell para datos panel**
+>
+> Un consejo de Stata para generar paneles es usar la opción egen seq. Una poderosa herramienta para generar todo tipo de secuencias, esto dará un panel limpio y balanceado.
+>
+>```
+>clear// 
+>define the panel variables
+>local units = 40 // panel variable
+>local start = 2000 // time start
+>local end = 2022 // time end
+>
+>local time = `end' - `start' + 1
+>local obsv = `units' * `time'
+>set obs `obsv'
+>egen id = seq(), b(`time')
+>egen t = seq(), f(`start') t(`end')
+>```
+
 
 ## 1.2 MODELOS DE PANEL DE DATOS
 
@@ -145,4 +163,14 @@ eststo re: xtreg lsalario raza escolaridad sexo experiencia urbano i.zona, re
 ![image](https://user-images.githubusercontent.com/128189216/227422243-27d925d2-ccbd-47a5-a558-e029c90126c3.png)
 
 
-****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/Gladys91/Proyecto_STATA/tree/main/_An%C3%A1lisis/Scripts/Conceptos%20b%C3%A1sicos "script") y [base de datos](https://github.com/Gladys91/Proyecto_STATA/tree/main/_An%C3%A1lisis/Data "base de datos")* 
+
+
+## Sigue aprendiendo
+| Recurso  | Tema | Descripción |
+| ------------- |:-------------:|:-------------:|
+| UCLA - Stata Learning modules | [Reshaping data wide to long](https://stats.oarc.ucla.edu/stata/modules/reshaping-data-wide-to-long/ "Reshaping data wide to long")  | Uso del comando `reshape` para data panel de datos |
+| UCLA - Stata Learning modules | [Reshaping data long to wide](https://stats.oarc.ucla.edu/stata/modules/reshaping-data-long-to-wide/ "Reshaping data long to wide") | Uso del comando `reshape` para data panel de datos  |
+
+
+
+****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Modelos%20de%20Panel%20de%20datos/1_Modelos_panel_datos.do "script") y [base de datos](https://github.com/Gladys91/Proyecto_STATA/tree/main/_An%C3%A1lisis/Data "base de datos")* 
