@@ -1,4 +1,4 @@
-# Panel de datos
+# PANEL DE DATOS
 
 ### 2 SELECCIÓN DE MODELOS
 
