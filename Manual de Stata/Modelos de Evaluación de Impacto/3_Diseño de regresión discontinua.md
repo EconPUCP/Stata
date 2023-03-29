@@ -2,6 +2,47 @@
 
 ### 2 DISEÑO DE REGRESIÓN DISCONTINUA
 
+El método de regresién discontinua es un método cuasiexperimental utilizado para identificar efectos causales. Este método se basa en cortes que surgen por ley o por diseño y que implican una discontinuidad en alguna variable $(X_1)$.
+
+Este método nos permite investigar el efecto de la variable $T_i$ sobre $Y_i$, donde $T_i$ será una variable dummy que especifica si el individuo $i$ forma parte del grupo de “tratamiento” ($T_i$ = 1) o de “control” ($T_i$ = 0).
+
+Cada individuo tiene dos resultados potenciales, de los cuales únicamente observamos uno (el realizado). $Y^T_i$ es el nivel de la variable dependiente que $i$ tendría si forma parte del grupo de tratamiento, $Y^C_i$ el que tendría si forma parte del grupo de control y $Y_i$ el nivel observado.
+
+A diferencia que en el caso de experimentos donde ambos grupos (tratamiento y control) son determinados de forma aleatoria, en este caso son determinados por una regla objetiva de decisión. Dicha regla deberá especificar cortes especificos en los cuales la probabilidad de formar parte del grupo de tratamiento o control cambie de forma abrupta (i.e. discontinua).
+
+El cambio discontinuo en la probabilidad de formar parte del grupo de tratamiento puede ser de dos tipos:
+
+### 2.1 REGRESIÓN DISCONTINUA "SHARP"
+
+Este tipo de discontinuidad se refiere al caso en el cual la probabilidad de formar parte del grupo de tratamiento pasa de 0 a 1 despúes del corte que determina la discontinuidad. Se utiliza cuando el tratamiento(variable $D_i$) es una función perfecta y discontinua de algún tipo de score(variable $score_i$)
+
+$$D_i=\begin{cases} 1,&\text{if $score_i$ <= $X_0$} \\ 
+0,&\text{if $score_i$ > $X_0$}\end{cases}$$
+
+En este caso, el modelo más sencillo a aplicar es:
+
+$$Y_i=\alpha+\beta X_i+\rho D_i+ \eta_i$$
+
+donde $\rho$ es el parámetro de interes. 
+
+La asignación al tratamiento se interpreta como aleatoria en elvecindario de la discontinuidad. Es decir, para un segmento de la población se asume que estar marginalmente por encima o por debajo del cut-off es algo que está fuera de control delindividuo. 
+
+En estricto, se obtiene LATE (Local Average Treatment Effect). Esd ecir, se obtiene el impacto del programa para aquellos en el vecindario de la discontinuidad. 
+
+
+### 2.1 REGRESIÓN DISCONTINUA "FUZZY"
+
+En este tipo de discontinuidad la probabilidad de formar parte del grupo de tratamiento tiene un cambio discontinuo en el punto de corte $G_i = k$. Sin embargo, la probabilidad no cambia de 0 a 1. Este tipo de discontinuidad suele darse en casos en los cuales el punto de corte determina la elegibilidad al tratamiento, pero que la participación en el grupo de tratamiento no es obligatoria.
+
+En ocasiones la discontinuidad determina quien recibe acceso alprograma, pero no de manera perfecta
+La regresión discontinua borrosa (fuzzy RD) se utiliza cuando eltratamiento (variable $D_i$) es más probable
+ de ocurrir cuando los individuos cumplen cierto criterio.
+
+En este caso se tiene un modelo de dos ecuaciones:
+
+Primero, se estima una ecuacion de probabilidad de acceder altratamieno, $D_i$
+
+$$D_i=\gamma_0+\pi T_i+g(x_i)+ \zeta_i$$
 
 
 
