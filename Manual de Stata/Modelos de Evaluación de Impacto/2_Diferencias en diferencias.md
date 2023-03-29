@@ -2,19 +2,17 @@
 
 ### 2 DIFERENCIAS EN DIFERENCIAS
 
-
-
 En muchos casos la variable de interés cambia en el tiempo para un grupo de individuos, una provincia, una cohorte. La fuente de sesgo de variable omitida en estos casos puede ser la
-presencia de variables no observables a nivel de estado y año. 
+presencia de variables no observables a nivel de estado y año. En estos casos podemos utilizar la estrategia de identificación llamada de Diferencias-en-Diferencias (DD o dif-en-dif). 
 
-En estos casos podemos utilizar la estrategia de identificación llamada de Diferencias-en-Diferencias (DD o dif-en-dif). Para utilizar esta estrategia es posible usar secciones cruzadas repetidas.
+Una ventaja de este modelo es que es capaz de remover aquel componente no observable de los datos con el fin de tener estimaciones confiables apoyándonos en la existencia de datos de panel de los individuos antes y después de recibir el tratamiento y asumiendo que las características no observables son invariantes en el tiempo podemos obtener estimaciones confiables del efecto tratamiento. 
 
-Supongamos que el tratamiento se asigna aleatoriamente a ciertas unidades (o al menos puede considerarse como si fuese aleatorio). Para estimar el efecto del tratamiento, podemos simplemente
-comparar las unidades tratadas antes y después del tratamiento.
+$$y_{it}=\alpha_0+\alpha_1T_i+\alpha_2t_t+\beta(T_ixt_t)+e_t$$
 
-El problema es que podemos capturar los efectos de otros factores que hayan cambiado durante el tratamiento. Por lo tanto, usaremos un grupo de control para descontar estos posibles factores y aislar el efecto del tratamiento.
-
-
+En donde $y_{it}$ es la variable de resultado, $T_i$ es una dummy = 1 para el grupo de tratados
+y $t_t$ es una dummy = 1 para el periodo en donde el grupo tratado recibe el tratamiento.
+Por último, $(T_i × t_t)$ es la interacción entre ambas dummy. El coeficiente $\beta$ es el
+parámetro de interés.
 
 
 ## Sigue aprendiendo
