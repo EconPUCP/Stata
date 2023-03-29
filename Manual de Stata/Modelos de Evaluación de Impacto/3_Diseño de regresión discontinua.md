@@ -1,4 +1,4 @@
-# # Evaluación de Impacto
+#  Evaluación de Impacto
 
 ### 3 DISEÑO DE REGRESIÓN DISCONTINUA
 
