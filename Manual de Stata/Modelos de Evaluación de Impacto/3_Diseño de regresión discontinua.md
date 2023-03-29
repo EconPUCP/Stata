@@ -34,9 +34,9 @@ En estricto, se obtiene LATE (Local Average Treatment Effect). Esd ecir, se obti
 
 En este tipo de discontinuidad la probabilidad de formar parte del grupo de tratamiento tiene un cambio discontinuo en el punto de corte $G_i = k$. Sin embargo, la probabilidad no cambia de 0 a 1. Este tipo de discontinuidad suele darse en casos en los cuales el punto de corte determina la elegibilidad al tratamiento, pero que la participación en el grupo de tratamiento no es obligatoria.
 
-En ocasiones la discontinuidad determina quien recibe acceso alprograma, pero no de manera perfecta
-La regresión discontinua borrosa (fuzzy RD) se utiliza cuando eltratamiento (variable $D_i$) es más probable
- de ocurrir cuando los individuos cumplen cierto criterio.
+En ocasiones la discontinuidad determina quien recibe acceso alprograma, pero no de manera perfecta.
+
+La regresión discontinua borrosa (fuzzy RD) se utiliza cuando eltratamiento (variable $D_i$) es más probable de ocurrir cuando los individuos cumplen cierto criterio.
 
 En este caso se tiene un modelo de dos ecuaciones:
 
@@ -44,8 +44,13 @@ Primero, se estima una ecuacion de probabilidad de acceder altratamieno, $D_i$
 
 $$D_i=\gamma_0+\pi T_i+g(x_i)+ \zeta_i$$
 
+Donde $T_i$ es una variable binaria que se activa cuando el individuocumple cierto criterio. Se asume que $T_i$ es una función de $x_i$. Luego se obtiene $\hat{D_i}$ (el valor predicho de $D_i$) y se reemplaza en la ecuación de interés.
 
+$$Y_i=\alpha+\rho \hat{D_i}+ i(x_i) +\eta_i$$
 
+el coeﬁciente $\rho$ mide el impacto del programa. Las funciones $g(x_i)$ y $i(x_i)$ permiten controlar por no linearidades.
+
+RD (en su versión nítida y borrosa) permite obtener estimadoresinsesgados del impacto de un programa en el vecindario de la discontinuidad. Por otro lado, el resultado que se obtiene (LATE) no esnecesariamente generalizable.
 
 ## Sigue aprendiendo
 | Recurso  | Tema | Descripción |
