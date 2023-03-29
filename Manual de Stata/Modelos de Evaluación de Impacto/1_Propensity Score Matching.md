@@ -32,7 +32,9 @@ El uso de demasiadas covariables para calcular el puntaje de propensión puede g
 El tipo de emparejamiento más común es el "Nearest Neighbour", este algoritmo selecciona los mejores controles emparejados para cada individuo tratado. En cada etapa del matching se elige la observación del grupo control que esté lo más cercana a la observación tratada según la distancia especificada. Si múltiples individuos controles se encuentran a la misma distancia del sujeto tratado, se selecciona aleatoriamente a uno de estos.
 
 
-Si bien El PSM es un método muy utilizado en evaluación de impacto, también tiene muchas críticas en cuanto a sus supuestos y sensibilidad a la especificación o a la muestra e incluso algunos señalan que tiene más desventajas que ventajas. 
+Si bien El PSM es un método muy utilizado en evaluación de impacto, también tiene muchas críticas en cuanto a sus supuestos y sensibilidad a la especificación o a la muestra. El principal problema del Propensity score matching en la estimación del ATET es que no puede controlar las características no observables de los individuos, con lo cual existe un serio riesgo de sesgo en la estimación de este valor.
+
+
 
 ## Sigue aprendiendo
 | Recurso  | Tema | Descripción |
