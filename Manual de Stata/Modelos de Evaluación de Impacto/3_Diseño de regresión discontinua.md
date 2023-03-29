@@ -52,6 +52,58 @@ el coeﬁciente $\rho$ mide el impacto del programa. Las funciones $g(x_i)$ y $i
 
 RD (en su versión nítida y borrosa) permite obtener estimadoresinsesgados del impacto de un programa en el vecindario de la discontinuidad. Por otro lado, el resultado que se obtiene (LATE) no esnecesariamente generalizable.
 
+### 3.3 REGRESIÓN DISCONTINUA EN STATA
+
+Para ejemplificar un RDD en Stata, utilizaremos el paquete de replicación del paper "The effects of access to health insurance: Evidence from a regression discontinuity design in Peru" de Bernal, Carpio y Klein (2017). Este paquete de replicación lo puedes descargar directamente desde el siguiente [enlace](https://www.sciencedirect.com/science/article/pii/S0047272717301299#ec0010 "enlace") o descargarlo directamente de la base de datos de este repositorio. 
+
+Los autores estiman el efecto del seguro social de salud dirigido a los pobres en Perú mediante un diseño de regresión discontinua. 
+
+Abrimos nuestro dofile y establecemos nuestro direcctorio.
+
+
+```
+cd "C:\Users\Usuario\Desktop\replication package - evaluación de impacto\replication package Bernal Carpio Klein Effects Access Health Insurance JPubE\output"
+
+* we are in output directory that contains the data set
+use data_for_analysis.dta, replace
+```
+
+Para crear la variable de asignación restamos el corte al índice. Adicionalmente se crea una dummy = 1 si el valor de la variable de asignación es mayor a cero (es decir, mayor al corte) y = 0 en caso contrario. De igual manera se crea una interacción de ambos juntos a otras variables adicionales.
+
+```
+***variables (Z)
+
+gen z_ifh=ifh-corte
+clonevar Z1=z_ifh
+label var Z1 "IFH index minus threshold"
+
+gen eligibleZ1=Z1<=0 
+label var eligible "eligibility"
+label def eligible 0 "Ineligible" 1 "Eligible"
+label val eligibleZ1 eligible
+
+gen interaccion_EZ1=Z1*eligibleZ1
+
+gen Z2=p1172_01-20 // Cutoff = 20 soles.
+gen Z3=p1172_02-25 // Cutoff = 25 soles.
+gen eligibleZ2=Z2<=0 | Z2==.
+gen eligibleZ3=Z3<=0 | Z3==.
+generate high=(formal==0 & agua==1 & electricidad==1 & eligibleZ2==0 & eligibleZ3==0) // Informal individuals accessing water and electricity with high consumption.
+
+generate high_eligibleZ1=high*eligibleZ1
+gen interaccion_high=Z1*high
+
+gen eligible=1 if formal==0 & (agua~=1 | electricidad~=1) & eligibleZ1==1 // Eligible definition based on IFH, electricity and water.
+replace eligible=0 if formal==0 & (agua~=1 | electricidad~=1) & eligibleZ1==0
+replace eligible=0 if formal==0 & agua==1 & electricidad==1 & eligibleZ1==0
+replace eligible=0 if formal==0 & agua==1 & electricidad==1 & eligibleZ1==1 & (eligibleZ2==0 & eligibleZ3==0)
+replace eligible=1 if formal==0 & agua==1 & electricidad==1 & eligibleZ1==1 & (eligibleZ2==1 | eligibleZ3==1)
+```
+
+
+
+
+
 ## Sigue aprendiendo
 | Recurso  | Tema | Descripción |
 | ------------- |:-------------:|:-------------:|
