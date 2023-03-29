@@ -26,12 +26,10 @@ las tres herramientas para diseño de evaluación de impacto más usuales son:
 
 El propensity score matching (PSM) consiste en buscar observaciones no tratadas que sean similares a las tratadas, con base en un conjunto de variables que determinen la probabilidad de estar en el programa.
 
-La eficacia de un diseño de PSM depende principalmente de qué tan buena son las características observables de los individuos para determinan su
-participación en el programa. Si el sesgo de las características no observadas es muy pequeño, PSM proporciona buenas estimaciones; Si el
-sesgo de las características no observadas es grande, entonces las estimaciones del PSM pueden estar sesgadas.
-El uso de demasiadas covariables para calcular el puntaje de propensión puede generar una ruptura del supuesto de soporte común (common
-support)
+La eficacia de un diseño de PSM depende principalmente de qué tan buena son las características observables de los individuos para determinan su participación en el programa. Si el sesgo de las características no observadas es muy pequeño, PSM proporciona buenas estimaciones; Si el sesgo de las características no observadas es grande, entonces las estimaciones del PSM pueden estar sesgadas.
+El uso de demasiadas covariables para calcular el puntaje de propensión puede generar una ruptura del supuesto de soporte común (common support)
 
+El tipo de emparejamiento más común es el "Nearest Neighbour", este algoritmo selecciona los mejores controles emparejados para cada individuo tratado. En cada etapa del matching se elige la observación del grupo control que esté lo más cercana a la observación tratada según la distancia especificada. Si múltiples individuos controles se encuentran a la misma distancia del sujeto tratado, se selecciona aleatoriamente a uno de estos.
 
 
 Si bien El PSM es un método muy utilizado en evaluación de impacto, también tiene muchas críticas en cuanto a sus supuestos y sensibilidad a la especificación o a la muestra e incluso algunos señalan que tiene más desventajas que ventajas. 
