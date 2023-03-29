@@ -1,6 +1,6 @@
 # # Evaluación de Impacto
 
-### 2 DISEÑO DE REGRESIÓN DISCONTINUA
+### 3 DISEÑO DE REGRESIÓN DISCONTINUA
 
 El método de regresién discontinua es un método cuasiexperimental utilizado para identificar efectos causales. Este método se basa en cortes que surgen por ley o por diseño y que implican una discontinuidad en alguna variable $(X_1)$.
 
@@ -12,7 +12,7 @@ A diferencia que en el caso de experimentos donde ambos grupos (tratamiento y co
 
 El cambio discontinuo en la probabilidad de formar parte del grupo de tratamiento puede ser de dos tipos:
 
-### 2.1 REGRESIÓN DISCONTINUA "SHARP"
+### 3.1 REGRESIÓN DISCONTINUA "SHARP"
 
 Este tipo de discontinuidad se refiere al caso en el cual la probabilidad de formar parte del grupo de tratamiento pasa de 0 a 1 despúes del corte que determina la discontinuidad. Se utiliza cuando el tratamiento(variable $D_i$) es una función perfecta y discontinua de algún tipo de score(variable $score_i$)
 
@@ -30,7 +30,7 @@ La asignación al tratamiento se interpreta como aleatoria en elvecindario de la
 En estricto, se obtiene LATE (Local Average Treatment Effect). Esd ecir, se obtiene el impacto del programa para aquellos en el vecindario de la discontinuidad. 
 
 
-### 2.1 REGRESIÓN DISCONTINUA "FUZZY"
+### 3.2 REGRESIÓN DISCONTINUA "FUZZY"
 
 En este tipo de discontinuidad la probabilidad de formar parte del grupo de tratamiento tiene un cambio discontinuo en el punto de corte $G_i = k$. Sin embargo, la probabilidad no cambia de 0 a 1. Este tipo de discontinuidad suele darse en casos en los cuales el punto de corte determina la elegibilidad al tratamiento, pero que la participación en el grupo de tratamiento no es obligatoria.
 
