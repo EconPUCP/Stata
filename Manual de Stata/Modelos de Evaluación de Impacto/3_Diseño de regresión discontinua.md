@@ -96,6 +96,7 @@ gen z_ifh=ifh-corte
 clonevar Z1=z_ifh
 label var Z1 "IFH index minus threshold"
 ```
+
 Adicionalmente se crea una dummy  y = 1 para las personas que son elegibles, todas aquellas observaciones que están por debajo del corte, y y = 0 en caso contrario. 
 
 ```
@@ -105,7 +106,7 @@ label def eligible 0 "Ineligible" 1 "Eligible"
 label val eligibleZ1 eligible
 ```
 
-Se crea una interacción entre nuestro corte estandarizado y  la variable de elegible.
+Se crea una interacción entre nuestro corte estandarizado y la variable de elegible.
 
 ```
 gen interaccion_EZ1=Z1*eligibleZ1
@@ -125,38 +126,49 @@ replace eligible=0 if formal==0 & agua==1 & electricidad==1 & eligibleZ1==0
 replace eligible=0 if formal==0 & agua==1 & electricidad==1 & eligibleZ1==1 & (eligibleZ2==0 & eligibleZ3==0)
 replace eligible=1 if formal==0 & agua==1 & electricidad==1 & eligibleZ1==1 & (eligibleZ2==1 | eligibleZ3==1)
 ```
-
-```
-***Bandwith 20
-gen bw20=Z1>-20
-replace bw20=0 if Z1>20
-replace bw20=. if formal==1
-summ bw20
-plot bw20 Z1
-```
-
-
-
-
 Se creará un global para la especificación del modelo y de los controles
 
 ```
-global specification eligibleZ1 Z1 interaccion_EZ1 high high_eligibleZ1 interaccion_high
-global ylist $yuse $yfin $yexpenditures2 $yexp2detail $yhealth
 global controles mujer edad educ mieperho hhmujer
+lab var mujer "women"
+lab var edad "age"
+lab var educ "years of education"
+lab var mieperho "number of household members"
+lab var hhmujer "women as head of household"
+
+global yfinlist consulta consulta_ins consulta_pins consulta_oop ///
+		medicinas medicinas_ins medicinas_pins medicinas_oop ///
+		analisis analisis_ins analisis_oop ///
+		rayos rayos_ins rayos_oop ///
+		examenes examenes_ins examenes_oop ///
+		lentes  lentes_oop ///
+		otros otros_ins otros_pins otros_oop ///
+		hospinter hospinter_ins hospinter_pins hospinter_oop ///
+		hospital intervencion ///
+		dental dental_ins dental_oop ///
+		ojos ojos_ins ojos_oop ///
+		vacunas vacunas_ins ///
+		anticon anticon_ins anticon_oop  ///
+		campana atencion curative
 ```
 
-
-
-
-
+La regresión final se puede realizar, generalmente, de dos manera. La primera es la forma paramétrica, usando el comando `reg` o de la forma no paramétrica usando el comando `rdrobust`. 
+Los autores utilizan el comando `rdrobust`, previamente este se debe ser instalado.
 
 ```
-*Sample 20 (Effects)
-foreach var of varlist $ylist {
-quietly regress `var' $specification $controles_c if formal==0 & bw20==1, vce(robust)
-estimates store `var'
+ssc install rdrobust
+
+foreach var of varlist $yfinlist {
+rdrobust `var' Z1_change if formal==0 & high==0, c(0) p(1) covs($controles) bwselect(msetwo) all
+}
 ```
+
+![image](https://user-images.githubusercontent.com/128189216/228690059-d636f00d-fda4-4df4-a1e5-325eb6f01949.png)
+
+
+![image](https://user-images.githubusercontent.com/128189216/228690586-a5e91fca-c28f-4f04-982e-4c2d78ba2e1f.png)
+
+
 
 
 ## Sigue aprendiendo
