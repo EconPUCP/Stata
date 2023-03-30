@@ -14,6 +14,51 @@ y $t_t$ es una dummy = 1 para el periodo en donde el grupo tratado recibe el tra
 Por último, $(T_i × t_t)$ es la interacción entre ambas dummy. El coeficiente $\beta$ es el
 parámetro de interés.
 
+Para ejemplificar este modelo abriremos nuestro do file, estableceremos nuestro directorio y procederemos a abrir nuestra base de datos.
+
+```
+```
+
+Crearemos una variable ficticia para indicar el momento en que comenzó el tratamiento. Supondremos que el tratamiento comenzó en 1994. En este caso, los años anteriores a 1994 tendrán un valor de 0 y los años a partir de 1994 un 1.
+
+```
+gen time = (year>=1994) & !missing(year)
+```
+
+Crearemos una variable ficticia para identificar el grupo expuesto al tratamiento. Supondremos que se trataron los países con los códigos 5, 6 y 7 (=1). Los países 1-4 no fueron tratados (=0).
+
+```
+gen treated = (country>4) & !missing(country)
+```
+
+Crearemos una interacción entre el tiempo y el tratado. Llamaremos a esta interacción 'did'
+
+```
+gen did = time*treated
+```
+
+Procedemos a realizar la estimación del estimador a tráves de tres alternativas.
+
+La primera forma de llegar al estimador es utilizando el comando `reg` seguido de la variable dependiente
+
+```
+reg y time treated did, r
+```
+
+haciendo uso del método del hastag
+
+```
+reg y time##treated, r
+```
+
+ y usando el comadno `diff`
+```
+ssc install diff
+diff y, t(treated) p(time)
+```
+
+El coeficiente para 'did' es el estimador de diferencias en diferencias. El efecto es significativo al nivel del 10%, teniendo el tratamiento un efecto negativo
+
 
 ## Sigue aprendiendo
 | Recurso  | Tema | Descripción |
