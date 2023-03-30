@@ -7,12 +7,11 @@ presencia de variables no observables a nivel de estado y año. En estos casos p
 
 Una ventaja de este modelo es que es capaz de remover aquel componente no observable de los datos con el fin de tener estimaciones confiables apoyándonos en la existencia de datos de panel de los individuos antes y después de recibir el tratamiento y asumiendo que las características no observables son invariantes en el tiempo podemos obtener estimaciones confiables del efecto tratamiento. 
 
-$$y_{it}=\alpha_0+\alpha_1T_i+\alpha_2t_t+\beta(T_ixt_t)+e_t$$
+$$y_{it}=\alpha_0+\alpha_1T_i+\alpha_2t_t+\beta(T_ixt_t)+e_it$$
 
 En donde $y_{it}$ es la variable de resultado, $T_i$ es una dummy = 1 para el grupo de tratados
 y $t_t$ es una dummy = 1 para el periodo en donde el grupo tratado recibe el tratamiento.
-Por último, $(T_i × t_t)$ es la interacción entre ambas dummy. El coeficiente $\beta$ es el
-parámetro de interés.
+Por último, $(T_i × t_t)$ es la interacción entre ambas dummy. El coeficiente $\beta$ es el parámetro de interés.
 
 Para ejemplificar este modelo abriremos nuestro do file, estableceremos nuestro directorio y procederemos a abrir nuestra base de datos.
 
@@ -39,25 +38,29 @@ gen did = time*treated
 
 Procedemos a realizar la estimación del estimador a tráves de tres alternativas.
 
-La primera forma de llegar al estimador es utilizando el comando `reg` seguido de la variable dependiente
+La primera forma de llegar al estimador es utilizando el comando `reg` seguido de la variable dependiente, time, treated y did.
 
 ```
 reg y time treated did, r
 ```
 
-haciendo uso del método del hastag
+El coeficiente para 'did' es el estimador de diferencias en diferencias que es igual a -2519. El efecto es significativo al nivel del 10%, teniendo el tratamiento un efecto negativo
+
+Una manera alternativa de llegar a este mismo estimador sin crear la variable de interacción es haciendo uso del método del hastag visto en este mismo manual en la sección de regresiones. 
 
 ```
 reg y time##treated, r
 ```
 
- y usando el comadno `diff`
+Podemos observar que llegamos al mismo estimador. Stata también nos ofrece un comando especial para realizar los este tipo de modelos, el comando `diff`, este debe ser instalado previamente.
+
+
 ```
 ssc install diff
 diff y, t(treated) p(time)
 ```
 
-El coeficiente para 'did' es el estimador de diferencias en diferencias. El efecto es significativo al nivel del 10%, teniendo el tratamiento un efecto negativo
+Una recomendación final es utiliza 
 
 
 ## Sigue aprendiendo
