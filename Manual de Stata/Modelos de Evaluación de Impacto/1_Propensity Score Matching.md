@@ -39,8 +39,8 @@ Si bien El PSM es un método muy utilizado en evaluación de impacto, también t
 ## Sigue aprendiendo
 | Recurso  | Tema | Descripción |
 | ------------- |:-------------:|:-------------:|
-| UCLA - Stata learning module  | [Getting help](https://stats.oarc.ucla.edu/stata/modules/getting-help-using-stata/ "Getting help") | Cómo obtener ayuda en Stata  |
-| UCSF GSI  | [Thinking like Stata](https://www.youtube.com/watch?v=jTtIREfhyEY&t=108s&ab_channel=UCSFGSI "Thinking like Stata") | Manejar la sintaxis de los comandos en Stata  |
+| luis García Núñez  | [Econometría de evaluación de impacto](https://revistas.pucp.edu.pe/index.php/economia/article/view/2676http:// "Econometría de evaluación de impacto") | Principales métodos de evaluación de impacto y aplicaciones  |
+| Mastering Metrics  | [MRU Short Videos](https://www.masteringmetrics.com/online-metrics-resources/ "MRU Short Videos")| Entendiendo qué es una evaluación de impacto |
 
 
 ****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/Gladys91/Proyecto_STATA/tree/main/_An%C3%A1lisis/Scripts/Conceptos%20b%C3%A1sicos "script") y [base de datos](https://github.com/Gladys91/Proyecto_STATA/tree/main/_An%C3%A1lisis/Data "base de datos")* 
