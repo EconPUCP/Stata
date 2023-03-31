@@ -16,6 +16,7 @@ Por último, $(T_i × t_t)$ es la interacción entre ambas dummy. El coeficiente
 Para ejemplificar este modelo abriremos nuestro do file, estableceremos nuestro directorio y procederemos a abrir nuestra base de datos.
 
 ```
+use "Panel101.dta", clear
 ```
 
 Crearemos una variable ficticia para indicar el momento en que comenzó el tratamiento. Supondremos que el tratamiento comenzó en 1994. En este caso, los años anteriores a 1994 tendrán un valor de 0 y los años a partir de 1994 un 1.
@@ -44,6 +45,8 @@ La primera forma de llegar al estimador es utilizando el comando `reg` seguido d
 reg y time treated did, r
 ```
 
+![image](https://user-images.githubusercontent.com/128189216/229003236-afbb7788-3920-4388-bd86-9bc4ef31f3ed.png)
+
 El coeficiente para 'did' es el estimador de diferencias en diferencias que es igual a -2519. El efecto es significativo al nivel del 10%, teniendo el tratamiento un efecto negativo
 
 Una manera alternativa de llegar a este mismo estimador sin crear la variable de interacción es haciendo uso del método del hastag visto en este mismo manual en la sección de regresiones. 
@@ -51,16 +54,16 @@ Una manera alternativa de llegar a este mismo estimador sin crear la variable de
 ```
 reg y time##treated, r
 ```
+![image](https://user-images.githubusercontent.com/128189216/229003406-d1e6400c-7faa-45b6-81c2-241a4eb096fc.png)
 
 Podemos observar que llegamos al mismo estimador. Stata también nos ofrece un comando especial para realizar los este tipo de modelos, el comando `diff`, este debe ser instalado previamente.
-
 
 ```
 ssc install diff
 diff y, t(treated) p(time)
 ```
-
-Una recomendación final es utiliza 
+![image](https://user-images.githubusercontent.com/128189216/229003551-c3c89805-33da-4272-88a4-30aa0eccb3eb.png)
+ 
 
 
 ## Sigue aprendiendo
