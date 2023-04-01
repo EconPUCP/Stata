@@ -2,7 +2,7 @@
 
 ### 3 DISEÑO DE REGRESIÓN DISCONTINUA
 
-El método de regresién discontinua es un método cuasiexperimental utilizado para identificar efectos causales. Este método se basa en cortes que surgen por ley o por diseño y que implican una discontinuidad en alguna variable $(X_1)$.
+El método de regresión discontinua es un método cuasiexperimental utilizado para identificar efectos causales. Este método se basa en cortes que surgen por ley o por diseño y que implican una discontinuidad en alguna variable $(X_1)$.
 
 Este método nos permite investigar el efecto de la variable $T_i$ sobre $Y_i$, donde $T_i$ será una variable dummy que especifica si el individuo $i$ forma parte del grupo de “tratamiento” ($T_i$ = 1) o de “control” ($T_i$ = 0).
 
@@ -54,21 +54,40 @@ RD (en su versión nítida y borrosa) permite obtener estimadoresinsesgados del 
 
 ### 3.3 REGRESIÓN DISCONTINUA EN STATA
 
-Para ejemplificar un RDD en Stata, utilizaremos el paquete de replicación del paper "The effects of access to health insurance: Evidence from a regression discontinuity design in Peru" de Bernal, Carpio y Klein (2017). Este paquete de replicación lo puedes descargar directamente desde el siguiente [enlace](https://www.sciencedirect.com/science/article/pii/S0047272717301299#ec0010 "enlace") o descargarlo directamente de la base de datos de este repositorio. 
+Para ejemplificar un RDD en Stata, utilizaremos el paquete de replicación del paper "The effects of access to health insurance: Evidence from a regression discontinuity design in Peru" de Bernal, Carpio y Klein (2017). Este paquete de replicación lo puedes descargar directamente desde el siguiente [enlace](https://www.sciencedirect.com/science/article/pii/S0047272717301299#ec0010 "enlace") o descargarlo de la base de datos de este repositorio. 
 
-Los autores estiman el efecto del seguro social de salud dirigido a los pobres en Perú mediante un diseño de regresión discontinua. 
+El paquete de replicación contiene 4 do files, nosotros nos concentraremos en el do file 4, donde los autores estiman el efecto del seguro social de salud dirigido a los pobres en Perú mediante un diseño de regresión discontinua. 
 
-Abrimos nuestro dofile y establecemos nuestro direcctorio.
-
+Abrimos nuestro dofile con el comando `doedit` y establecemos nuestro direcctorio.
 
 ```
-cd "C:\Users\Usuario\Desktop\replication package - evaluación de impacto\replication package Bernal Carpio Klein Effects Access Health Insurance JPubE\output"
+cd "C:\Users\Usuario\Documents\GitHub\Stata\_Análisis\Data"
 
-* we are in output directory that contains the data set
 use data_for_analysis.dta, replace
 ```
 
-Para crear la variable de asignación restamos el corte al índice. Adicionalmente se crea una dummy = 1 si el valor de la variable de asignación es mayor a cero (es decir, mayor al corte) y = 0 en caso contrario. De igual manera se crea una interacción de ambos juntos a otras variables adicionales.
+Una vez abierta la base de datos y nos quedamos con observaciones para Lima y eliminamos los missing values:
+
+```
+***Lima Province
+gen limaprov=(substr(ubigeo,1,4)=="1501")
+
+***Households without wage workers
+tab depend1, m
+bys num_hog: egen hog_depend1=sum(depend1)
+replace hog_depend1=1 if hog_depend1>=1
+gen formal=(hog_depend1==1) // Individuals that belong to a household in which at least one member is formally employed.
+
+***Filters
+keep if limaprov==1 // Focus on Lima Province.
+drop if ifh==. // 3 observations without IFH.
+drop if consulta==. // 1 observation without information on health.
+tab formal, m // Full sample: 4,161 obs.
+```
+
+![image](https://user-images.githubusercontent.com/128189216/228531694-1f260454-7b7f-46d3-938d-57186ca652e9.png)
+
+Luego se procede a crear la variable de asignación, restando el corte al índice de focalización de hogares estimado. 
 
 ```
 ***variables (Z)
@@ -76,12 +95,20 @@ Para crear la variable de asignación restamos el corte al índice. Adicionalmen
 gen z_ifh=ifh-corte
 clonevar Z1=z_ifh
 label var Z1 "IFH index minus threshold"
+```
 
+Adicionalmente se crea una dummy  y = 1 para las personas que son elegibles, todas aquellas observaciones que están por debajo del corte, y y = 0 en caso contrario. 
+
+```
 gen eligibleZ1=Z1<=0 
 label var eligible "eligibility"
 label def eligible 0 "Ineligible" 1 "Eligible"
 label val eligibleZ1 eligible
+```
 
+Se crea una interacción entre nuestro corte estandarizado y la variable de elegible.
+
+```
 gen interaccion_EZ1=Z1*eligibleZ1
 
 gen Z2=p1172_01-20 // Cutoff = 20 soles.
@@ -99,7 +126,47 @@ replace eligible=0 if formal==0 & agua==1 & electricidad==1 & eligibleZ1==0
 replace eligible=0 if formal==0 & agua==1 & electricidad==1 & eligibleZ1==1 & (eligibleZ2==0 & eligibleZ3==0)
 replace eligible=1 if formal==0 & agua==1 & electricidad==1 & eligibleZ1==1 & (eligibleZ2==1 | eligibleZ3==1)
 ```
+Se creará un global para la especificación del modelo y de los controles
 
+```
+global controles mujer edad educ mieperho hhmujer
+lab var mujer "women"
+lab var edad "age"
+lab var educ "years of education"
+lab var mieperho "number of household members"
+lab var hhmujer "women as head of household"
+
+global yfinlist consulta consulta_ins consulta_pins consulta_oop ///
+		medicinas medicinas_ins medicinas_pins medicinas_oop ///
+		analisis analisis_ins analisis_oop ///
+		rayos rayos_ins rayos_oop ///
+		examenes examenes_ins examenes_oop ///
+		lentes  lentes_oop ///
+		otros otros_ins otros_pins otros_oop ///
+		hospinter hospinter_ins hospinter_pins hospinter_oop ///
+		hospital intervencion ///
+		dental dental_ins dental_oop ///
+		ojos ojos_ins ojos_oop ///
+		vacunas vacunas_ins ///
+		anticon anticon_ins anticon_oop  ///
+		campana atencion curative
+```
+
+La regresión final se puede realizar, generalmente, de dos manera. La primera es la forma paramétrica, usando el comando `reg` o de la forma no paramétrica usando el comando `rdrobust`. 
+Los autores utilizan el comando `rdrobust`, previamente este se debe ser instalado.
+
+```
+ssc install rdrobust
+
+foreach var of varlist $yfinlist {
+rdrobust `var' Z1_change if formal==0 & high==0, c(0) p(1) covs($controles) bwselect(msetwo) all
+}
+```
+
+![image](https://user-images.githubusercontent.com/128189216/228690059-d636f00d-fda4-4df4-a1e5-325eb6f01949.png)
+
+
+![image](https://user-images.githubusercontent.com/128189216/228690586-a5e91fca-c28f-4f04-982e-4c2d78ba2e1f.png)
 
 
 

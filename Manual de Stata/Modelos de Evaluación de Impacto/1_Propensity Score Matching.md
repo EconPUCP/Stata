@@ -31,6 +31,56 @@ El uso de demasiadas covariables para calcular el puntaje de propensión puede g
 
 El tipo de emparejamiento más común es el "Nearest Neighbour", este algoritmo selecciona los mejores controles emparejados para cada individuo tratado. En cada etapa del matching se elige la observación del grupo control que esté lo más cercana a la observación tratada según la distancia especificada. Si múltiples individuos controles se encuentran a la misma distancia del sujeto tratado, se selecciona aleatoriamente a uno de estos.
 
+Abriremos nuestra base de datos, 
+
+```
+use "http://www.stata-press.com/data/r16/cattaneo2.dta", clear
+```
+
+Procederemos a medir la diferencia entre el grupo de tratados y el grupo de control usando el comando `ttest` seguido por la variable bweight considerando al grupo de los tratados y control.
+
+```
+ttest bweight, by(mbsmoke)
+```
+
+![image](https://user-images.githubusercontent.com/128189216/229262808-bc60d782-1461-4d1c-923b-6459dafeb427.png)
+
+Para observar cómo varía la distribución de la variable bweight entre ambos grupos realizamos un gráfico de los kernel de densidad.
+
+```
+twoway (kdensity bweight if mbsmoke == 0, lcolor(red)) (kdensity bweight if mbsmoke == 1, lcolor(blue)), legend(order(1 "Tratado" 2 "Control" ))
+```
+
+![image](https://user-images.githubusercontent.com/128189216/229262920-1b96c286-84cc-4054-94aa-932c5855e8bb.png)
+
+Podemos observar que hay diferencias sistemáticas entre nuestras observaciones tratadas y de control.
+
+Procederemos a estimar la diferencia a partir del PSM usando varias alternativas. La primera forma es a tráves del comando `psmatch2`, recuerda que este comando debe ser instalado previamente con el comando `ssc install`.
+
+```
+ssc install psmatch2
+psmatch2 mbsmoke mmarried mage medu fbaby, out(bweight) ate
+```
+
+![image](https://user-images.githubusercontent.com/128189216/229263163-88b75da0-09d6-4cc1-acd7-b6ffe84ef264.png)
+
+
+```
+teffects psmatch (bweight) (mbsmoke mmarried mage medu fbaby, probit), atet nn(1)
+```
+
+```
+```
+
+
+
+
+
+
+
+
+
+
 
 Si bien El PSM es un método muy utilizado en evaluación de impacto, también tiene muchas críticas en cuanto a sus supuestos y sensibilidad a la especificación o a la muestra. El principal problema del Propensity score matching en la estimación del ATET es que no puede controlar las características no observables de los individuos, con lo cual existe un serio riesgo de sesgo en la estimación de este valor.
 
@@ -39,8 +89,8 @@ Si bien El PSM es un método muy utilizado en evaluación de impacto, también t
 ## Sigue aprendiendo
 | Recurso  | Tema | Descripción |
 | ------------- |:-------------:|:-------------:|
-| UCLA - Stata learning module  | [Getting help](https://stats.oarc.ucla.edu/stata/modules/getting-help-using-stata/ "Getting help") | Cómo obtener ayuda en Stata  |
-| UCSF GSI  | [Thinking like Stata](https://www.youtube.com/watch?v=jTtIREfhyEY&t=108s&ab_channel=UCSFGSI "Thinking like Stata") | Manejar la sintaxis de los comandos en Stata  |
+| luis García Núñez  | [Econometría de evaluación de impacto](https://revistas.pucp.edu.pe/index.php/economia/article/view/2676http:// "Econometría de evaluación de impacto") | Principales métodos de evaluación de impacto y aplicaciones  |
+| Mastering Metrics  | [MRU Short Videos](https://www.masteringmetrics.com/online-metrics-resources/ "MRU Short Videos")| Entendiendo qué es una evaluación de impacto |
 
 
 ****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/Gladys91/Proyecto_STATA/tree/main/_An%C3%A1lisis/Scripts/Conceptos%20b%C3%A1sicos "script") y [base de datos](https://github.com/Gladys91/Proyecto_STATA/tree/main/_An%C3%A1lisis/Data "base de datos")* 
