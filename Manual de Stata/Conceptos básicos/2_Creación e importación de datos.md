@@ -171,4 +171,4 @@ Al igual que en el caso de archivos de Excel, es necesario indicar la extensión
 | Diego Quispe Ortogorin | [Sesión 3 - Laboratorio de Econometría ](https://youtu.be/Abj6tUXJ-90?t=5427 "Comando type") | Uso del comando `type` para ver los datos contenidos de un archivo |
 
 
-****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Conceptos%20b%C3%A1sicos/5_Importar_datos.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data "base de datos")* 
+****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Conceptos%20b%C3%A1sicos/5_Importar_datos.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data/Conceptos%20b%C3%A1sicos "base de datos")* 
