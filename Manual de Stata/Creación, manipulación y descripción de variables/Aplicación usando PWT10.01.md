@@ -79,4 +79,4 @@ graph combine PER CHL COL, ycommon title("Logaritmo del stock de capital per cá
 
 
 
-*Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Creaci%C3%B3n,%20manipulaci%C3%B3n%20y%20descripci%C3%B3n%20de%20variables/5_Aplicaci%C3%B3n.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data "base de datos")* 
+*Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Creaci%C3%B3n,%20manipulaci%C3%B3n%20y%20descripci%C3%B3n%20de%20variables/5_Aplicaci%C3%B3n.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data/Creaci%C3%B3n%2C%20manipulaci%C3%B3n%20y%20descripci%C3%B3n%20de%20variables "base de datos")* 
