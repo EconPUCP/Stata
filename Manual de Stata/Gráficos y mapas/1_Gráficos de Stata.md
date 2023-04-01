@@ -429,4 +429,4 @@ Al final podemos ‘recuperar’ cada gráfico para combinarlos usando graph com
 | STATA  | [Help for graph](https://www.stata.com/help.cgi?graph "Help for graph") | Manual de gráficos de Stata  |
 
 
-****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Gr%C3%A1ficos%20y%20mapas/1_graficos_de_stata.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data "base de datos")*
+****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Gr%C3%A1ficos%20y%20mapas/1_graficos_de_stata.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data/Gr%C3%A1ficos%20y%20mapas "base de datos")*
