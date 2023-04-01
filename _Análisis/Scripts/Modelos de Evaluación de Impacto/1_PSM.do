@@ -4,37 +4,20 @@
 * OBJETIVO: Propensity Score Matching
 ************
 
-*Preámbulo
+use "http://www.stata-press.com/data/r16/cattaneo2.dta", clear
 
-cd ""
-
-*************
-
-use "", clear
-
-* Vemos la correlación entre las variables
-twoway ///
-(scatter x1 x2 y, msize(*0.4 *0.4) mcolor(red blue)) ///
-(lfit x1 y, lcolor(red)) (lfit x2 y, lcolor(blue)) ///
-,legend(order(1 "x1" 2 "x2"))
-
-reg y x1 x2
 
 * Diferencia de medias
-ttest y, by(t)
+ttest bweight, by(mbsmoke)
 
-twoway ///
-(kdensity y if t == 1, lcolor(red)) ///
-(kdensity y if t == 0, lcolor(blue)) ///
-, legend(order(1 "Tratado" 2 "Control" ))
+twoway (kdensity bweight if mbsmoke == 0, lcolor(red)) (kdensity bweight if mbsmoke == 1, lcolor(blue)), legend(order(1 "Tratado" 2 "Control" ))
 
-* Usamos psmatch para estimar el efecto del tratamiento
+* Usando el comando psmatch para estimar el efecto del tratamiento
+ssc install psmatch2
+psmatch2 mbsmoke mmarried c.mage##c.mage medu fbaby, out(bweight) ate
 
-* ssc install psmatch2 para instalar el paquete
-psmatch2 t x1 x2, out(y) ate
-
-* Podemos estimar el mismo resultado usando teffects
-teffects psmatch (y) (t x1 x2, probit), atet nn(10)
+*Usando el comando teffects
+teffects psmatch (bweight) (mbsmoke mmarried c.mage##c.mage medu fbaby, probit), atet nn(1)
 
 * Usamos emparejamiento por kernel con distribución normal
-psmatch2 t x1 x2, out(y) ate kerneltype(normal)
+psmatch2 mbsmoke mmarried mage medu fbaby, out(bweight) ate kerneltype(normal)
