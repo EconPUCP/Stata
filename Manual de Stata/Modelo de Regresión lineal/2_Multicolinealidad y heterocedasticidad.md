@@ -12,7 +12,7 @@ $$Mujer = 1 – Hombre$$
 
 Por lo que Mujer es una combinación lineal de Hombre y por ende no pueden entrar a la misma vez en una regresión. Es por esto que cuando se tienen una variable categórica de N categorías solo se consideran N − 1. + Esto también se puede dar en variables que no sea multicolineales por definición como en el caso del género. Veamos una forma de evaluar este problema en una regresión:
 
-Consideremos un modelo similar al estimado previo, pero ahora considerando al PBI per cápita y al % de la población urbana como variables explicativas adicionales. Una forma de evaluar la multicolinealidad es usando el estadístico $`VIF`$, usado como post estimation luego de la regresión. Esto generó un valor $VIF$ que se compara con el valor 10. Si es mayor a 10 entonces se tiene indicios de que esa variable es una combinación lineal de alguna otra variable.
+Consideremos un modelo similar al estimado previo, pero ahora considerando al PBI per cápita y al % de la población urbana como variables explicativas adicionales. Una forma de evaluar la multicolinealidad es usando el estadístico `VIF`, usado como post estimation luego de la regresión. Esto generó un valor $VIF$ que se compara con el valor 10. Si es mayor a 10 entonces se tiene indicios de que esa variable es una combinación lineal de alguna otra variable.
 
 ```
 * Testeando por Multicolinealidad
