@@ -105,4 +105,4 @@ Cada columna indica cada regresión corrida. La tabla contiene los estimadores, 
 
 
 
-****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Regresi%C3%B3n/3_dise%C3%B1o_muestral.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data "base de datos")*
+****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Modelo%20de%20Regresi%C3%B3n%20lineal/3_dise%C3%B1o_muestral.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data/Modelo%20de%20Regresi%C3%B3n%20lineal "base de datos")*
