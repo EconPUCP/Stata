@@ -2,10 +2,13 @@
 
 Para integrar todos los puntos de la sesión, usaremos el modulo 1226 del Censo Nacional de Comisarias - CENACOM 2017.
 
-Importamos una base de datos en formarto dbf
-Colapsaremos una base de datos
-Transformaremos un archivo shp a dta
-Realizaremos un mapa a nivel departamental
+- Importamos una base de datos en formarto dbf
+
+- Colapsaremos una base de datos
+
+- Transformaremos un archivo shp a dta
+
+- Realizaremos un mapa a nivel departamental
 
 El Censo Nacional de Comisarias - CENACOM 2017 tienen como objetivo disponer de una base de datos con información estadística confiable y oportuna sobre el estado actual de la infraestructura y equipamiento, recursos humanos en las comisarías y unidades especializadas a nivel nacional. 
 
@@ -18,7 +21,6 @@ Abrimos nuestro dofile desde la ventata de comandos con el comando `doedit` para
 
 cd "C:/Users/Usuario/Documents/GitHub/Proyecto_STATA/_Análisis/Data" // Se debe cambiar por la dirección dónde 
                                                                      // se encuentra tu base de datos
-
 ```
 
 Importaremos nuestra base de dato: 
@@ -61,4 +63,4 @@ Si hemos seguidos pasos correctamente, debemos llegar a una imagen como esta.
 
 ![image](https://user-images.githubusercontent.com/106888200/223929068-1e590ab8-84f1-43a1-841b-101659612c29.png)
 
-****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Gr%C3%A1ficos%20y%20mapas/4_aplicaci%C3%B3n_mapa.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data "base de datos")*
+****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Gr%C3%A1ficos%20y%20mapas/4_aplicaci%C3%B3n_mapa.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data/Gr%C3%A1ficos%20y%20mapas "base de datos")*
