@@ -42,4 +42,4 @@ describe
 ```
 
 
-*Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Conceptos%20b%C3%A1sicos/7_Aplicaci%C3%B3n.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data "base de datos")* 
+*Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Conceptos%20b%C3%A1sicos/7_Aplicaci%C3%B3n.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data/Conceptos%20b%C3%A1sicos "base de datos")* 
