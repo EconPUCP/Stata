@@ -1,4 +1,4 @@
-# Modelo de series de tiempo
+# MODELO DE SERIES DE TIEMPO
 
 ## 4  FILTROS Y SUAVIZACIÓN DE SERIES
 
@@ -148,11 +148,13 @@ Por último, el filtro Butterworth es una opción adicional que tiene el comando
 
 Si comparamos las series generadas, la tendencia es más suavizada y el ciclo más volátil Hay más opciones de filtro de series, algunas más complejos como el filtro de Kalman u otros más simples en adaptar a stata como el filtro de Hamilton (`ssc install hamiltonfilter`).
 
+
+
 ## Sigue aprendiendo
 | Recurso  | Tema | Descripción |
 | ------------- |:-------------:|:-------------:|
 | Economía Aplicada | [Filtro Hodrick Prescott en Stata](https://www.youtube.com/watch?v=yM_UI8HhMjA "Filtro Hodrick Prescott en Stata") | Uso de los comandos "hprescott" y "tsfilter hp" para extraer los componentes del Ciclo y la Tendencia de una serie anual del PIB en Stata  |
 
 
-
+______________________________________________________________________________
 ****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Modelos%20de%20Series%20de%20tiempo/4_filtros_serie_de_tiempo.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data/Modelos%20de%20Series%20de%20tiempo "base de datos")*
