@@ -30,8 +30,8 @@ Base de Datos Internacionales
 | :------------ |:---------------:| :-----:|
 | BANCO MUNDIAL  | WITS | [Estadísticas comerciales](https://wits.worldbank.org/ "Estadísticas comerciales")  |
 | BANCO MUNDIAL | Enterprise Surveys | [Datos económicos mundial](https://www.enterprisesurveys.org/en/survey-datasets "Datos económicos mundial") |
-| Colorado School of Mines  | EARTH OBSERVATION GROUP | [Luces nocturnas, botes e incendios](https://payneinstitute.mines.edu/eog/ "Luces nocturnas, botes e incendios")  |
-| Corporación Latinobarómetro  | Latinobarómetro  | [Contexto político](https://www.latinobarometro.org/latContents.jsp "Contexto político")  |
+| COLORADO SCHOOL OF MINES  | EARTH OBSERVATION GROUP | [Luces nocturnas, botes e incendios](https://payneinstitute.mines.edu/eog/ "Luces nocturnas, botes e incendios")  |
+| CORPORACIÓN LATINOBARÓMETRO | Latinobarómetro  | [Contexto político](https://www.latinobarometro.org/latContents.jsp "Contexto político")  |
 | ECMWF  | ECMWF | [Variables climáticas mensuales](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-land-monthly-means?tab=form "Variables climáticas mensuales")   |
 | ECMWF  | ECMWF | [Variables climáticas diarias](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-land?tab=overview "Variables climáticas diarias")  |
 | FMI  | IMF DATA | [Datos macroeconómicos y financieros mundiales](https://data.imf.org/?sk=388dfa60-1d26-4ade-b505-a05a558d9a42 "Datos macroeconómicos y financieros mundiales")  |
@@ -39,9 +39,9 @@ Base de Datos Internacionales
 | NOAA | NOAA  | [Luces nocturnas](https://ngdc.noaa.gov/eog/dmsp/downloadV4composites.html#AXP "Luces nocturnas")  |
 | OECD  | OECDiLibrary  | [Base de datos, indicadores y series estadisticas mundiales](https://www.oecd-ilibrary.org/statistics "Base de datos, indicadores y series estadisticas mundiales")  |
 | ONU  | Comtrade | [Comercio global](https://comtradeplus.un.org/ "Comercio global") |
-| Oxford Martin School  |   | [Data de la pandemia del Coronavirus](https://ourworldindata.org/coronavirus#explore-the-global-situation "Data de la pandemia del Coronavirus") |
-| Oxford University  | Niños del Milenio  | [Datos de Niños del Milenio en el Perú y otros países participantes](https://ninosdelmilenio.org/acceso-a-la-base-de-datos/#:~:text=La%20base%20de%20Ni%C3%B1os%20del,le%20permitir%C3%A1%20realizar%20la%20descarga. "Datos de Niños del Milenio en el Perú y otros países participantes") |
+| UNIVERSITY OF OXFORD |   | [Data de la pandemia del Coronavirus](https://ourworldindata.org/coronavirus#explore-the-global-situation "Data de la pandemia del Coronavirus") |
+| UNIVERSITY OF OXFORD  | Niños del Milenio  | [Datos de Niños del Milenio en el Perú y otros países participantes](https://ninosdelmilenio.org/acceso-a-la-base-de-datos/#:~:text=La%20base%20de%20Ni%C3%B1os%20del,le%20permitir%C3%A1%20realizar%20la%20descarga. "Datos de Niños del Milenio en el Perú y otros países participantes") |
 | THE HERITAGE FOUNDATION | Index of economic freedom  | [12 libertades desde los derechos de propiedad hasta la libertad financiera en 184 países.](https://www.heritage.org/index/explore "12 libertades desde los derechos de propiedad hasta la libertad financiera en 184 países.") |
-| Vanderbilt University  | AmericasBarometer  | [Contexto político](https://www.vanderbilt.edu/lapop/index.php/ "Contexto político")  |
+| VANDERBILT UNIVERSITY  | AmericasBarometer  | [Contexto político](https://www.vanderbilt.edu/lapop/index.php/ "Contexto político")  |
 
 
