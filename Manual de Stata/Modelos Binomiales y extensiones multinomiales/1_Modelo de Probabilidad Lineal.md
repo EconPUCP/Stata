@@ -98,4 +98,4 @@ esttab mpl_1 mpl_2, nomtitle r2 p
 | Renzo Álvarez Carcheri  | [Modelo de variables dicotómica](https://youtu.be/fHCnj0zhVyU?t=568 "Modelo de variables dicotómica") | Regressión MPL, Probit y Logit en Stata |
 
 
-****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Modelos%20Binomiales%20y%20extensiones%20multinomiales/1_MPL.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data "base de datos")* 
+****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Modelos%20Binomiales%20y%20extensiones%20multinomiales/1_MPL.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data/Modelos%20Binomiales%20y%20extensiones%20multinomiales "base de datos")* 
