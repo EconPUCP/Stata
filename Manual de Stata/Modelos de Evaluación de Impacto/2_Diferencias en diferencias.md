@@ -1,4 +1,4 @@
-# Evaluación de Impacto
+# EVALUACIÓN DE IMPACTO
 
 ### 2 DIFERENCIAS EN DIFERENCIAS
 
@@ -73,4 +73,4 @@ diff y, t(treated) p(time)
 | Rodazuero - Repositorio de Github | [Regression Discontinuity](https://github.com/rodazuero/samplecode/blob/master/Stata/Practical%20Guide%20for%20Impact%20Evaluation/Regression%20Discontinuity/discontinuity_do-file.do "Regression Discontinuity") | Do file - aplicación de una regresión discontinua |
 
 
-****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/Gladys91/Proyecto_STATA/blob/main/_An%C3%A1lisis/Scripts/Conceptos%20b%C3%A1sicos/5_Importar_datos.do "script") y [base de datos](https://github.com/Gladys91/Proyecto_STATA/tree/main/_An%C3%A1lisis/Data "base de datos")* 
+****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Modelos%20de%20Evaluaci%C3%B3n%20de%20Impacto/2_Dif_in_dif.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data/Modelos%20de%20Evaluaci%C3%B3n%20de%20Impacto "base de datos")* 
