@@ -1,4 +1,4 @@
-# Modelo de series de tiempo
+# MODELO DE SERIES DE TIEMPO
 
 ## 6.  DIAGNÓSTICO DE LOS MODELOS
 
@@ -326,5 +326,7 @@ El gráfico nos indica que no hay una gran diferencia entre el histograma y la d
 
 Con esto hemos modelado, bajo ciertos criterios, a la serie de tasa de crecimiento de los términos de intercambio. A partir de esto podemos pronosticar los valores de las series.
 
-****Puedes usar el kit de replicación de este módulo obteniendo el [script 1](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Serie%20de%20tiempo/7_random_walks.do "script 1"), [script 2](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Serie%20de%20tiempo/8_ra%C3%ADz_unitaria_y_rezagos.do "script 2") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data "base de datos")*
+
+____________________________________________________________
+****Puedes usar el kit de replicación de este módulo obteniendo el [script 1](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Modelos%20de%20Series%20de%20tiempo/7_random_walks.do "script 1"), [script 2](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Modelos%20de%20Series%20de%20tiempo/8_ra%C3%ADz_unitaria_y_rezagos.do "script 2") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data/Modelos%20de%20Series%20de%20tiempo "base de datos")*
  
