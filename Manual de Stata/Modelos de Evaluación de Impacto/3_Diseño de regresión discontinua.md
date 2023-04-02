@@ -1,4 +1,5 @@
-#  Evaluación de Impacto
+#  EVALUACIÓN DE IMPACTO
+
 
 ### 3 DISEÑO DE REGRESIÓN DISCONTINUA
 
@@ -178,4 +179,4 @@ rdrobust `var' Z1_change if formal==0 & high==0, c(0) p(1) covs($controles) bwse
 |               |        |         |
 
 
-****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/Gladys91/Proyecto_STATA/blob/main/_An%C3%A1lisis/Scripts/Conceptos%20b%C3%A1sicos/5_Importar_datos.do "script") y [base de datos](https://github.com/Gladys91/Proyecto_STATA/tree/main/_An%C3%A1lisis/Data "base de datos")* 
+****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Modelos%20de%20Evaluaci%C3%B3n%20de%20Impacto/3_RDD.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data/Modelos%20de%20Evaluaci%C3%B3n%20de%20Impacto "base de datos")* 
