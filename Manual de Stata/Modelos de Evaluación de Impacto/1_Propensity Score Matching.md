@@ -43,15 +43,17 @@ Procederemos a medir la diferencia entre el grupo de tratados y el grupo de cont
 ttest bweight, by(mbsmoke)
 ```
 
-![image](https://user-images.githubusercontent.com/128189216/229262808-bc60d782-1461-4d1c-923b-6459dafeb427.png)
+![image](https://user-images.githubusercontent.com/128189216/229385092-a0921dfe-d16d-4814-90a4-de052b752cba.png)
+
 
 Para observar cómo varía la distribución de la variable bweight entre ambos grupos realizamos un gráfico de los kernel de densidad.
 
 ```
-twoway (kdensity bweight if mbsmoke == 0, lcolor(red)) (kdensity bweight if mbsmoke == 1, lcolor(blue)), legend(order(1 "Tratado" 2 "Control" ))
+twoway (kdensity bweight if mbsmoke == 0, lcolor(red)) (kdensity bweight if mbsmoke == 1, lcolor(blue)), legend(order(1 "Control" 2 "Tratado" ))
 ```
 
-![image](https://user-images.githubusercontent.com/128189216/229262920-1b96c286-84cc-4054-94aa-932c5855e8bb.png)
+![image](https://user-images.githubusercontent.com/128189216/229384696-45cb7533-474c-45bf-a208-07347c6a414b.png)
+
 
 Podemos observar que hay diferencias sistemáticas entre nuestras observaciones tratadas y de control.
 
@@ -59,18 +61,28 @@ Procederemos a estimar la diferencia a partir del PSM usando varias alternativas
 
 ```
 ssc install psmatch2
-psmatch2 mbsmoke mmarried mage medu fbaby, out(bweight) ate
+psmatch2 mbsmoke mmarried c.mage##c.mage medu fbaby, out(bweight) ate
 ```
 
-![image](https://user-images.githubusercontent.com/128189216/229263163-88b75da0-09d6-4cc1-acd7-b6ffe84ef264.png)
+![image](https://user-images.githubusercontent.com/128189216/229385144-d93b6ec2-e124-4469-9fbe-0f197de5eaaa.png)
 
+
+Utilizaremos una forma alternativa con el comando `teffects`
 
 ```
 teffects psmatch (bweight) (mbsmoke mmarried mage medu fbaby, probit), atet nn(1)
 ```
 
+![image](https://user-images.githubusercontent.com/128189216/229385210-91d486e8-2ac7-4009-8252-7e27b28ed534.png)
+
+
+Y finalmente utilizaremos un ejemplo utilizando un emparejamiento por kernel con distribución normal
+
 ```
+psmatch2 mbsmoke mmarried c.mage##c.mage medu fbaby, out(bweight) ate kerneltype(normal)
 ```
+
+![image](https://user-images.githubusercontent.com/128189216/229385241-888c08f4-8324-4ba4-89d0-7c6b12d040e7.png)
 
 
 Si bien El PSM es un método muy utilizado en evaluación de impacto, también tiene muchas críticas en cuanto a sus supuestos y sensibilidad a la especificación o a la muestra. El principal problema del Propensity score matching en la estimación del ATET es que no puede controlar las características no observables de los individuos, con lo cual existe un serio riesgo de sesgo en la estimación de este valor.
