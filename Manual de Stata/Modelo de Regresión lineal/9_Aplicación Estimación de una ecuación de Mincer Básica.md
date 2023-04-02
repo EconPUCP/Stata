@@ -4,12 +4,15 @@
 
 Una ecuación de Mincer busca explicar el nivel de ingresos a partir del nivel de educación así como de otras variables. Consideremos el siguiente modelo:
 
-*log (Ingreso)i = β0+ β1 Educacióni+ β3 HabilidadesInnatasi + ui*
+$$log (Ingreso)_i = β_0+ β_1 Educación_i+ β_3 HabilidadesInnatas_i + u_i$$
 
 Las habilidades innatas de las personas no son observables por lo que no pueden ser introducidas al modelo. A pesar de esto sí logran determinar el valor del ingreso. Si no consideramos a esta variable entonces estaríamos estimando un modelo como el siguiente:
 
-*log (Ingreso)i = β0+ β1 Educaciónni + εi (1)*
-En donde: *β3 HabilidadesInnatasi + ui= εi*
+$$log (Ingreso)_i = β_0+ β_1 Educación_i + ε_i ... (1) $$    
+
+En donde: 
+
+$$β_3 HabilidadesInnatas_i + u_i= ε_i$$
 
 Si estimamos (1) entonces es esperable que E(Educacióni,εi)≠0 dado que las habilidades innatas se correlacionan con el nivel de educación de una personas. A partir de esto debemos de decidir un instrumento que nos permita estimar la ecuación.
 
