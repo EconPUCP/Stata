@@ -27,7 +27,7 @@ Base de Datos Internacionales
 -------------
 
 | Institución  | Base de datos  | Descripción |
-| :------------ |:---------------:| :-----:|
+| :------------ |:---------------| :-----|
 | BANCO MUNDIAL  | WITS | [Estadísticas comerciales](https://wits.worldbank.org/ "Estadísticas comerciales")  |
 | BANCO MUNDIAL | Enterprise Surveys | [Datos económicos mundial](https://www.enterprisesurveys.org/en/survey-datasets "Datos económicos mundial") |
 | COLORADO SCHOOL OF MINES  | EARTH OBSERVATION GROUP | [Luces nocturnas, botes e incendios](https://payneinstitute.mines.edu/eog/ "Luces nocturnas, botes e incendios")  |
