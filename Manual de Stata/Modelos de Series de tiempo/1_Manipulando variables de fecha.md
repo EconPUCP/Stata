@@ -1,4 +1,4 @@
-# Modelo de series de tiempo
+# MODELOS DE SERIES DE TIEMPO
 
 ## 1.  MANIPULANDO VARIABLES DE FECHA
 
@@ -66,7 +66,7 @@ Tomemos la siguiente base de datos como ejemplo. En este caso no tenemos los dat
 - fecha2: Es similar al previo pero tiene el mes en iniciales en inglés.
 - fecha3: Se tiene la fecha en números pero sin algún tipo de separador.
 - fecha4: Similar al previo pero los días y meses menores a 10 no comienzan con cero.
-- fecha5: Similar a la segunda columna pero con las iniciales en español.
+- fecha5: Similar a la segunda columna pero con las iniciales en español. 
 
 
 Veamos cómo manejar estas fechas para que tengan el formato de series diarias. Cargamos la base con las fechas de ejemplos.
@@ -177,8 +177,9 @@ format semana %tw
 | Recurso  | Tema | Descripción |
 | ------------- |:-------------:|:-------------:|
 | Stata.Professor | [Daily Dates](https://fintechprofessor.com/2018/10/22/quick-table-for-converting-different-dates-to-stata-format/ "Daily Dates") | Tabla rápida para convertir diferentes fechas a formato Stata |
-|   |  |   |
 
 
 
-****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Serie%20de%20tiempo/1_Manipulando_variables_de_fecha.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data "base de datos")*
+
+______________________________________________
+****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Modelos%20de%20Series%20de%20tiempo/1_Manipulando_variables_de_fecha.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data/Modelos%20de%20Series%20de%20tiempo "base de datos")*

@@ -1,4 +1,4 @@
-# Aplicación
+# APLICACIÓN: MODELO VAR CON SERIES DEL BCRP                                                                                
 
 
 Como aplicación vamos a estimar un VAR entre tres variables macroeconómicas importantes, la tasa de desempleo, la tasa de interés de los bonos del gobierno y la tasa de inflación. Empezaremos abriendo nuestra base de datos y declarar que es una serie de tiempo.
@@ -73,5 +73,5 @@ irf graph sirf, impulse(inf desempleo interes) response(inf desempleo interes) x
 
 ![image](https://user-images.githubusercontent.com/106888200/225368645-eb3dd329-4341-43a4-9c01-68d4592b81f5.png)
 
-
-****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Serie%20de%20tiempo/12_Aplicaci%C3%B3n.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data "base de datos")*
+___________________________________________________________________________________
+****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Modelos%20de%20Series%20de%20tiempo/12_Aplicaci%C3%B3n.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data/Modelos%20de%20Series%20de%20tiempo "base de datos")*

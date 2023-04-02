@@ -1,4 +1,4 @@
-# Modelo de series de tiempo
+# MODELO DE SERIES DE TIEMPO
 
 ## 7.  PRONÓSTICO
 
@@ -57,5 +57,5 @@ Usamos twoway para graficar la serie de pronóstico fuera de la muestra junto a 
 Ahora veamos otros tópicos de series de tiempo. En las primeras partes hemos visto una introducción a las distintas posibilidades de Stata con respecto a las series de tiempo, así como un conjunto de herramientas de análisis de procesos ARMA. En esta parte vamos a complementar ese desarrollo básico con algunos tópicos relativamente más avanzados. Debido a esto, les pido de nuevo que revisen la teoría detrás de los tópicos que desarrollemos para que puedan contrastar las posibilidades de la programación con el análisis dado por la teoría. 
 Comenzaremos viendo modelos ARCH y GARCH para luego pasar a modelos multivariados VAR y SVAR. Por último, analizaremos la presencia de cointegración en las series y revisaremos cómo aprovechar esta propiedad en las series.
 
-
-****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Serie%20de%20tiempo/9_pron%C3%B3sticos.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data "base de datos")* 
+________________________________________________________________________________
+****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Modelos%20de%20Series%20de%20tiempo/9_pron%C3%B3sticos.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data/Modelos%20de%20Series%20de%20tiempo "base de datos")* 
