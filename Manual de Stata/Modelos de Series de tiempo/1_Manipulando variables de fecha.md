@@ -1,4 +1,4 @@
-# Modelo de series de tiempo
+# MODELOS DE SERIES DE TIEMPO
 
 ## 1.  MANIPULANDO VARIABLES DE FECHA
 
@@ -177,8 +177,7 @@ format semana %tw
 | Recurso  | Tema | Descripción |
 | ------------- |:-------------:|:-------------:|
 | Stata.Professor | [Daily Dates](https://fintechprofessor.com/2018/10/22/quick-table-for-converting-different-dates-to-stata-format/ "Daily Dates") | Tabla rápida para convertir diferentes fechas a formato Stata |
-|   |  |   |
 
 
 
-****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Serie%20de%20tiempo/1_Manipulando_variables_de_fecha.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data "base de datos")*
+****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Modelos%20de%20Series%20de%20tiempo/1_Manipulando_variables_de_fecha.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data/Modelos%20de%20Series%20de%20tiempo "base de datos")*
