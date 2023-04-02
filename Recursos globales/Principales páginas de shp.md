@@ -2,7 +2,7 @@
 
 
 | Plataforma  | Descripción  |
-| :------------ |:---------------:|
+| :------------ |:---------------|
 | DIVA - GIS  | [Cartografía de países](https://www.diva-gis.org/gdata "Cartografía de países") | 
 | IPUMS INTERNATIONAL | [Cartografía de países](https://international.ipums.org/international/gis.shtml "Cartografía de países") | 
 | NATURAL EARTH | [Mapas mundiales y regionales](https://www.naturalearthdata.com/ "Mapas mundiales y regionales") |
