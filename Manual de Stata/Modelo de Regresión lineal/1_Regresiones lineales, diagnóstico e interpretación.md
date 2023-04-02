@@ -11,6 +11,8 @@ El comando más básico en términos de regresiones es `regress`. Este permite e
 ![image](https://user-images.githubusercontent.com/106888200/223620420-0d0ccf1a-8f8f-445d-bc82-4c8e53f9f3e1.png)
 
 En este caso _depvar_ hace referencia a la variables dependientes mientras que _indepvars_ al conjunto de variables explicativas.
+
+
 Tomemos la base de datos sobre indicadores de desarrollo humano para un corte de países como ejemplo. En esta base de datos tenemos información acerca de distintos indicadores como el de expectativas de vida al nacer, la escolaridad promedio, el PBI per cápita, la tasa de fertilidad, entre otros. Partamos planteando que esperamos una especie de correlación entre la expectativa de vida y la escolaridad en el corte de países. Probablemente esta correlación sea positiva, a mayor escolaridad mayor expectativa de vida. Comencemos viendo algunos descriptivos de los datos:
 
 ```
@@ -99,6 +101,7 @@ twoway (scatter life school) ( lfit life school), legend(off) xlabel(,grid) ylab
 ![image](https://user-images.githubusercontent.com/106888200/223622225-4bcd54a7-8dea-48d1-b90e-d8e8813d1872.png)
 
 Para hacer este gráfico hemos usado una nueva opción, `text(85 4 "predicted {it:life} = 50.36 + 2.45{it:school}")`. Los números tomados como argumentos indican la posición en el gráfico de acuerdo a cada eje. El resto entre comillas indica el texto a presentarse. Adicionalmente usamos `{it:life}` para que se presente en cursiva (o italics) en inglés.
+
 
 Antes de pasar a ver algunas opciones adicionales recordemos que la interpretación de los coeficientes estimados se limita a ser correlaciones condicionadas. Si la regresión se da en un ambiente de evaluación de impacto en donde la causalidad es probada entonces la correlación condicional pasa a ser un efecto causal entre las variables. De esta manera hablaremos de correlaciones y no ‘efectos’ al momento de interpretar las regresiones. Adicionalmente, hay que recordar que los coeficientes tienen una interpretación de acuerdo al valor que acompañan. Veamos una tabla de ayuda.
 
