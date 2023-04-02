@@ -1,4 +1,4 @@
-# Evaluación de Impacto
+# EVALUACIÓN DE IMPACTO
  
 El objetivo de una evaluación de impacto es estimar el efecto causal (impacto) de una
 intervención (P) en un resultado (Y). Donde:
@@ -73,15 +73,6 @@ teffects psmatch (bweight) (mbsmoke mmarried mage medu fbaby, probit), atet nn(1
 ```
 
 
-
-
-
-
-
-
-
-
-
 Si bien El PSM es un método muy utilizado en evaluación de impacto, también tiene muchas críticas en cuanto a sus supuestos y sensibilidad a la especificación o a la muestra. El principal problema del Propensity score matching en la estimación del ATET es que no puede controlar las características no observables de los individuos, con lo cual existe un serio riesgo de sesgo en la estimación de este valor.
 
 
@@ -93,4 +84,4 @@ Si bien El PSM es un método muy utilizado en evaluación de impacto, también t
 | Mastering Metrics  | [MRU Short Videos](https://www.masteringmetrics.com/online-metrics-resources/ "MRU Short Videos")| Entendiendo qué es una evaluación de impacto |
 
 
-****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/Gladys91/Proyecto_STATA/tree/main/_An%C3%A1lisis/Scripts/Conceptos%20b%C3%A1sicos "script") y [base de datos](https://github.com/Gladys91/Proyecto_STATA/tree/main/_An%C3%A1lisis/Data "base de datos")* 
+****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Modelos%20de%20Evaluaci%C3%B3n%20de%20Impacto/1_PSM.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data/Modelos%20de%20Evaluaci%C3%B3n%20de%20Impacto "base de datos")* 
