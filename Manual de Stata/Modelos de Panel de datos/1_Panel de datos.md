@@ -1,5 +1,4 @@
-# MODELO DE PANEL DE DATOS
-
+# MODELOS DE DATOS DE PANEL
 Son datos que pertenecen a varios individuos de una entidad y para varios momentos del tiempo
 son datos que es una combinación de datos se series de tiempo y de corte transversal. Por ejemplo Las exportaciones de los países de Sudamérica para el periodo: 1990-2018.
 
