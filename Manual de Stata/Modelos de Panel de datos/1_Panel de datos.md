@@ -173,4 +173,4 @@ eststo re: xtreg lsalario raza escolaridad sexo experiencia urbano i.zona, re
 | Jngod2011 - Repositorio Github| [Regresión con datos panel](https://github.com/jngod2011/Stata_for_Econometrics/blob/master/Regression%20with%20Panel%20Data/Simple.do "Regresión con datos panel") | Modelo MCO , MCO con errores estándar robustos de clúster, MCO agrupado |
 
  
-****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Modelos%20de%20Panel%20de%20datos/1_Modelos_panel_datos.do "script") y [base de datos](https://github.com/Gladys91/Proyecto_STATA/tree/main/_An%C3%A1lisis/Data "base de datos")* 
+****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Modelos%20de%20Datos%20de%20Panel/1_Modelos_panel_datos.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data/Modelos%20de%20Datos%20de%20Panel "base de datos")* 
