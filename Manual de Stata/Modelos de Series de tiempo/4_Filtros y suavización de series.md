@@ -14,7 +14,7 @@ En donde $ψ(L)$ es una función que considera los rezagos (L) de la serie insum
 Los filtros _moving average_ tienen la siguiente forma:
 
 
-$$\hat{x_t}=\frac{\\sum_{i=-l}^f w_{i}x_{t+i}}{\sum_{i=-l}^{f} w_{i}}$$
+$$\hat{x_t}=\frac{\\sum_{i=-l}^f w_{i}x_{t+i}} {\sum_{i=-l}^{f} w_{i}}$$
 
 
 En donde $x_t$ es la serie nueva, wi son pesos para cada observación y $x_t$ es la serie input. Los valores f y l indican el número de rezagos a considerar a la derecha y a la izquierda. Si no tenemos ponderadores el filtro solo toma un promedio simple de los datos, por ejemplo: 
@@ -155,4 +155,4 @@ Si comparamos las series generadas, la tendencia es más suavizada y el ciclo m�
 
 
 
-****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Serie%20de%20tiempo/4_filtros_serie_de_tiempo.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data "base de datos")*
+****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Modelos%20de%20Series%20de%20tiempo/4_filtros_serie_de_tiempo.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data/Modelos%20de%20Series%20de%20tiempo "base de datos")*
