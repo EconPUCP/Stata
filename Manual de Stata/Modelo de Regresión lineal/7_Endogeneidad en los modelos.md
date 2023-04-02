@@ -6,7 +6,7 @@
 
 Los problemas de endogeneidad son constantes al momento de estimar un modelo. Una forma fácil de entender la endogeneidad es considerar que hay una correlación entre una variable explicativa (incluida o no ) y el término de error. Es decir:  
 
-  $E(e|X) ≠ 0$ o $E(X'e) = 0$
+$E(e|X) ≠ 0$ o $E(X'e) = 0$
 
 
 Definamos que esto puede ocurrir producto de:
@@ -23,15 +23,21 @@ $$Q_d = \beta P_d + e_d$$
 
 $$Q_s = \theta P_s + e_s$$
 
-Si queremos estimar Qd sin considerar que P se determina simultáneamente en las ecuaciones entonces tendríamos problemas de endogeneidad. Si encontramos los valores de equilibrio de las variables obtenemos:
+Si queremos estimar $Q_d$ sin considerar que P se determina simultáneamente en las ecuaciones entonces tendríamos problemas de endogeneidad. Si encontramos los valores de equilibrio de las variables obtenemos:
 
-![image](https://user-images.githubusercontent.com/106888200/224231925-aa43209d-4b62-4fc6-95b1-6191f5797a6a.png)
+$$P=\frac{e_s-e_d}{\beta-\theta}$$
+
+
+$$Q=\frac{\beta e_s-\theta e_d}{\beta-\theta}$$
+
 
 A partir de esto, podemos verificar que:
 
-![image](https://user-images.githubusercontent.com/106888200/224231972-71b5e77e-67c8-46e4-8a36-9d21cf3a2cdc.png)
 
-Por lo que no se cumpliría que $E(P_dε_d)$,  por lo tanto, hay endogeneidad
+$$E(P_d e_d) = E(\frac{e_s-e_d}{\beta-\theta} e_d)=-\frac{E(e_d^2)}{\beta-\theta}$$
+
+
+Por lo que no se cumpliría que $E(P_dε_d)=0$,  por lo tanto, hay endogeneidad
 
 ### 7.2 VARIABLES INSTRUMENTALES
 
@@ -39,8 +45,8 @@ Para resolver este problema podemos proponer un o un conjunto de variables instr
 
 ![image](https://user-images.githubusercontent.com/106888200/224232364-8493a449-cff1-49db-bd42-e7bd4540ebb5.png)
 
-- Exogeneidad, cov(z,u)=0
-- Relevancia, Corrz(z,x),x≠0 . Es decir que z tenga la capacidad de explicar x.
+- Exogeneidad, $cov(z,u)=0$
+- Relevancia, $Corrz(z,x),x≠0$ . Es decir que $z$ tenga la capacidad de explicar $x$.
 
 El uso de variables instrumentales se puede dar bajo distintos métodos de estimación, no solo bajo MCO. En este caso revisaremos cómo estimar el modelo básico usando dos métodos: Mínimo Cuadrado en 2 Etapas y el Método Generalizado de Momentos. 
 
@@ -48,21 +54,21 @@ El uso de variables instrumentales se puede dar bajo distintos métodos de estim
 
 Comenzamos viendo la estimación por dos etapas. Consideremos a x1 como la variable endógena, x2 como otra variable explicativa no endógena, a z como la variable instrumental y a y como la variable dependiente. La primera etapa consiste en estimar:
 
-![image](https://user-images.githubusercontent.com/106888200/224233074-6a7aeeaa-81b1-4ce5-aa7f-b2d577a78c00.png)
+$x_{1,i}=\alpha_0+\alpha_1 z_i +\alpha_2 x_{2,i} + e_i$
 
 A partir de esto se obtiene:
 
-![image](https://user-images.githubusercontent.com/106888200/224233143-e672bdd0-cdbc-40a0-a35b-3d4d642bcc24.png)
+$$\hat{\alpha_{1,i}}=\hat{\alpha_1} z_i+ hat{\alpha_2} x_{2,i}$$
 
-Usamos el valor estimado de x1 para regresionar:
+Usamos el valor estimado de $x_1$ para regresionar:
 
-![image](https://user-images.githubusercontent.com/106888200/224233175-0bdd80a6-3379-45f0-98f8-57db19abb099.png)
+$$y_i=\beta_0+\beta_1 \hat{x_{1,i}}+\beta_2\ x_{i,2} + u_i$$
 
 Podemos llegar a esta estimación paso a paso, estimando cada etapa, o usando un comando en particular. Hay dos comandos bastante usados, `ivregress` y `ivreg2`. Comparemos los tres caminos.
 
 Como ejemplo tomemos los datos del estudio de Romer (1993) en donde se busca estimar la correlación entre la tasa de inflación de un país y su nivel de apertura comercial (controlado por el nivel de ingreso per cápita en logaritmo). Para ello planteamos un modelo simple:
 
-![image](https://user-images.githubusercontent.com/106888200/224233259-e2ac0fd4-b42c-4052-ab08-9b2eed1abcc8.png)
+$$inflación_i=\beta_0+\beta_1xApertura_i+ \beta_2 x log(Ingreso_{pc})_i+u_i$$
 
 En este caso planteamos como variable instrumental al logaritmo de la extensión territorial del país. Veamos:
 
@@ -113,9 +119,9 @@ En el resultado de `ivreg2` podemos ver la información usual sino también mayo
 
 El método generalizado de momentos estima el modelo de manera distinta al estimador de dos etapas. En este escenario se busca que los estimadores cumplan con:
 
-![image](https://user-images.githubusercontent.com/106888200/224236026-1fb94002-2135-4bec-9a6b-99e88abbb456.png)
+$$E[g(x,\theta]=0$$
 
-Siendo g() la función generalizadora de momentos y el vector de coeficientes a estimar. Este no es un método lineal como en el caso anterior. Veamos las diferencias de estimar el modelo considerando dos etapas y considerando el Método generalizado de momentos:
+Siendo $g()$ la función generalizadora de momentos y el vector de coeficientes a estimar. Este no es un método lineal como en el caso anterior. Veamos las diferencias de estimar el modelo considerando dos etapas y considerando el Método generalizado de momentos:
 
 ```
 * Estimemos el modelo usando el método generalizado de momentos o GMM
@@ -137,5 +143,5 @@ En este caso vemos que el coeficiente estimado es igual pero los errores estánd
 | César Mora Ruíz  | [Endogeneidad y variables instrumentales en Stata](https://www.youtube.com/watch?v=GJLos89fLic&list=PLlyb_Ke0SHbj3hKlN_lUH7F28IoafcSv-&index=5&ab_channel=ProyectaPer%C3%BA-Asesores "Endogeneidad y variables instrumentales en Stata") | Aplicación en Stata con variables instrumentales |
 
 
-****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Regresi%C3%B3n/7_endogenoidad.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data "base de datos")*
+****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Modelo%20de%20Regresi%C3%B3n%20lineal/7_endogenoidad.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data/Modelo%20de%20Regresi%C3%B3n%20lineal "base de datos")*
 
