@@ -4,7 +4,7 @@
 
 ¿Cómo podemos ver si los instrumentos cumplen con sus condiciones?
 
-- Condición de relevancia, $Corr(z,x)≠0 o , Cov(z,x)≠0$.
+- Condición de relevancia, $Corr(z,x)≠0, Cov(z,x)≠0$.
 
 Podemos construir un estadístico:
 
