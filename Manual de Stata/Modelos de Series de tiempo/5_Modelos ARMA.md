@@ -1,4 +1,4 @@
-# Modelo de series de tiempo
+# MODELO DE SERIES DE TIEMPO
 
 ## 1.  MODELOS ARMA
 
