@@ -66,7 +66,7 @@ Tomemos la siguiente base de datos como ejemplo. En este caso no tenemos los dat
 - fecha2: Es similar al previo pero tiene el mes en iniciales en inglés.
 - fecha3: Se tiene la fecha en números pero sin algún tipo de separador.
 - fecha4: Similar al previo pero los días y meses menores a 10 no comienzan con cero.
-- fecha5: Similar a la segunda columna pero con las iniciales en español.
+- fecha5: Similar a la segunda columna pero con las iniciales en español. 
 
 
 Veamos cómo manejar estas fechas para que tengan el formato de series diarias. Cargamos la base con las fechas de ejemplos.
