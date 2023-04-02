@@ -4,16 +4,20 @@
 
 ¿Cómo podemos ver si los instrumentos cumplen con sus condiciones?
 
-- Condición de relevancia, Corr(z,x)≠0 o , Cov(z,x)≠0.
+- Condición de relevancia, $Corr(z,x)≠0 o , Cov(z,x)≠0$.
+
 Podemos construir un estadístico:
 
-![image](https://user-images.githubusercontent.com/106888200/224239423-f469998c-2c13-4f9f-8e53-d81a465c9243.png)
+$$\pi=\frac{Cov(z,x}{Var(z)}$$
 
 Y, luego, testear:
 
-![image](https://user-images.githubusercontent.com/106888200/224239485-174e787d-686a-439a-adfe-10918c82e833.png)
+$$H_0=\pi=0$$
 
-- Condición de exogeneidad, Cov(z,u)=0. 
+$$H_a=\pi≠0$$
+
+- Condición de exogeneidad, $Cov(z,u)=0$. 
+
 No se puede hacer un test sobre este supuesto. En cambio, debemos justificar de alguna manera que esto se cumpla. Bien siguiendo la teoría económica o alguna fuente de exogeneidad (como un experimento).
 
 
@@ -48,6 +52,6 @@ En este caso no podemos rechazar la nula por lo que el conjunto de instrumentos 
 | Luis García Núñez | [Correlación entre los regresores y los errores](https://www.youtube.com/watch?v=2xMjmxbkfEE&list=PLvXMYc3QuXe_7363kwXPtwTrd6TzfofOa&index=28 "Correlación entre los regresores y los errores") | Teoría de las variables instrumentales y MC2E, verificando las condiciones de las variables instrumentales. |
 
 
-****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Regresi%C3%B3n/8_variables_instrumentales.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data "base de datos")*
+****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Modelo%20de%20Regresi%C3%B3n%20lineal/8_variables_instrumentales.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data/Modelo%20de%20Regresi%C3%B3n%20lineal "base de datos")*
 
 
