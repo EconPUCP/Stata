@@ -21,9 +21,9 @@ Para estimar esta ecuación primero necesitamos juntar los módulos de empleo (m
 ```
 * Estimamos tres modelos
 eststo clear
-eststo: svy: 						 reg log_ing educ i.p207 p208
+eststo: svy: reg log_ing educ i.p207 p208
 eststo: svy, subpop(hijo_jefehogar): reg log_ing educ i.p207 p208
-eststo: svy: 					  	 ivregress 2sls log_ing (educ = educ_jefe) i.p207 p208
+eststo: svy: ivregress 2sls log_ing (educ = educ_jefe) i.p207 p208
 eststo: svy, subpop(hijo_jefehogar): ivregress 2sls log_ing (educ = educ_jefe) i.p207 p208
 ```
 
