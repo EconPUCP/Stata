@@ -106,4 +106,4 @@ La tabla, al menos en Word, parece estár más detallada que en el caso del form
 | Avila - Repositorio Github | [mat2tex](https://github.com/avila/mat2tex "mat2tex") | Ejemplos de la instalación y uso del comando `mat2tex`para exportar una matriz stata a un cuerpo de una tabla de látex |
 | Lukestein - Repositorio Github | [Stata - Latex - Workflows](https://github.com/lukestein/stata-latex-workflows "Stata - Latex - Workflows") | Paquetes para generar output para LaTeX a partir de código Stata |
 
-****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Regresi%C3%B3n/5_exportar_resultados.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data "base de datos")*
+****Puedes usar el kit de replicación de este módulo obteniendo el [script](https://github.com/EconPUCP/Stata/blob/main/_An%C3%A1lisis/Scripts/Modelo%20de%20Regresi%C3%B3n%20lineal/5_exportar_resultados.do "script") y [base de datos](https://github.com/EconPUCP/Stata/tree/main/_An%C3%A1lisis/Data/Modelo%20de%20Regresi%C3%B3n%20lineal "base de datos")*
