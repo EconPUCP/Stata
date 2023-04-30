@@ -85,7 +85,7 @@ psmatch2 mbsmoke mmarried c.mage##c.mage medu fbaby, out(bweight) ate kerneltype
 ![image](https://user-images.githubusercontent.com/128189216/229385241-888c08f4-8324-4ba4-89d0-7c6b12d040e7.png)
 
 
-Si bien El PSM es un método muy utilizado en evaluación de impacto, también tiene muchas críticas en cuanto a sus supuestos y sensibilidad a la especificación o a la muestra. El principal problema del Propensity score matching en la estimación del ATET es que no puede controlar las características no observables de los individuos, con lo cual existe un serio riesgo de sesgo en la estimación de este valor.
+Si bien el PSM es un método muy utilizado en evaluación de impacto, también tiene muchas críticas en cuanto a sus supuestos y sensibilidad a la especificación o a la muestra. El principal problema del Propensity score matching en la estimación del ATET es que no puede controlar las características no observables de los individuos, con lo cual existe un serio riesgo de sesgo en la estimación de este valor.
 
 
 
