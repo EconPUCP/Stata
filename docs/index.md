@@ -14,11 +14,6 @@ Guía y repositorio de Stata para la investigación económica
 
 
 
-
-
-
-
-
 | Sección | Contenido |  Aplicaciones |  
 |:--|:----------------|:------|  
 | Video tutoriales  |  Replicación de tesis de Nicolás Barrantes (probit, pobreza multidimensional), replicación de tesis de Angelo Cozzubo (dinámicas de la pobreza; análisis, cuantificación, tipificación de las transiciones) |  |  
