@@ -37,12 +37,17 @@ Esta es una Guía de análisis de datos en Stata. Esta guía contiene instruccio
 
 ### Equipo
 
--  Consultor responsable: César Cornejo Román
+-  Consultor responsable: 
+   César Cornejo Román
 
--  Practicante preprofesional: Gladys Godines Sanchez
+-  Practicante preprofesional: 
+   Gladys Godines Sanchez
 
--  Director de la especialidad de economía PUCP: José Carlos Orihuela
+-  Director de la especialidad de economía PUCP: 
+   José Carlos Orihuela
 
--  Jefa del Departamento de Economía PUCP: Janina León Castillo
+-  Jefa del Departamento de Economía PUCP: 
+   Janina León Castillo
 
--  Decano de la Facultad de Ciencias Sociales PUCP:  Carlos Eduardo Aramburú
+-  Decano de la Facultad de Ciencias Sociales PUCP:  
+   Carlos Eduardo Aramburú
