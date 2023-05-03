@@ -54,4 +54,4 @@ Esta es una Guía de análisis de datos en Stata. Esta guía contiene instruccio
 
 -  Decano de la Facultad de Ciencias Sociales PUCP:  
    
-   Carlos Eduardo Aramburú
+   Carlos Eduardo Aramburú 
