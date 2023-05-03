@@ -1,7 +1,7 @@
 ---
 # STATA ECONPUCP 
-### Guía y Repositorio de Stata para la investigación económica
 ---
+### Guía y Repositorio de Stata para la investigación económica
 
 Esta página es parte del _hub_ de recursos para la investigación económica mantenida por la Facultad de Ciencias Sociales de la Pontificia Universidad Católica del Perú (PUCP)
 
