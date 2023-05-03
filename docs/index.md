@@ -6,10 +6,16 @@ Esta página es un _hub_ de recursos para la investigación económica mantenida
 
 
 
+---
+
 ### GUÍA DE STATA: ÍNDICE RESUMIDO
 
 
+
+
 [Ver este proyecto en Github](https://github.com/EconPUCP/Stata "Ver este proyecto en Github")
+
+
 
 
 | Sección | Contenido |  Aplicaciones |  
