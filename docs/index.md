@@ -2,12 +2,12 @@
 # STATA ECONPUCP 
 ---
 
-### Repositorio 
-
-[Main repo Stata](https://github.com/EconPUCP/Stata)
 
 
-----
+[Ver este proyecto en Github](https://github.com/EconPUCP/Stata "Ver este proyecto en Github")
+
+
+
 
 Esta es una Guía de análisis de datos en Stata. Esta guía contiene instrucciones y código para los análisis estadísticos y econométricos más frecuentes en la investigación de problemas económicos. Esta guía sigue el principio de programación de escribir código consistente, fácil de leer, transparente y reproducible.
 
@@ -36,22 +36,22 @@ Esta es una Guía de análisis de datos en Stata. Esta guía contiene instruccio
 
 ### Equipo
 
--  Consultor responsable: 
+   Consultor responsable: 
 
    César Cornejo Román
 
--  Practicante preprofesional: 
+   Practicante preprofesional: 
    
    Gladys Godines Sanchez
 
--  Director de la especialidad de economía PUCP: 
+   Director de la especialidad de economía PUCP: 
    
    José Carlos Orihuela
 
--  Jefa del Departamento de Economía PUCP: 
+   Jefa del Departamento de Economía PUCP: 
    
    Janina León Castillo
 
--  Decano de la Facultad de Ciencias Sociales PUCP:  
+   Decano de la Facultad de Ciencias Sociales PUCP:  
    
    Carlos Eduardo Aramburú 
