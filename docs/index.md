@@ -67,7 +67,7 @@ En la fase 1, para identificar, organizar y analizar los recursos disponibles pa
 
 
 3) Análisis de necesidades de programación en las tesis sustentadas para obtener el título profesional de Licenciado en Economía entre 2011 y 2023: luego de completado el análisis de las tesis, para escoger los análisis estadísticos y econométricos más apropiados para presentar en video tutoriales, se completó la siguiente tarea:
-
+ 
 
 4) Creación de un proceso de replicación de tesis: en la fase 2, se elaboró el contenido publicado en la página web https://econpucp.github.io/Stata/ y en el repositorio https://github.com/EconPUCP/Stata a partir de los mejores recursos identificados (de fuentes internas o externas) y se redactó un informe final presentado a la facultad de Ciencias Sociales de la PUCP en abril del 2023
 
