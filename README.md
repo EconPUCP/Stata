@@ -37,6 +37,18 @@ Jefa del Departamento de Economía PUCP: Janina León Castillo
 
 Decano de la Facultad de Ciencias Sociales PUCP: Carlos Eduardo Aramburú 
 
+
+----
+
+### Antecedentes
+
+En la especialidad de Economía de la PUCP, se contaba con los siguientes documentos: Nuevo plan de estudios de economía, Requerimientos mínimos para la sección de prácticas en la especialidad de Economía y Manual de Stata 2022 elaborado por Yasmeen Destre-Roldan y José Antonio Mendoza. En su conjunto, estos documentos establecieron la línea de partida para desarrollar el Repositorio.
+
+### El proyecto
+
+El proyecto se realizó en 2 fases: identificación de necesidades y recursos disponibles y desarrollo de contenido. 
+En la fase 1, para identificar, organizar y analizar los recursos disponibles para la enseñanza de programación en Stata para economistas, se elaboró los siguientes productos intermedios: 
+
 1) Compilación y análisis de recursos disponibles vinculados con la especialidad o el Departamento de Economía PUCP
 
 
@@ -47,3 +59,5 @@ Decano de la Facultad de Ciencias Sociales PUCP: Carlos Eduardo Aramburú
 
 
 4) Creación de un proceso de replicación de tesis: en la fase 2, se elaboró el contenido publicado en la página web https://econpucp.github.io/Stata/ y en el repositorio https://github.com/EconPUCP/Stata a partir de los mejores recursos identificados (de fuentes internas o externas) y se redactó un informe final presentado a la facultad de Ciencias Sociales de la PUCP en abril del 2023
+
+
