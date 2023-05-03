@@ -17,7 +17,7 @@ Esta es una Guía de análisis de datos en Stata. Esta guía contiene instruccio
 
 
 | Sección | Contenido |  Aplicaciones |  
-|:--|:--------|:------|  
+|:--|:----------------|:------|  
 | Video tutoriales  |  Replicación de tesis de Nicolás Barrantes (probit, pobreza multidimensional), replicación de tesis de Angelo Cozzubo (dinámicas de la pobreza; análisis, cuantificación, tipificación de las transiciones) |  |  
 | [Conceptos básicos](https://github.com/EconPUCP/Stata/tree/main/Manual%20de%20Stata/Conceptos%20b%C3%A1sicos "Conceptos básicos")   |  Conocer la interfaz, crear e importar datos, fusionar y anexar bases de datos, manipular distintos formatos de datos | [Fusionar módulos de la ENAHO](https://github.com/EconPUCP/Stata/blob/main/Manual%20de%20Stata/Conceptos%20b%C3%A1sicos/Aplicaci%C3%B3n%20Fusi%C3%B3n%20entre%20los%20m%C3%B3dulos%20de%20la%20ENAHO.md "Fusionar módulos de la ENAHO") |  
 | [Manipulación de variables](https://github.com/EconPUCP/Stata/tree/main/Manual%20de%20Stata/Creaci%C3%B3n%2C%20manipulaci%C3%B3n%20y%20descripci%C3%B3n%20de%20variables "Manipulación de variables")  | Usar comandos de manipulación, reestructurar datos, crear rutinas con loop, realizar análisis descriptivos y exploratorios | [Crear un reporte macroeconómico usando la Penn World Table PWT10.01](https://github.com/EconPUCP/Stata/blob/main/Manual%20de%20Stata/Creaci%C3%B3n%2C%20manipulaci%C3%B3n%20y%20descripci%C3%B3n%20de%20variables/Aplicaci%C3%B3n%20usando%20PWT10.01.md "Crear un reporte macroeconómico usando la Penn World Table PWT10.01") |  
@@ -35,7 +35,7 @@ Esta es una Guía de análisis de datos en Stata. Esta guía contiene instruccio
 
 ----
 
-### :pushpin: Equipo
+### Equipo
 
 -  Consultor responsable: César Cornejo Román
 
