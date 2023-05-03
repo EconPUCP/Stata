@@ -2,7 +2,7 @@
 # STATA ECONPUCP 
 ---
 
-Esta página es un _hub_ de recursos para la investigación económica mantenida por la Facultad de Ciencias Sociales de la  "Pontificia Universidad Católica del Perú (PUCP)"
+Esta página es un _hub_ de recursos para la investigación económica mantenida por la Facultad de Ciencias Sociales de la Pontificia Universidad Católica del Perú (PUCP).
 
 [Ver este proyecto en Github](https://github.com/EconPUCP/Stata "Ver este proyecto en Github")
 
