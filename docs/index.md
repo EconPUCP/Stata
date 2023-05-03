@@ -63,14 +63,11 @@ En la fase 1, para identificar, organizar y analizar los recursos disponibles pa
 1) Compilación y análisis de recursos disponibles vinculados con la especialidad o el Departamento de Economía PUCP
 
 
-2) Compilación y análisis de recursos de enseñanza en programación intermedia en Stata.
-Para identificar las necesidades de programación para escribir una tesis de licenciatura en economía, se completó la siguiente tarea: 
+2) Compilación y análisis de recursos de enseñanza en programación intermedia en Stata: para identificar las necesidades de programación para escribir una tesis de licenciatura en economía, se completó la siguiente tarea: 
 
 
-3) Análisis de necesidades de programación en las tesis sustentadas para obtener el título profesional de Licenciado en Economía entre 2011 y 2023
-Luego de completado el análisis de las tesis, para escoger los análisis estadísticos y econométricos más apropiados para presentar en video tutoriales, se completó la siguiente tarea:
+3) Análisis de necesidades de programación en las tesis sustentadas para obtener el título profesional de Licenciado en Economía entre 2011 y 2023: luego de completado el análisis de las tesis, para escoger los análisis estadísticos y econométricos más apropiados para presentar en video tutoriales, se completó la siguiente tarea:
 
 
-4) Creación de un proceso de replicación de tesis
-En la fase 2, se elaboró el contenido publicado en la página web https://econpucp.github.io/Stata/ y en el repositorio https://github.com/EconPUCP/Stata a partir de los mejores recursos identificados (de fuentes internas o externas) y se redactó un informe final presentado a la facultad de Ciencias Sociales de la PUCP en abril del 2023
+4) Creación de un proceso de replicación de tesis: en la fase 2, se elaboró el contenido publicado en la página web https://econpucp.github.io/Stata/ y en el repositorio https://github.com/EconPUCP/Stata a partir de los mejores recursos identificados (de fuentes internas o externas) y se redactó un informe final presentado a la facultad de Ciencias Sociales de la PUCP en abril del 2023
 
