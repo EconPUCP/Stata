@@ -39,7 +39,7 @@ Consultor responsable: César Cornejo Román
 
 Practicante preprofesional: Gladys Godines Sanchez
 
-Director de la especialidad de economía PUCP: José Carlos Orihuela
+Director de la Especialidad de Economía PUCP: José Carlos Orihuela
 
 Jefa del Departamento de Economía PUCP: Janina León Castillo
 
