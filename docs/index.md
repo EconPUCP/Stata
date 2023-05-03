@@ -2,7 +2,7 @@
 # STATA ECONPUCP 
 ---
 
-Esta página es un _hub_ de recursos para la investigación económica mantenida por la Facultad de Ciencias Sociales de la Pontificia Universidad Católica del Perú (PUCP).
+Esta página es un _hub_ de recursos para la investigación económica mantenida por la Facultad de Ciencias Sociales de la Pontificia Universidad Católica del Perú (PUCP)
 
 [Ver este proyecto en Github](https://github.com/EconPUCP/Stata "Ver este proyecto en Github")
 
@@ -26,7 +26,7 @@ Esta página es un _hub_ de recursos para la investigación económica mantenida
 | Modelos de datos de panel | [Usar y estimar modelos de panel de datos](https://github.com/EconPUCP/Stata/blob/main/Manual%20de%20Stata/Modelos%20de%20Datos%20de%20Panel/1_Panel%20de%20datos.md "Usar y estimar modelos de panel de datos"), [seleccionar el modelo más apropiado: efectos fijos, datos agrupados, efectos aleatorios, test F, test de Hausman, testparm](https://github.com/EconPUCP/Stata/blob/main/Manual%20de%20Stata/Modelos%20de%20Datos%20de%20Panel/2_Selecci%C3%B3n%20de%20modelos.md "seleccionar el modelo más apropiado: efectos fijos, datos agrupados, efectos aleatorios, test F, test de Hausman, testparm") |  |  
 | Evaluación de impacto  | [Propensity Score Matching (PSM)](https://github.com/EconPUCP/Stata/blob/main/Manual%20de%20Stata/Modelos%20de%20Evaluaci%C3%B3n%20de%20Impacto/1_Propensity%20Score%20Matching.md "Propensity Score Matching (PSM)"), [Diferencias en diferencias](https://github.com/EconPUCP/Stata/blob/main/Manual%20de%20Stata/Modelos%20de%20Evaluaci%C3%B3n%20de%20Impacto/2_Diferencias%20en%20diferencias.md "Diferencias en diferencias"), [Diseño de Regresión Discontinua (RDD)](https://github.com/EconPUCP/Stata/blob/main/Manual%20de%20Stata/Modelos%20de%20Evaluaci%C3%B3n%20de%20Impacto/3_Dise%C3%B1o%20de%20regresi%C3%B3n%20discontinua.md "Diseño de Regresión Discontinua (RDD)") |  |  
 | Replicación de tesis |   |  |  
-| Manejo de base de datos  |  **Micro:** corregir el problema de las tildes y "Ñ" en los módulos de la ENAHO con el comando latin1.  **Macro:** limpiar y preparar una base de datos con la ENAHO, limpiar y preparar una base de datos con la ENAHO PANEL, limpiar y preparar series mensuales del BCRP, limpiar y preparar series trimestrales del BCRP, limpiar y fusionar varias series del BCRP |  | 
+| Manejo de base de datos  |  **Micro:** corregir el problema de las tildes y "Ñ" en los módulos de la ENAHO con el comando latin1, limpiar y preparar una base de datos con la ENAHO, limpiar y preparar una base de datos con la ENAHO PANEL. **Macro:** limpiar y preparar series mensuales del BCRP, limpiar y preparar series trimestrales del BCRP, limpiar y fusionar varias series del BCRP |  | 
 | Bases de datos | [Descargar bases de datos Nacionales e Internacionales ](https://github.com/EconPUCP/Stata/blob/main/Recursos%20globales/Principales%20bases%20de%20datos%20de%20acceso%20p%C3%BAblico.md "Descargar bases de datos Nacionales e Internacionales "), [descargar shapefiles (shp)](https://github.com/EconPUCP/Stata/blob/main/Recursos%20globales/Principales%20p%C3%A1ginas%20de%20shp.md "descargar shapefiles (shp)")  |  |  
 | Recursos  | [Repositorios, cursos, manuales y videos de aprendizaje de Stata](https://github.com/EconPUCP/Stata/blob/main/Recursos%20globales/Otros%20recursos.md "Repositorios, cursos, manuales y videos de aprendizaje de Stata") | |  
 
