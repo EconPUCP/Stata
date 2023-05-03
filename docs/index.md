@@ -30,7 +30,6 @@ Esta es una Guía de análisis de datos en Stata. Esta guía contiene instruccio
 | [Replicación de tesis](https://github.com/EconPUCP/Stata/tree/main/Replicaci%C3%B3n%20de%20tesis "Replicación de tesis") |   |  |  
 | [Manejo de base de datos](https://github.com/EconPUCP/Stata/tree/main/Manejo%20de%20base%20de%20datos "Manejo de base de datos")  |  **Micro:** corregir el problema de las tildes y "Ñ" en los módulos de la ENAHO con el comando latin1.  **Macro:** limpiar y preparar una base de datos con la ENAHO, limpiar y preparar una base de datos con la ENAHO PANEL, limpiar y preparar series mensuales del BCRP, limpiar y preparar series trimestrales del BCRP, limpiar y fusionar varias series del BCRP |  | 
 | Bases de datos | [Descargar bases de datos Nacionales e Internacionales ](https://github.com/EconPUCP/Stata/blob/main/Recursos%20globales/Principales%20bases%20de%20datos%20de%20acceso%20p%C3%BAblico.md "Descargar bases de datos Nacionales e Internacionales "),  |  |  
-| Bases de datos | [Descargar bases de datos Nacionales e Internacionales ](https://github.com/EconPUCP/Stata/blob/main/Recursos%20globales/Principales%20bases%20de%20datos%20de%20acceso%20p%C3%BAblico.md "Descargar bases de datos Nacionales e Internacionales "),  |  |  
 | Recursos  | [Repositorios, cursos, manuales y videos de aprendizaje de Stata](https://github.com/EconPUCP/Stata/blob/main/Recursos%20globales/Otros%20recursos.md "Repositorios, cursos, manuales y videos de aprendizaje de Stata") | |  
 
 ----
@@ -38,16 +37,21 @@ Esta es una Guía de análisis de datos en Stata. Esta guía contiene instruccio
 ### Equipo
 
 -  Consultor responsable: 
+
    César Cornejo Román
 
 -  Practicante preprofesional: 
+   
    Gladys Godines Sanchez
 
 -  Director de la especialidad de economía PUCP: 
+   
    José Carlos Orihuela
 
 -  Jefa del Departamento de Economía PUCP: 
+   
    Janina León Castillo
 
 -  Decano de la Facultad de Ciencias Sociales PUCP:  
+   
    Carlos Eduardo Aramburú
