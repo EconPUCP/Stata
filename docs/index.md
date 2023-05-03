@@ -1,6 +1,7 @@
 ---
 # STATA ECONPUCP 
 ---
+-----
 
 
 ### Guía y Repositorio de Stata para la investigación económica
