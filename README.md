@@ -34,8 +34,6 @@ Practicante preprofesional: Gladys Godines Sanchez
 
 Director de la Especialidad de Economía PUCP: José Carlos Orihuela
 
-Jefa del Departamento de Economía PUCP: Janina León Castillo
-
 Decano de la Facultad de Ciencias Sociales PUCP: Carlos Eduardo Aramburú 
 
 
