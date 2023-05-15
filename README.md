@@ -5,7 +5,7 @@ Esta guía contiene instrucciones y código para los análisis estadísticos y e
 
 
 
-### Índice resumido
+## Índice resumido
 
 
 | Sección | Contenido |  Aplicaciones |  
@@ -39,11 +39,11 @@ Decano de la Facultad de Ciencias Sociales PUCP: Carlos Eduardo Aramburú
 
 ----
 
-### Antecedentes
+## Antecedentes
 
 En la especialidad de Economía de la PUCP, se contaba con los siguientes documentos: Nuevo plan de estudios de economía, Requerimientos mínimos para la sección de prácticas en la especialidad de Economía y Manual de Stata 2022 elaborado por Yasmeen Destre-Roldan y José Antonio Mendoza. En su conjunto, estos documentos establecieron la línea de partida para desarrollar el Repositorio.
 
-### El proyecto
+## El proyecto
 
 El proyecto se realizó en 2 fases: identificación de necesidades y recursos disponibles y desarrollo de contenido. 
 En la fase 1, para identificar, organizar y analizar los recursos disponibles para la enseñanza de programación en Stata para economistas, se elaboró los siguientes productos intermedios: 
