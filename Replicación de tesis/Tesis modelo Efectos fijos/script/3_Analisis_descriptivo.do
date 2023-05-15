@@ -120,6 +120,7 @@ shp2dta using "$data/DEPARTAMENTOS/DEPARTAMENTOS.shp", database(dpto) coordinate
 use "dpto.dta", clear
 merge 1:m dpto_id using "$data/data_para_mapas"
 
+***Fig. 05
 foreach x in 07 08 09 10 11{
 spmap pobre if aniorec==20`x' using "dpto_coord.dta", id(dpto_id) fcolor(Blues) clnumber(5)  title("Pobreza por regiones Perú 20`x'" ) 
 }
