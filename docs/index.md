@@ -13,9 +13,7 @@ Esta página es parte del _hub_ de recursos para la investigación económica ma
 
 -----
 
-## GUÍA DE STATA: ÍNDICE RESUMIDO
-
-
+## Guía de Stata: índice resumido
 
 
 | Sección | Contenido |  Aplicaciones |  
