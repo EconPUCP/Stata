@@ -11,8 +11,9 @@ global root "C:/Users/Usuario/Desktop/Proyecto"
 * Creando carpeta
 *=================
 * Creamos tres nuevas carpetas dentro del directorio de trabajo que se llame "codes", "data" y "results"
-global codes "$root/codes"	
 global data "$root/data"
+global data "$root/cleaned"
+global codes "$root/script"	
 global results "$root/results"
 
 * Informamos a STATA que a partir de este momento se extraerá la información de la carpeta que denominamos "data"
