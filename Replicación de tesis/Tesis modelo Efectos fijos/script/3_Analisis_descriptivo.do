@@ -102,5 +102,24 @@ label var pob_integrado pob_integrado
 gen pobreza_integ=pob_integrado
 recode pobreza_integ (1=0) (2/4=1)
 
+*==================
+* Mapas de pobreza
+*==================
 
+*crearemos la variable dpto_id
+g dpto_id= real(substr(ubigeo,1,2))
 
+collapse (mean) pobre, by(dpto_id aniorec)
+
+save "$data/data_para_mapas", replace
+
+*Transformamos los datos de shapefiles a dta
+shp2dta using "$data/DEPARTAMENTOS/DEPARTAMENTOS.shp", database(dpto) coordinates(dpto_coord) genid(dpto_id)  replace
+
+*Haciendo mapas en Stata anexando con otros datos
+use "dpto.dta", clear
+merge 1:m dpto_id using "$data/data_para_mapas"
+
+foreach x in 07 08 09 10 11{
+spmap pobre if aniorec==20`x' using "dpto_coord.dta", id(dpto_id) fcolor(Blues) clnumber(5)  title("Pobreza por regiones Perú 20`x'" ) 
+}
