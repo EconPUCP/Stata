@@ -1,6 +1,8 @@
-*==============================================
-* CREACIÓN DE VARIABLES
-*==============================================
+*******************************************
+* PONTIFICIA UNIVERSIDAD CATÓLICA DEL PERÚ
+* SCRIPT: 2_Creación_de_variables.do
+* OBJETIVO: Creación de la base principal
+*******************************************
 
 * Limpiar la memoria del programa
 *=================================
@@ -12,9 +14,15 @@ global root "C:/Users/Usuario/Desktop/Replica Cozzubo"
 global data "$root/data"
 global cleaned "$root/cleaned"
 
+
+*========================
+* CREACIÓN DE VARIABLES
+*========================
+
 * Abrir base de datos
-*================================
+*==========================
 use "$cleaned/data", clear
+
 
 * Renombramos algunas variables
 rename p*_ p*
@@ -27,179 +35,121 @@ rename vivi vivienda
 rename result_ result
 rename inghog1d_ inghog1d
 rename gashog2d_ gashog2d
-rename ocu500_ ocu500
-
-*=========================
-* CREACIÓN DE VARIABLES
-*=========================
-
-*Variables explicativas
-*=======================
-
-*Empleo - jefe del hogar
+rename fac_ factor07
+rename año aniorec
 
 
-*Nivel educativo
-{
-* Nivel educativo
-gen educ=.
-replace educ=0 if p301a==1 | p301a==2
-replace educ=1 if p301a==3 | p301a==4
-replace educ=2 if p301a==5 | p301a==6
-replace educ=3 if p301a==7 | p301a==8
-replace educ=4 if p301a==9 | p301a==10
-replace educ=5 if p301a==11
-label variable educ "Nivel educativo"
-label define niveduc 0 "Sin nivel" 1 "Primaria" 2 "Secundaria" 3 "Superior no universitaria" 4 "Superior universitaria" 5 "Postgrado" 
-label values educ niveduc
+*Variables de Corte
+*===================	
+	
+* Departamento
+g dpto1= real(substr(ubigeo,1,2))
+lab var dpto1 "Departamentos"
+label define dpto 1"Amazonas" 2"Ancash" 3"Apurimac" 4"Arequipa" 5"Ayacucho" 6"Cajamarca" /// 
+7 "Callao" 8"Cusco" 9"Huancavelica"  10"Huanuco"  11"Ica" 12"Junin" /// 
+13"La Libertad" 14"Lambayeque" 15"Lima" 16"Loreto" 17"Madre de Dios" 18"Moquegua" /// 
+19"Pasco" 20"Piura" 21"Puno" 22"San Martin" 23"Tacna" 24"Tumbes" 25"Ucayali" 
+lab val dpto1 dpto
 
-* Escolaridad (años)
-gen sch=.
-replace sch=0  if p301a==1 | p301a==2  // Sin nivel, nivel inicial
-replace sch=0  if p301a==3 & (p301b==0 & p301c==0)  // Sin nivel :799
-replace sch=1  if (p301a==3 & p301b==1) | (p301a==3 & p301c==1) | (p301a==4 & p301b==1) | (p301a==4 & p301c==1)     
-replace sch=2  if (p301a==3 & p301b==2) | (p301a==3 & p301c==2) | (p301a==4 & p301b==2) | (p301a==4 & p301c==2) 
-replace sch=3  if (p301a==3 & p301b==3) | (p301a==3 & p301c==3) | (p301a==4 & p301b==3) | (p301a==4 & p301c==3) 
-replace sch=4  if (p301a==3 & p301b==4) | (p301a==3 & p301c==4) | (p301a==4 & p301b==4) | (p301a==4 & p301c==4) 
-replace sch=5  if (p301a==3 & p301b==5) | (p301a==3 & p301c==5) | (p301a==4 & p301b==5) | (p301a==4 & p301c==5) 
-replace sch=6  if (p301a==3 & p301b==6) | (p301a==3 & p301c==6) | (p301a==4 & p301b==6) | (p301a==4 & p301c==6)  
-replace sch=7  if (p301a==5 & p301b==1) | (p301a==6 & p301b==1)                                                  
-replace sch=8  if (p301a==5 & p301b==2) | (p301a==6 & p301b==2)   											   
-replace sch=9  if (p301a==5 & p301b==3) | (p301a==6 & p301b==3)   												 
-replace sch=10 if (p301a==5 & p301b==4) | (p301a==6 & p301b==4)   												
-replace sch=11 if (p301a==5 & p301b==5) | (p301a==6 & p301b==5)   								
-replace sch=12 if (p301a==6 & p301b==6) 										
-replace sch=12 if (p301a==7 & p301b==1) | (p301a==8 & p301b==1) | (p301a==9 & p301b==1) | (p301a==10 & p301b==1) 
-replace sch=13 if (p301a==7 & p301b==2) | (p301a==8 & p301b==2) | (p301a==9 & p301b==2) | (p301a==10 & p301b==2) 
-replace sch=14 if (p301a==7 & p301b==3) | (p301a==8 & p301b==3) | (p301a==9 & p301b==3) | (p301a==10 & p301b==3)
-replace sch=15 if (p301a==7 & p301b==4) | (p301a==8 & p301b==4) | (p301a==9 & p301b==4) | (p301a==10 & p301b==4) 
-replace sch=16 if (p301a==7 & p301b==5) | (p301a==8 & p301b==5) | (p301a==9 & p301b==5) | (p301a==10 & p301b==5) 
-replace sch=17 if (p301a==9 & p301b==6) | (p301a==10 & p301b==6) | (p301a==11 & p301b==1)
-replace sch=18 if (p301a==9 & p301b==7) | (p301a==10 & p301b==7) | (p301a==11 & p301b==2)
-label variable sch "Escolaridad (años)"
-}
-*Nivel educativo - jefe del hogar 
-gen educacion_jh=sch if p203==1
+* Generamos un identificador para area rural y urbana
+replace estrato = 1 if dominio ==8 
+recode estrato (1/5=1 "Urbana") (6/8=2 "Rural"), gen(area)
+lab var area "Urbana = 1 Rural = 2"
 
-*Nivel educativo - hogar 
-egen educacion_h=mean(sch), by(conglome vivienda hogar año)
+* Dominios con inferencia en ENAHO*
+g domin02=1 if dominio>=1 & dominio<=3 & area==1
+replace domin02=2 if dominio>=1 & dominio<=3 & area==2
+replace domin02=3 if dominio>=4 & dominio<=6 & area==1
+replace domin02=4 if dominio>=4 & dominio<=6 & area==2
+replace domin02=5 if dominio==7 & area==1
+replace domin02=6 if dominio==7 & area==2
+replace domin02=7 if dominio==8
 
-*Necesidades básicas - hogar
-gen NBI= nbi1+nbi2+nbi3+nbi4+nbi5
+label define domin02 1 "Costa urbana" 2 "Costa rural" 3 "Sierra urbana" /// 
+4 "Sierra rural" 5 "Selva urbana" 6 "Selva rural" 7 "Lima Metropolitana"
+label value domin02 domin02
+label var domin02 "Dominios con inferencia ENAHO"
 
+* Región Natural (Costa / Sierra/Selva)
+recode dominio (1/3 8 = 1 "Costa") (4/6 = 2 "Sierra") (7 = 3 "Selva"), g(region)
 
-*Nivel de dependencia
+* Regiones Naturales separando LM
+g areag = (dominio==8)
+replace areag = 2 if dominio >= 1 & dominio <= 7 & area==1
+replace areag = 3 if dominio >= 1 & dominio <= 7 & area==2
 
+lab define areag 1 "Lima_Metro" 2 "Resto_Urbano" 3 "Rural" 
+label values areag  areag
 
+* Indicador sub conjunto Región Lima y Callao
+g limareg=1 if(substr(ubigeo,1,4))=="1501"
+replace limareg=2 if(substr(ubigeo,1,2))=="07"
+replace limareg=3 if((substr(ubigeo,1,4))>="1502" & (substr(ubigeo,1,4))<"1599")
 
-*Programas sociales - Distrito
+label define limareg 1 "Lima Prov" 2 "Prov Const. Callao" 3 "Región Lima"
+label val limareg limareg
 
+* Redondeo del factor
+gen factornd07=round(factor07*mieperho,1)
 
+	
+* Generar Departamentos (lima incluye callao)
+clonevar dpto = dpto1		
+replace dpto=15 if dpto==7 // dpto==7 corresponde al Callao
 
-*Desigualdad - Región
+* Utilizaremos los deflactores	
+merge m:1 aniorec dpto using "$data/deflactores_base2020_new.dta"
+drop if _m==2
+drop _m
 
-* Índice de Gini
-*================ 
+* Generamos 17 dominios para aplicar deflactores espaciales
 
+g       dominioA=1 if dominio==1 & area==1
+replace dominioA=2 if dominio==1 & area==2
+replace dominioA=3 if dominio==2 & area==1
+replace dominioA=4 if dominio==2 & area==2
+replace dominioA=5 if dominio==3 & area==1
+replace dominioA=6 if dominio==3 & area==2
+replace dominioA=7 if dominio==4 & area==1
+replace dominioA=8 if dominio==4 & area==2
+replace dominioA=9 if dominio==5 & area==1
+replace dominioA=10 if dominio==5 & area==2
+replace dominioA=11 if dominio==6 & area==1
+replace dominioA=12 if dominio==6 & area==2
+replace dominioA=13 if dominio==7 & area==1
+replace dominioA=14 if dominio==7 & area==2
+replace dominioA=15 if dominio==7 & (dpto==16 | dpto==17 | dpto==25) & area==1
+replace dominioA=16 if dominio==7 & (dpto==16 | dpto==17 | dpto==25) & area==2
+replace dominioA=17 if dominio==8 & area==1
+replace dominioA=17 if dominio==8 & area==2
 
-*ineqdeco ypc [aw=facpob07] , by(ano)
-*ineqdeco ypc [aw=facpob07] , by(area)
-*ineqdeco ypc [aw=facpob07] if ano==2011, by(departamento)
+label define dominioA ///
+1 "Costa norte urbana" /// 
+2 "Costa norte rural" /// 
+3 "Costa centro urbana" /// 
+4 "Costa centro rural" /// 
+5 "Costa sur urbana" /// 
+6 "Costa sur rural" ///	
+7 "Sierra norte urbana" ///	
+8 "Sierra norte rural" ///	
+9 "Sierra centro urbana" /// 
+10 "Sierra centro rural" ///	
+11 "Sierra sur urbana" /// 
+12 "Sierra sur rural" /// 
+13 "Selva alta urbana" ///	
+14 "Selva alta rural" /// 
+15 "Selva baja urbana" /// 
+16 "Selva baja rural" /// 
+17"Lima Metropolitana" 
+lab val dominioA dominioA 
 
-
-
-*Variables hipótesis
-*=======================
-
-*jefatura del hogar  - hogar
-*conyugue 
-gen conyugue=1 if p203==1 & (p209==1 | p209==2)
-replace conyugue=0 if p203==1 & (p209==3 | p209==4 | p209==5 | p209==6) | p203==0 
-
-
-*Generación de ingresos  - hogar
-
-
-
-
-*Seguro  - hogar
-*cualquier tipo de seguro
-gen seguro=1 if  p4191==1|p4192==1|p4193==1|p4194==1|p4195==1|p4196==1|p4197==1|p4198==1
-replace seguro=0 if  p4191==0 & p4192==0 & p4193==0 & p4194==0 & p4195==0 & p4196==0 & p4197==0 & p4198==0
-
-egen pc_seguro= total(seguro==1), by(conglome vivienda hogar año)
-gen seguro_essalud=pc_seguro/mieperho
-
-*cualquier seguro menos sis 
-gen seguro_sin_sis=1 if  p4191==1|p4192==1|p4193==1|p4194==1|p4196==1|p4197==1|p4198==1
-replace seguro_sin_sis=0 if  p4191==0 & p4192==0 & p4193==0 & p4194==0 & p4196==0 & p4197==0 & p4198==0
-
-egen pc_seguro_no_sis= total(seguro_sin_sis==1), by(conglome vivienda hogar año)
-gen seguro_no_sis=pc_seguro_no_sis/mieperho
-
-
-*Variable dependiente
-*=======================
-
-*Transición entre periodos - hogar
-
-
-*Variables de control
-*======================
-
-*Ubicación geográfica
-
-*Edad
-egen edad_h=mean(p208a), by(conglome vivienda hogar año)
-
-*Género
-recode p207 (2=0 "Mujeres") (1=1 "Hombres"), g(sexo)
-lab var sexo "Sexo: Mujeres=0 | Hombres=1"
-
-egen num_hombres = total(sexo==1), by(conglome vivienda hogar año)
-gen hombres_h=num_hombres/mieperho
-
-gen hombre_jh=1 if p203==1 & sexo==1
-replace hombre_jh=0 if (p203==1 & sexo==0)
-
-*Etnicidad
-rename p300a lengua
-replace lengua=. if lengua==9
-label variable lengua "Lengua Materna"
-
-gen lenguacat=.
-label variable lenguacat "Categoría de Lengua Materna"
-replace lenguacat=1 if lengua==4 & !missing(lengua) 
-replace lenguacat=2 if lengua<4 & !missing(lengua) 
-replace lenguacat=3 if lengua>4 & lengua<8 & !missing(lengua)
-replace lenguacat=4 if lengua==8 & !missing(lengua) 
-label define lenguacat 1 "Castellano" 2 "Quechua/Aymara/Otra lengua nativa" ///
-3 "Inglés/Portugués/Otra lengua extranjera" 4 "Sordo mudo"
-label values lenguacat lenguacat
-
-egen total_lenguacat= total(lenguacat==2), by(conglome vivienda hogar año)
-gen lengua_h=total_lenguacat/mieperho
-
-*Télefono
-gen telefono=1 if p1141==1
-replace telefono=0 if p1141==0
-
-*Agua
-gen agua=1 if p110==1 | p110==2
-replace agua=0 if p110==3 | p110==4 | p110==5 | p110==6 | p110==7 
-
-*Electricidad
-gen electricidad=1 if p1121==1
-replace electricidad=0 if p1121==0 
+merge m:1 dominioA using "$data/despacial_ldnew.dta"
+drop _m
 
 
-*Colapsar la base a nivel de hogar
-keep if p203==1
+*================================ 
+* GUARDANDO ARCHIVO PRINCIPAL
+*-===============================
 
+save "$cleaned/data_final", replace
 
-drop if año==año[_n-1]
-
-*Establecer a los datos como un panel de datos
-xtset hogar año
-
-save "$cleaned/data_para_analisis_final.dta", replace
