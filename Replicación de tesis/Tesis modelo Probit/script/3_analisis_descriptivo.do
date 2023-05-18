@@ -10,10 +10,10 @@ clear all
 
 * Definición de rutas (carpetas)
 *================================
-global root "C:/Users/Usuario/Desktop/Replica Cozzubo"
+global root "C:/Users/Usuario/Desktop/Replica Cozzubo" // cambiar directorio
 global data "$root/data"
 global cleaned "$root/cleaned"
-
+global result "$root/result"
 
 * Abrir base de datos
 *==========================
@@ -122,5 +122,7 @@ merge 1:m dpto_id using "$data/data_para_mapas"
 
 ***Fig. 05
 foreach x in 07 08 09 10 11{
-spmap pobre if aniorec==20`x' using "dpto_coord.dta", id(dpto_id) fcolor(Blues) clnumber(5)  title("Pobreza por regiones Perú 20`x'" ) 
+spmap pobre if aniorec==20`x' using "dpto_coord.dta", id(dpto_id) fcolor(Blues) clnumber(5) title("20`x'") legenda(off) name("mp`x'", replace)
 }
+
+graph combine mp07 mp08 mp09 mp10 mp11, title("Figura 5: Pobreza por regiones Perú 2007-2011")

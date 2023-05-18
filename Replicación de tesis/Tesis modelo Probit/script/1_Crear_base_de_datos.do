@@ -13,7 +13,7 @@ clear all
 
 * Definición de rutas (carpetas)
 *================================
-global root "C:/Users/Usuario/Desktop/Replica Cozzubo"
+global root "C:/Users/Usuario/Desktop/Replica Cozzubo" // cambiar directorio
 global data "$root/data"
 global cleaned "$root/cleaned"
 
