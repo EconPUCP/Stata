@@ -45,14 +45,15 @@ rename año aniorec
 * Departamento
 g dpto1= real(substr(ubigeo,1,2))
 lab var dpto1 "Departamentos"
-label define dpto 1"Amazonas" 2"Ancash" 3"Apurimac" 4"Arequipa" 5"Ayacucho" 6"Cajamarca" /// 
-7 "Callao" 8"Cusco" 9"Huancavelica"  10"Huanuco"  11"Ica" 12"Junin" /// 
-13"La Libertad" 14"Lambayeque" 15"Lima" 16"Loreto" 17"Madre de Dios" 18"Moquegua" /// 
-19"Pasco" 20"Piura" 21"Puno" 22"San Martin" 23"Tacna" 24"Tumbes" 25"Ucayali" 
+label define dpto 1"Amazonas" 2"Ancash" 3"Apurimac" 4"Arequipa"  ///
+5"Ayacucho" 6"Cajamarca" 7 "Callao" 8"Cusco" 9"Huancavelica"     /// 
+10"Huanuco"  11"Ica" 12"Junin" 13"La Libertad" 14"Lambayeque"    /// 
+15"Lima" 16"Loreto" 17"Madre de Dios" 18"Moquegua" 19"Pasco"     ///  
+20"Piura" 21"Puno" 22"San Martin" 23"Tacna" 24"Tumbes" 25"Ucayali" 
 lab val dpto1 dpto
 
 * Generamos un identificador para area rural y urbana
-replace estrato = 1 if dominio ==8 
+replace estrato=1 if dominio==8 
 recode estrato (1/5=1 "Urbana") (6/8=2 "Rural"), gen(area)
 lab var area "Urbana = 1 Rural = 2"
 
@@ -103,7 +104,6 @@ drop if _m==2
 drop _m
 
 * Generamos 17 dominios para aplicar deflactores espaciales
-
 g       dominioA=1 if dominio==1 & area==1
 replace dominioA=2 if dominio==1 & area==2
 replace dominioA=3 if dominio==2 & area==1
@@ -123,24 +123,12 @@ replace dominioA=16 if dominio==7 & (dpto==16 | dpto==17 | dpto==25) & area==2
 replace dominioA=17 if dominio==8 & area==1
 replace dominioA=17 if dominio==8 & area==2
 
-label define dominioA ///
-1 "Costa norte urbana" /// 
-2 "Costa norte rural" /// 
-3 "Costa centro urbana" /// 
-4 "Costa centro rural" /// 
-5 "Costa sur urbana" /// 
-6 "Costa sur rural" ///	
-7 "Sierra norte urbana" ///	
-8 "Sierra norte rural" ///	
-9 "Sierra centro urbana" /// 
-10 "Sierra centro rural" ///	
-11 "Sierra sur urbana" /// 
-12 "Sierra sur rural" /// 
-13 "Selva alta urbana" ///	
-14 "Selva alta rural" /// 
-15 "Selva baja urbana" /// 
-16 "Selva baja rural" /// 
-17"Lima Metropolitana" 
+label define dominioA 1 "Costa norte urbana" 2 "Costa norte rural"    ///
+3 "Costa centro urbana"  4 "Costa centro rural" 5 "Costa sur urbana"  /// 
+6 "Costa sur rural" 7 "Sierra norte urbana" 8 "Sierra norte rural"    ///	
+9 "Sierra centro urbana" 10 "Sierra centro rural" 11 "Sierra sur urbana" /// 
+12 "Sierra sur rural" 13 "Selva alta urbana" 14 "Selva alta rural" /// 
+15 "Selva baja urbana" 16 "Selva baja rural" 17"Lima Metropolitana" 
 lab val dominioA dominioA 
 
 merge m:1 dominioA using "$data/despacial_ldnew.dta"

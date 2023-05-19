@@ -77,14 +77,15 @@ tab pobre_NBI
 
 svy: tabulate pobre_NBI anio, col 
 
+
 ***Fig 10
-foreach x in 07 08 09 10 11{
-svy: tab nbi1 if aniorec==20`x'
-svy: tab nbi2 if aniorec==20`x'
-svy: tab nbi3 if aniorec==20`x'
-svy: tab nbi4 if aniorec==20`x'
-svy: tab nbi5 if aniorec==20`x'
+foreach x in 1 2 3 4 5{
+svy: tabulate nbi`x' anio, col 
 }
+
+***Cuadro 8
+svy: tabulate NBI aniorec, col format(%9.4fc)
+
 
 *==================
 *Pobreza integrada
@@ -101,6 +102,8 @@ label var pob_integrado pob_integrado
 *Clasifica No Pobre y Pobre
 gen pobreza_integ=pob_integrado
 recode pobreza_integ (1=0) (2/4=1)
+
+svy: tabulate pobreza_integ aniorec, col format(%9.4fc)
 
 *==================
 * Mapas de pobreza
