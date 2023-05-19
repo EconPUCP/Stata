@@ -170,6 +170,7 @@ eststo m1_`x'_A: quietly margins [iw=FACTOR_PCD], dydx(*) atmeans post
 quietly logit pobre_k`x'_A indigena mujer rural edad edad2 l_visual_grave_completa l_comunicativa l_auditiva_grave_completa l_aprendizaje l_relacional l_enfermedad jefe vive_solo lima_callao mieperhog programa_social if (l_movilidad==1 & edad>=3) [iw=FACTOR_PCD], robust
 
 eststo m2_`x'_A: quietly margins [iw=FACTOR_PCD], dydx(*) atmeans post
+
 }
 
 esttab m1_1_A m2_1_A m1_2_A m2_2_A m1_3_A m2_3_A m1_4_A m2_4_A m1_5_A m2_5_A, b(%9.7fc) se(%9.3fc)
@@ -177,7 +178,7 @@ esttab m1_6_A m2_6_A m1_7_A m2_7_A m1_8_A m2_8_A m1_9_A m2_9_A, b(%9.7fc) se(%9.
 
 
 ****Tabla 11.A 
-foreach x of numlist 1/9{
+foreach x of numlist 1/7{
 
 logit pobre_k`x'_B indigena mujer rural edad l_visual_grave_completa l_comunicativa l_auditiva_grave_completa l_aprendizaje l_relacional l_enfermedad jefe vive_solo lima_callao mieperhog if (l_movilidad==1 & edad>17 & edad<65) [iw=FACTOR_PCD], robust
 
@@ -192,6 +193,5 @@ margins [iw=FACTOR_PCD], dydx(*) atmeans post
 estimates store m2_`x'_B
 }
 
-esttab m1_1_B m2_1_B m1_2_B m2_2_B m1_3_B m2_3_B m1_4_B m2_4_B m1_5_B m2_5_B, b(%9.7fc) se(%9.3fc)
-esttab m1_6_B m2_6_B m1_7_B m2_7_B m1_8_B m2_8_B m1_9_B m2_9_B, b(%9.7fc) se(%9.3fc)
+esttab m1_1_B m2_1_B m1_2_B m2_2_B m1_3_B m2_3_B m1_4_B m2_4_B m1_5_B m2_5_B m1_6_B m2_6_B m1_7_B m2_7_B, b(%9.7fc) se(%9.3fc)
 
