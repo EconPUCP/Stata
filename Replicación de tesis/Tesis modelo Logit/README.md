@@ -74,7 +74,11 @@ Metodología de identificación y agregación de Alkire-Foster
 
 # Videotutorial
 
-[![Alt text](https://img.youtube.com/vi/pj-y3dLDOEA/0.jpg)](https://www.youtube.com/watch?v=pj-y3dLDOEA)
+
+
+https://github.com/EconPUCP/Stata/assets/128189216/b9ec59de-0b21-4633-b8b5-312faf637e94
+
+
 
 -----
 __Contribuciones:__ El código fue proporcionado por el autor de la tesis (Nicolás Barrantes Gamba), editado y organizado por César Cornejo Román y Gladys Godines Sánchez, quienes construyeron el paquete de replicación siguiendo los estándares de la American Economics Association. La página fue elaborada por . El videotutorial fue creado y producido por .
