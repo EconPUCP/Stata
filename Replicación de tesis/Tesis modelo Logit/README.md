@@ -9,14 +9,14 @@ Esta sección del repositorio contiene el código completo para la replicación 
 
 # Objetivo: 
 
-evaluar empíricamente las posibles desigualdades horizontales entre las personas con discapacidad de movilidad (PcDM) indígenas y no indígenas en términos de pobreza multidimensional. La pobreza multidimensional se entiende como la experiencia de sufrir privaciones en varias dimensiones centrales de la vida humana, según lo conceptualizado por Amartya Sen en sus obras.
+Evaluar empíricamente las posibles desigualdades horizontales entre las personas con discapacidad de movilidad (PcDM) indígenas y no indígenas en términos de pobreza multidimensional. La pobreza multidimensional se entiende como la experiencia de sufrir privaciones en varias dimensiones centrales de la vida humana, según lo conceptualizado por Amartya Sen en sus obras.
 
 # Hipótesis: 
-pertenecer al grupo indígena coloca a las PcDM en una posición de desventaja en términos de pobreza multidimensional en comparación con aquellas que no son parte de un grupo indígena.
+Pertenecer al grupo indígena coloca a las PcDM en una posición de desventaja en términos de pobreza multidimensional en comparación con aquellas que no son parte de un grupo indígena.
 
 # Metodología
 
-sigue Clausen (2015) grupo de adultos mayores en el Perú
+Sigue Clausen (2015) grupo de adultos mayores en el Perú
 
 | 4. Metodología  |
 | :------------- | 
@@ -66,11 +66,11 @@ __Anexo A:__ Criterios de Alkire (2007) para la elección de dimensiones
 
 En cuanto a la metodología de elección de dimensiones previamente enunciada, se elaboraron dos listas: una ideal y otra factible. La lista ideal consta de diez dimensiones: 1) Vida Saludable; 2) Educación; 3) Conectividad Social; 4) Ausencia de Humillación; 5) Accesibilidad Física; 6) Condiciones de Vivienda; 7) Servicios Básicos; 8) Participación Política; 9) Empleo; 10) Agencia.
 
-agencia es una dimensión de la lista ideal que no se evalúa en la lista factible por ausencia de data
+Agencia es una dimensión de la lista ideal que no se evalúa en la lista factible por ausencia de data
 
 __4.3. Metodología de Identificación y Agregación de Pobreza Multidimensional__
 
-metodología de identificación y agregación de Alkire-Foster
+Metodología de identificación y agregación de Alkire-Foster
 
 
 
