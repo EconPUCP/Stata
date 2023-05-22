@@ -6,6 +6,7 @@ __Autor:__ Nicolás Barrantes Gamba
 Esta tesis analiza las desigualdades horizontales según la procedencia étnica dentro de la población de personas con discapacidad de movilidad (PcDM).
 Esta sección del repositorio contiene el código completo para la replicación de los análisis estadísticos y econométricos de esta tesis (carpeta script), los datos necesarios para la replicación (carpeta data), los resultados (carpeta results). Esta página (archivo README.md) orienta al usuario para replicar las diferentes secciones y análisis de las tesis.
 
+https://github.com/EconPUCP/Stata/assets/128189216/b9ec59de-0b21-4633-b8b5-312faf637e94
 
 # Objetivo: 
 
@@ -72,11 +73,10 @@ __4.3. Metodología de Identificación y Agregación de Pobreza Multidimensional
 
 Metodología de identificación y agregación de Alkire-Foster
 
-# Videotutorial
 
 
 
-https://github.com/EconPUCP/Stata/assets/128189216/b9ec59de-0b21-4633-b8b5-312faf637e94
+
 
 
 
