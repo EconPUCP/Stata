@@ -19,11 +19,23 @@ pertenecer al grupo indígena coloca a las PcDM en una posición de desventaja e
 sigue Clausen (2015) grupo de adultos mayores en el Perú
 
 4. Metodología
+
+
 4.1. Identificación de la Población Indígena
+
+
 4.2. Decisiones Normativas: La Elección de las Dimensiones de la Pobreza
+
+
 4.3. Metodología de Identificación y Agregación de Pobreza Multidimensional
+
+
 4.4 Indicador de Desigualdad Intergrupal en Pobreza Multidimensional
+
+
 4.5. Modelos Econométricos y Métodos de Estimación
+
+
 4.6. Datos
 
 
