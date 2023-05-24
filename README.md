@@ -1,4 +1,4 @@
-# Manual de Stata - EconPUCP
+# Guía y Repositorio de Stata para la investigación económica - Stata EconPUCP
 
 Esta es una Guía de análisis de datos en Stata. 
 Esta guía contiene instrucciones y código para los análisis estadísticos y econométricos más frecuentes en la investigación de problemas económicos. Esta guía sigue el principio de programación de escribir código consistente, fácil de leer, transparente y reproducible.
