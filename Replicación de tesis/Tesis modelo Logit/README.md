@@ -1,6 +1,7 @@
 # Tesis: Desigualdades horizontales entre las personas con discapacidad de movilidad en el Perú: Brechas en la situación de pobreza multidimensional según la procedencia étnica
 
 __Autor:__ Nicolás Barrantes Gamba 
+
 __Asesor:__ Jhonatan Clausen 
 
 Esta tesis analiza las desigualdades horizontales según la procedencia étnica dentro de la población de personas con discapacidad de movilidad (PcDM).
