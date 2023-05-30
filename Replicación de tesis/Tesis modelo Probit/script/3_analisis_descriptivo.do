@@ -44,7 +44,7 @@ label val pobre pobre
 svy:mean pobre, over(aniorec) 
 
 ***Fig 06 y cuadro. 18 
-svy:mean pobre, over(aniorec dpto1) cformat(%9.4fc) 
+table dpto1 aniorec [pweight = factornd07], c(mean pobre) format(%9.4fc) 
 
 * Brecha pobreza 
 *================
@@ -53,7 +53,7 @@ g brecha = (linear_pl-gpcmr_pl)/linear_pl if pobre==1
 replace brecha = 0 if pobre==0
 
 ***Fig 07 y cuadro. 19
-svy:mean brecha, over(aniorec dpto1) cformat(%9.4fc) 
+table dpto1 aniorec [pweight = factornd07], c(mean brecha) format(%9.4fc) 
 
 * Severidad
 *===========
@@ -62,8 +62,7 @@ g severidad = ((linear_pl-gpcmr_pl)/linear_pl)^2 if pobre==1
 replace severidad = 0 if pobre==0
 
 ***Fig 08. y cuadro. 20
-svy:mean severidad, over(aniorec dpto1) cformat(%9.4fc) 
-
+table dpto1 aniorec [pweight = factornd07], c(mean severidad) format(%9.4fc) 
 
 *===============================================
 *Pobreza por necesidades básicas insatisfechas
