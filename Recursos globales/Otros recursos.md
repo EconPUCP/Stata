@@ -24,7 +24,7 @@ Cursos de Stata virtual
 | Diego Quispe Ortogorín | [Laboratorio de cómputo: manejo de base de datos - 2023 - 0](https://www.youtube.com/playlist?list=PLonlrXezFkvMM18XPVxSEUEEc58bko8o- "Laboratorio de cómputo: manejo de base de datos - 2023 - 0") | 
 | César Mora Ruiz | [Mini curso de Stata y Econometría](https://www.youtube.com/playlist?list=PLlyb_Ke0SHbj3hKlN_lUH7F28IoafcSv- "Mini curso de Stata y Econometría") |  
 | STATeando | [Curso básico de Stata](https://www.youtube.com/playlist?list=PL8Kfd0vexG7x-ckuyt5B4okglsD66TjVw "Curso básico de Stata") |  
-| Edúcate Perú consultores | [Stata para principiantes](https://www.youtube.com/playlist?list=PLCJdTrVInB2qAg41_nRjx0oseIKCixYJU "Stata para principiantes") |  
+| Copertino Quispe Ccama | [Stata para principiantes](https://www.youtube.com/playlist?list=PLCJdTrVInB2qAg41_nRjx0oseIKCixYJU "Stata para principiantes") |  
 | Stata | [Videotutoriales de diversos temas en Stata](https://www.stata.com/links/video-tutorials/ "Videotutoriales de diversos temas en Stata") |  
 
 Manuales de Stata
