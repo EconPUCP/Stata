@@ -26,16 +26,19 @@ Creemos una base de datos de los principales equipos de fútbol del Perú junto 
 
 > **TIPS:  `clear` vs `clear all`**
 >
->Si bien la mayoría de la gente usa `clear` para borrar el conjunto de datos y las etiquetas, `clear all` hace borrón y cuenta nueva. Usa este último si estás trabajando matrices, mata, marcos, programas, etc.
+>Si bien la mayoría de la gente usa `clear` para borrar el conjunto de datos y las etiquetas, `clear all` hace borrón y cuenta nueva. Usa este último si estás trabajando matrices, mata, macros, programas, etc.
 
 
 #### 2.1.2 Copiando datos en el editor de datos
 
-Antes de copiar una base, limpiemos el navegador de datos usando el comando clear en la ventana de comando. Abramos el excel de ejemplo, ‘cuadro-19-4, seleccionamos las filas que van desde Amazonas hasta Lima para todos los años de la siguiente manera:
+Antes de copiar una base, limpiemos el navegador de datos usando el comando `clear` en la ventana de comando. 
+
+Abramos el excel de ejemplo, _cuadro-19-4_, seleccionamos las filas que van desde Amazonas hasta Lima para todos los años de la siguiente manera:
 
 ![image436](https://user-images.githubusercontent.com/106888200/223179332-7e726872-ff50-4584-ae2f-818eea8f4891.png)
 
 Copiamos los datos usando `ctrl+c`. Ahora, se puede pegar directamente en el editor de datos usando `ctrl+v`.
+
 Como vemos, luego de pegar aún se puede mejorar la base editando los nombres de las variables antes de guardarla.
 
 ![image437](https://user-images.githubusercontent.com/106888200/223179886-461fec04-b655-4e71-9e26-94c3eaf270b6.png)
@@ -85,15 +88,18 @@ Para poder cargar datos a Stata es necesario saber el formato del archivo que se
 
 - Si los datos están en formato ‘.dta’ (el formato propio de Stata) entonces se usa el comando use seguido por la dirección en donde se almacena la carpeta.
 - Otros formatos comunes son:
+
 ‘.xlsx’ o ‘.xls’ para Excel.
+
 ‘.csv’ (Comma Separated Values) para archivos almacenados como texto y separados por algún caracter (puede ser comas, punto y comas, espacios, entre otros).
+
 También se puede cargar formatos menos comunes como ODBC, SAS, etc.
 
 #### 2.2.1 Cargando una base de datos en formato de Stata
 
 El comando para cargar bases en formato ‘.dta’ es `use`. 
 
-Para usarlo es necesario indicar el nombre del archivo junto a la dirección de la carpeta en donde se encuentra guardado. Para que la base sea cargada de manera correcta es necesario no tener alguna base previa. La opción `clear` luego de la coma permite limpiar el navegador de datos de cualquier base previa. De esta manera se puede cargar la base. De no indicar esto, aparecerá una advertencia en la ventana de resultados indicándonos que no podemos cargar la base. Veamos un ejemplo.
+Para usarlo es necesario indicar el nombre del archivo junto a la dirección de la carpeta en donde se encuentra guardado. Para que la base sea cargada de manera correcta es necesario no tener alguna base previa. La opción `clear` luego de la coma permite limpiar el navegador de datos de cualquier base previa. De esta manera se puede cargar la base. De no indicar esto, aparecerá una advertencia en la ventana de resultados indicándonos que no podemos cargar la base. 
 
 ##### 2.2.1.1 use filename, clear
 
