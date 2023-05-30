@@ -88,9 +88,7 @@ Para poder cargar datos a Stata es necesario saber el formato del archivo que se
 
 - Si los datos están en formato ‘.dta’ (el formato propio de Stata) entonces se usa el comando use seguido por la dirección en donde se almacena la carpeta.
 - Otros formatos comunes son:
-
 ‘.xlsx’ o ‘.xls’ para Excel.
-
 ‘.csv’ (Comma Separated Values) para archivos almacenados como texto y separados por algún caracter (puede ser comas, punto y comas, espacios, entre otros).
 
 También se puede cargar formatos menos comunes como ODBC, SAS, etc.
