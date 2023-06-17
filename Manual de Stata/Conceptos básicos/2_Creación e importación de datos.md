@@ -51,7 +51,7 @@ Editamos los nombres de cada variable para pulir la base antes de guardarla.
 
 Abramos el editor de do-files. En este caso vamos a crear un cascarón (o shell) que definirá la extensión de los datos. Supongamos que estamos revisando archivos históricos y debemos de almacenar cada dato con algún comentario para doce meses de un año. Hacerlo a mano puede generar problemas para editar posteriormente. Así que lo hacemos dato a dato en el do-file. Veamos el ejemplo:
 
-```
+```stata
 *--------------------------------------
 *Crear la cáscara de una base de datos
 *--------------------------------------
@@ -103,13 +103,13 @@ Para usarlo es necesario indicar el nombre del archivo junto a la dirección de 
 
 El comando `use` se usa para cargar no solo bases que estén físicamente en alguna carpeta de la computadora, también sirve para cargar datos que ya se encuentren en internet. Este es el caso del ejemplo inicial sobre uso de do-files. 
 
-```
+```stata
 use "http://fmwww.bc.edu/ec-p/data/wooldridge/openness", clear	
 ```
 
 Veamos un caso más común en donde se tiene un archivo en alguna carpeta de la computadora:
 
-```
+```stata
 cd "C:/Users/Usuario/Documents/GitHub/Proyecto_STATA/_Análisis/Data" // coloca la dirección donde se encuentra tu base de datos
 use "sumaria-2020.dta", clear
 ```
@@ -119,7 +119,7 @@ use "sumaria-2020.dta", clear
 
 Una alternativa a copiar y pegar desde excel es cargar la misma base desde Excel respetando su formato original. Esto permite disminuir los posibles errores humanos que puede haber al manipular los datos. Para ello, usamos el comando import Excel de la siguiente manera: 
 
-```
+```stata
 import excel using "relaciones_extramaritales.xlsx", clear	
 ```
 
@@ -129,7 +129,7 @@ Adicionalmente, hay distintas opciones que se pueden indicar luego de la coma (a
 - sheet("sheetname"): Si se tienen distintas pestañas en un mismo archivo, podemos cargar una en específico indicando su nombre en sheetname (entre comillas).
 - firstrow: Permite tomar la primera fila de los datos como nombre de las variables. Si no hacemos esto, la primera fila será considerada como datos generando problemas en la base.
 
-```
+```stata
 import excel using "relaciones_extramaritales.xlsx", clear firstrow 
 br 
  
@@ -157,7 +157,7 @@ Por ejemplo, se tiene datos de longitud y altitud separados por comas. Para cono
 
 El comando usado para cargar archivos ‘.csv’ es muy similar al usado para cargar bases en excel. Hay una diferencia principal. En este caso es necesario indicar qué carácter está siendo usado como separador con la opción delimiter(" "). Dentro del paréntesis debemos indicar el caractér, por ejemplo: delmiter(",") o delmiter(";")
 
-```
+```stata
 import delimited using "RECH0.csv", delimiter(",") clear // formatos .csv
 insheet delimited using "RECH0.csv", delimiter(",") clear // formatos .csv
 ```
